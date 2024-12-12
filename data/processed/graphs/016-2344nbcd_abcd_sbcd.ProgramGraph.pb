@@ -1,0 +1,13874 @@
+
+
+[external]
+AallocaB7
+5
+	full_text(
+&
+$%4 = alloca %struct.input_t, align 4
+4allocaB*
+(
+	full_text
+
+%5 = alloca i8, align 1
+5allocaB+
+)
+	full_text
+
+%6 = alloca i16, align 2
+5allocaB+
+)
+	full_text
+
+%7 = alloca i16, align 2
+5allocaB+
+)
+	full_text
+
+%8 = alloca i16, align 2
+5allocaB+
+)
+	full_text
+
+%9 = alloca i32, align 4
+PbitcastBE
+C
+	full_text6
+4
+2%10 = bitcast %struct.input_t* %4 to { i64, i64 }*
+*struct*B
+
+	full_text
+
+
+struct* %4
+ngetelementptrB]
+[
+	full_textN
+L
+J%11 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %10, i32 0, i32 0
++struct*B
+
+	full_text
+
+struct* %10
+;storeB2
+0
+	full_text#
+!
+store i64 %1, i64* %11, align 4
+%i64*B
+
+	full_text
+
+
+i64* %11
+ngetelementptrB]
+[
+	full_textN
+L
+J%12 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %10, i32 0, i32 1
++struct*B
+
+	full_text
+
+struct* %10
+;storeB2
+0
+	full_text#
+!
+store i64 %2, i64* %12, align 4
+%i64*B
+
+	full_text
+
+
+i64* %12
+sgetelementptrBb
+`
+	full_textS
+Q
+O%13 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+*struct*B
+
+	full_text
+
+
+struct* %4
+:loadB2
+0
+	full_text#
+!
+%14 = load i8, i8* %13, align 1
+#i8*B
+
+	full_text
+	
+i8* %13
+9storeB0
+.
+	full_text!
+
+store i8 %14, i8* %5, align 1
+!i8B
+
+	full_text
+
+
+i8 %14
+"i8*B
+
+	full_text
+
+
+i8* %5
+9loadB1
+/
+	full_text"
+ 
+%15 = load i8, i8* %5, align 1
+"i8*B
+
+	full_text
+
+
+i8* %5
+3sextB+
+)
+	full_text
+
+%16 = sext i8 %15 to i32
+!i8B
+
+	full_text
+
+
+i8 %15
+/andB(
+&
+	full_text
+
+%17 = and i32 %16, 15
+#i32B
+
+	full_text
+	
+i32 %16
+2subB+
+)
+	full_text
+
+%18 = sub nsw i32 0, %17
+#i32B
+
+	full_text
+	
+i32 %17
+sgetelementptrBb
+`
+	full_textS
+Q
+O%19 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+*struct*B
+
+	full_text
+
+
+struct* %4
+<loadB4
+2
+	full_text%
+#
+!%20 = load i32, i32* %19, align 4
+%i32*B
+
+	full_text
+
+
+i32* %19
+0subB)
+'
+	full_text
+
+%21 = sub i32 %18, %20
+#i32B
+
+	full_text
+	
+i32 %18
+#i32B
+
+	full_text
+	
+i32 %20
+6truncB-
++
+	full_text
+
+%22 = trunc i32 %21 to i16
+#i32B
+
+	full_text
+	
+i32 %21
+;storeB2
+0
+	full_text#
+!
+store i16 %22, i16* %6, align 2
+#i16B
+
+	full_text
+	
+i16 %22
+$i16*B
+
+	full_text
+	
+i16* %6
+9loadB1
+/
+	full_text"
+ 
+%23 = load i8, i8* %5, align 1
+"i8*B
+
+	full_text
+
+
+i8* %5
+3sextB+
+)
+	full_text
+
+%24 = sext i8 %23 to i32
+!i8B
+
+	full_text
+
+
+i8 %23
+0andB)
+'
+	full_text
+
+%25 = and i32 %24, 240
+#i32B
+
+	full_text
+	
+i32 %24
+2subB+
+)
+	full_text
+
+%26 = sub nsw i32 0, %25
+#i32B
+
+	full_text
+	
+i32 %25
+6truncB-
++
+	full_text
+
+%27 = trunc i32 %26 to i16
+#i32B
+
+	full_text
+	
+i32 %26
+;storeB2
+0
+	full_text#
+!
+store i16 %27, i16* %7, align 2
+#i16B
+
+	full_text
+	
+i16 %27
+$i16*B
+
+	full_text
+	
+i16* %7
+;loadB3
+1
+	full_text$
+"
+ %28 = load i16, i16* %6, align 2
+$i16*B
+
+	full_text
+	
+i16* %6
+4zextB,
+*
+	full_text
+
+%29 = zext i16 %28 to i32
+#i16B
+
+	full_text
+	
+i16 %28
+4icmpB,
+*
+	full_text
+
+%30 = icmp sgt i32 %29, 9
+#i32B
+
+	full_text
+	
+i32 %29
+8brB2
+0
+	full_text#
+!
+br i1 %30, label %31, label %36
+!i1B
+
+	full_text
+
+
+i1 %30
+=load8B3
+1
+	full_text$
+"
+ %32 = load i16, i16* %6, align 2
+&i16*8B
+
+	full_text
+	
+i16* %6
+6zext8B,
+*
+	full_text
+
+%33 = zext i16 %32 to i32
+%i168B
+
+	full_text
+	
+i16 %32
+4sub8B+
+)
+	full_text
+
+%34 = sub nsw i32 %33, 6
+%i328B
+
+	full_text
+	
+i32 %33
+8trunc8B-
++
+	full_text
+
+%35 = trunc i32 %34 to i16
+%i328B
+
+	full_text
+	
+i32 %34
+=store8B2
+0
+	full_text#
+!
+store i16 %35, i16* %6, align 2
+%i168B
+
+	full_text
+	
+i16 %35
+&i16*8B
+
+	full_text
+	
+i16* %6
+'br8B
+
+	full_text
+
+br label %36
+=load8B3
+1
+	full_text$
+"
+ %37 = load i16, i16* %7, align 2
+&i16*8B
+
+	full_text
+	
+i16* %7
+6zext8B,
+*
+	full_text
+
+%38 = zext i16 %37 to i32
+%i168B
+
+	full_text
+	
+i16 %37
+=load8B3
+1
+	full_text$
+"
+ %39 = load i16, i16* %6, align 2
+&i16*8B
+
+	full_text
+	
+i16* %6
+6zext8B,
+*
+	full_text
+
+%40 = zext i16 %39 to i32
+%i168B
+
+	full_text
+	
+i16 %39
+6add8B-
++
+	full_text
+
+%41 = add nsw i32 %38, %40
+%i328B
+
+	full_text
+	
+i32 %38
+%i328B
+
+	full_text
+	
+i32 %40
+8trunc8B-
++
+	full_text
+
+%42 = trunc i32 %41 to i16
+%i328B
+
+	full_text
+	
+i32 %41
+=store8B2
+0
+	full_text#
+!
+store i16 %42, i16* %8, align 2
+%i168B
+
+	full_text
+	
+i16 %42
+&i16*8B
+
+	full_text
+	
+i16* %8
+=load8B3
+1
+	full_text$
+"
+ %43 = load i16, i16* %8, align 2
+&i16*8B
+
+	full_text
+	
+i16* %8
+6zext8B,
+*
+	full_text
+
+%44 = zext i16 %43 to i32
+%i168B
+
+	full_text
+	
+i16 %43
+2and8B)
+'
+	full_text
+
+%45 = and i32 %44, 496
+%i328B
+
+	full_text
+	
+i32 %44
+8icmp8B.
+,
+	full_text
+
+%46 = icmp sgt i32 %45, 144
+%i328B
+
+	full_text
+	
+i32 %45
+5zext8B+
+)
+	full_text
+
+%47 = zext i1 %46 to i32
+#i18B
+
+	full_text
+
+
+i1 %46
+=store8B2
+0
+	full_text#
+!
+store i32 %47, i32* %9, align 4
+%i328B
+
+	full_text
+	
+i32 %47
+&i32*8B
+
+	full_text
+	
+i32* %9
+=load8B3
+1
+	full_text$
+"
+ %48 = load i32, i32* %9, align 4
+&i32*8B
+
+	full_text
+	
+i32* %9
+5icmp8B+
+)
+	full_text
+
+%49 = icmp ne i32 %48, 0
+%i328B
+
+	full_text
+	
+i32 %48
+:br8B2
+0
+	full_text#
+!
+br i1 %49, label %50, label %55
+#i18B
+
+	full_text
+
+
+i1 %49
+=load8B3
+1
+	full_text$
+"
+ %51 = load i16, i16* %8, align 2
+&i16*8B
+
+	full_text
+	
+i16* %8
+6zext8B,
+*
+	full_text
+
+%52 = zext i16 %51 to i32
+%i168B
+
+	full_text
+	
+i16 %51
+5sub8B,
+*
+	full_text
+
+%53 = sub nsw i32 %52, 96
+%i328B
+
+	full_text
+	
+i32 %52
+8trunc8B-
++
+	full_text
+
+%54 = trunc i32 %53 to i16
+%i328B
+
+	full_text
+	
+i32 %53
+=store8B2
+0
+	full_text#
+!
+store i16 %54, i16* %8, align 2
+%i168B
+
+	full_text
+	
+i16 %54
+&i16*8B
+
+	full_text
+	
+i16* %8
+'br8B
+
+	full_text
+
+br label %55
+=load8B3
+1
+	full_text$
+"
+ %56 = load i32, i32* %9, align 4
+&i32*8B
+
+	full_text
+	
+i32* %9
+5icmp8B+
+)
+	full_text
+
+%57 = icmp ne i32 %56, 0
+%i328B
+
+	full_text
+	
+i32 %56
+5zext8B+
+)
+	full_text
+
+%58 = zext i1 %57 to i64
+#i18B
+
+	full_text
+
+
+i1 %57
+@select8B4
+2
+	full_text%
+#
+!%59 = select i1 %57, i32 1, i32 0
+#i18B
+
+	full_text
+
+
+i1 %57
+wgetelementptr8Bd
+b
+	full_textU
+S
+Q%60 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+>store8B3
+1
+	full_text$
+"
+ store i32 %59, i32* %60, align 4
+%i328B
+
+	full_text
+	
+i32 %59
+'i32*8B
+
+	full_text
+
+
+i32* %60
+wgetelementptr8Bd
+b
+	full_textU
+S
+Q%61 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+>load8B4
+2
+	full_text%
+#
+!%62 = load i32, i32* %61, align 4
+'i32*8B
+
+	full_text
+
+
+i32* %61
+wgetelementptr8Bd
+b
+	full_textU
+S
+Q%63 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 5
+>store8B3
+1
+	full_text$
+"
+ store i32 %62, i32* %63, align 4
+%i328B
+
+	full_text
+	
+i32 %62
+'i32*8B
+
+	full_text
+
+
+i32* %63
+ugetelementptr8Bb
+`
+	full_textS
+Q
+O%64 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 3
+,struct*8B
+
+	full_text
+
+
+struct* %4
+>load8B4
+2
+	full_text%
+#
+!%65 = load i32, i32* %64, align 4
+'i32*8B
+
+	full_text
+
+
+i32* %64
+=load8B3
+1
+	full_text$
+"
+ %66 = load i16, i16* %8, align 2
+&i16*8B
+
+	full_text
+	
+i16* %8
+7trunc8B,
+*
+	full_text
+
+%67 = trunc i16 %66 to i8
+%i168B
+
+	full_text
+	
+i16 %66
+5sext8B+
+)
+	full_text
+
+%68 = sext i8 %67 to i32
+#i88B
+
+	full_text
+
+
+i8 %67
+5icmp8B+
+)
+	full_text
+
+%69 = icmp eq i32 %68, 0
+%i328B
+
+	full_text
+	
+i32 %68
+5zext8B+
+)
+	full_text
+
+%70 = zext i1 %69 to i64
+#i18B
+
+	full_text
+
+
+i1 %69
+@select8B4
+2
+	full_text%
+#
+!%71 = select i1 %69, i32 1, i32 0
+#i18B
+
+	full_text
+
+
+i1 %69
+2and8B)
+'
+	full_text
+
+%72 = and i32 %65, %71
+%i328B
+
+	full_text
+	
+i32 %65
+%i328B
+
+	full_text
+	
+i32 %71
+wgetelementptr8Bd
+b
+	full_textU
+S
+Q%73 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 3
+>store8B3
+1
+	full_text$
+"
+ store i32 %72, i32* %73, align 4
+%i328B
+
+	full_text
+	
+i32 %72
+'i32*8B
+
+	full_text
+
+
+i32* %73
+=load8B3
+1
+	full_text$
+"
+ %74 = load i16, i16* %8, align 2
+&i16*8B
+
+	full_text
+	
+i16* %8
+7trunc8B,
+*
+	full_text
+
+%75 = trunc i16 %74 to i8
+%i168B
+
+	full_text
+	
+i16 %74
+5sext8B+
+)
+	full_text
+
+%76 = sext i8 %75 to i32
+#i88B
+
+	full_text
+
+
+i8 %75
+6icmp8B,
+*
+	full_text
+
+%77 = icmp slt i32 %76, 0
+%i328B
+
+	full_text
+	
+i32 %76
+5zext8B+
+)
+	full_text
+
+%78 = zext i1 %77 to i64
+#i18B
+
+	full_text
+
+
+i1 %77
+@select8B4
+2
+	full_text%
+#
+!%79 = select i1 %77, i32 1, i32 0
+#i18B
+
+	full_text
+
+
+i1 %77
+wgetelementptr8Bd
+b
+	full_textU
+S
+Q%80 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 4
+>store8B3
+1
+	full_text$
+"
+ store i32 %79, i32* %80, align 4
+%i328B
+
+	full_text
+	
+i32 %79
+'i32*8B
+
+	full_text
+
+
+i32* %80
+ugetelementptr8Bb
+`
+	full_textS
+Q
+O%81 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 4
+,struct*8B
+
+	full_text
+
+
+struct* %4
+>load8B4
+2
+	full_text%
+#
+!%82 = load i32, i32* %81, align 4
+'i32*8B
+
+	full_text
+
+
+i32* %81
+wgetelementptr8Bd
+b
+	full_textU
+S
+Q%83 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 2
+>store8B3
+1
+	full_text$
+"
+ store i32 %82, i32* %83, align 4
+%i328B
+
+	full_text
+	
+i32 %82
+'i32*8B
+
+	full_text
+
+
+i32* %83
+=load8B3
+1
+	full_text$
+"
+ %84 = load i16, i16* %8, align 2
+&i16*8B
+
+	full_text
+	
+i16* %8
+6zext8B,
+*
+	full_text
+
+%85 = zext i16 %84 to i32
+%i168B
+
+	full_text
+	
+i16 %84
+2and8B)
+'
+	full_text
+
+%86 = and i32 %85, 255
+%i328B
+
+	full_text
+	
+i32 %85
+7trunc8B,
+*
+	full_text
+
+%87 = trunc i32 %86 to i8
+%i328B
+
+	full_text
+	
+i32 %86
+wgetelementptr8Bd
+b
+	full_textU
+S
+Q%88 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+<store8B1
+/
+	full_text"
+ 
+store i8 %87, i8* %88, align 4
+#i88B
+
+	full_text
+
+
+i8 %87
+%i8*8B
+
+	full_text
+	
+i8* %88
+$ret8B
+
+	full_text
+
+
+ret void
+$i648B
+
+	full_text
+
+
+i64 %1
+$i648B
+
+	full_text
+
+
+i64 %2
+6struct*8B'
+%
+	full_text
+
+%struct.output_t* %0
+Ealloca 8B7
+5
+	full_text(
+&
+$%4 = alloca %struct.input_t, align 4
+8alloca 8B*
+(
+	full_text
+
+%5 = alloca i8, align 1
+8alloca 8B*
+(
+	full_text
+
+%6 = alloca i8, align 1
+Sbitcast 8BD
+B
+	full_text5
+3
+1%7 = bitcast %struct.input_t* %4 to { i64, i64 }*
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+pgetelementptr 8B[
+Y
+	full_textL
+J
+H%8 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %7, i32 0, i32 0
+.struct* 8B
+
+	full_text
+
+
+struct* %7
+>store 8B1
+/
+	full_text"
+ 
+store i64 %1, i64* %8, align 4
+(i64* 8B
+
+	full_text
+	
+i64* %8
+pgetelementptr 8B[
+Y
+	full_textL
+J
+H%9 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %7, i32 0, i32 1
+.struct* 8B
+
+	full_text
+
+
+struct* %7
+>store 8B1
+/
+	full_text"
+ 
+store i64 %2, i64* %9, align 4
+(i64* 8B
+
+	full_text
+	
+i64* %9
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%10 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%11 = load i8, i8* %10, align 1
+'i8* 8B
+
+	full_text
+	
+i8* %10
+7zext 8B+
+)
+	full_text
+
+%12 = zext i8 %11 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %11
+3and 8B(
+&
+	full_text
+
+%13 = and i32 %12, 15
+'i32 8B
+
+	full_text
+	
+i32 %12
+7sub 8B,
+*
+	full_text
+
+%14 = sub nsw i32 25, %13
+'i32 8B
+
+	full_text
+	
+i32 %13
+9trunc 8B,
+*
+	full_text
+
+%15 = trunc i32 %14 to i8
+'i32 8B
+
+	full_text
+	
+i32 %14
+=store 8B0
+.
+	full_text!
+
+store i8 %15, i8* %5, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %15
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%16 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%17 = load i8, i8* %16, align 1
+'i8* 8B
+
+	full_text
+	
+i8* %16
+7zext 8B+
+)
+	full_text
+
+%18 = zext i8 %17 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %17
+4and 8B)
+'
+	full_text
+
+%19 = and i32 %18, 240
+'i32 8B
+
+	full_text
+	
+i32 %18
+4ashr 8B(
+&
+	full_text
+
+%20 = ashr i32 %19, 4
+'i32 8B
+
+	full_text
+	
+i32 %19
+7sub 8B,
+*
+	full_text
+
+%21 = sub nsw i32 25, %20
+'i32 8B
+
+	full_text
+	
+i32 %20
+9trunc 8B,
+*
+	full_text
+
+%22 = trunc i32 %21 to i8
+'i32 8B
+
+	full_text
+	
+i32 %21
+=store 8B0
+.
+	full_text!
+
+store i8 %22, i8* %6, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %22
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%23 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%24 = load i8, i8* %23, align 1
+'i8* 8B
+
+	full_text
+	
+i8* %23
+7zext 8B+
+)
+	full_text
+
+%25 = zext i8 %24 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %24
+3and 8B(
+&
+	full_text
+
+%26 = and i32 %25, 15
+'i32 8B
+
+	full_text
+	
+i32 %25
+8icmp 8B,
+*
+	full_text
+
+%27 = icmp sgt i32 %26, 9
+'i32 8B
+
+	full_text
+	
+i32 %26
+<br 8B2
+0
+	full_text#
+!
+br i1 %27, label %28, label %33
+%i1 8B
+
+	full_text
+
+
+i1 %27
+=load 8B1
+/
+	full_text"
+ 
+%29 = load i8, i8* %6, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+7zext 8B+
+)
+	full_text
+
+%30 = zext i8 %29 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %29
+6sub 8B+
+)
+	full_text
+
+%31 = sub nsw i32 %30, 1
+'i32 8B
+
+	full_text
+	
+i32 %30
+9trunc 8B,
+*
+	full_text
+
+%32 = trunc i32 %31 to i8
+'i32 8B
+
+	full_text
+	
+i32 %31
+=store 8B0
+.
+	full_text!
+
+store i8 %32, i8* %6, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %32
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+)br 8B
+
+	full_text
+
+br label %33
+=load 8B1
+/
+	full_text"
+ 
+%34 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7zext 8B+
+)
+	full_text
+
+%35 = zext i8 %34 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %34
+3and 8B(
+&
+	full_text
+
+%36 = and i32 %35, 15
+'i32 8B
+
+	full_text
+	
+i32 %35
+9trunc 8B,
+*
+	full_text
+
+%37 = trunc i32 %36 to i8
+'i32 8B
+
+	full_text
+	
+i32 %36
+=store 8B0
+.
+	full_text!
+
+store i8 %37, i8* %5, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %37
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+=load 8B1
+/
+	full_text"
+ 
+%38 = load i8, i8* %6, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+7zext 8B+
+)
+	full_text
+
+%39 = zext i8 %38 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %38
+3and 8B(
+&
+	full_text
+
+%40 = and i32 %39, 15
+'i32 8B
+
+	full_text
+	
+i32 %39
+9trunc 8B,
+*
+	full_text
+
+%41 = trunc i32 %40 to i8
+'i32 8B
+
+	full_text
+	
+i32 %40
+=store 8B0
+.
+	full_text!
+
+store i8 %41, i8* %6, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %41
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%42 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+@load 8B4
+2
+	full_text%
+#
+!%43 = load i32, i32* %42, align 4
+)i32* 8B
+
+	full_text
+
+
+i32* %42
+7icmp 8B+
+)
+	full_text
+
+%44 = icmp eq i32 %43, 0
+'i32 8B
+
+	full_text
+	
+i32 %43
+<br 8B2
+0
+	full_text#
+!
+br i1 %44, label %45, label %77
+%i1 8B
+
+	full_text
+
+
+i1 %44
+=load 8B1
+/
+	full_text"
+ 
+%46 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7zext 8B+
+)
+	full_text
+
+%47 = zext i8 %46 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %46
+7icmp 8B+
+)
+	full_text
+
+%48 = icmp eq i32 %47, 9
+'i32 8B
+
+	full_text
+	
+i32 %47
+<br 8B2
+0
+	full_text#
+!
+br i1 %48, label %49, label %61
+%i1 8B
+
+	full_text
+
+
+i1 %48
+;store 8	B.
+,
+	full_text
+
+store i8 0, i8* %5, align 1
+&i8* 8	B
+
+	full_text
+
+
+i8* %5
+=load 8	B1
+/
+	full_text"
+ 
+%50 = load i8, i8* %6, align 1
+&i8* 8	B
+
+	full_text
+
+
+i8* %6
+7zext 8	B+
+)
+	full_text
+
+%51 = zext i8 %50 to i32
+%i8 8	B
+
+	full_text
+
+
+i8 %50
+7icmp 8	B+
+)
+	full_text
+
+%52 = icmp eq i32 %51, 9
+'i32 8	B
+
+	full_text
+	
+i32 %51
+<br 8	B2
+0
+	full_text#
+!
+br i1 %52, label %53, label %54
+%i1 8	B
+
+	full_text
+
+
+i1 %52
+)br 8
+B
+
+	full_text
+
+br label %58
+=load 8B1
+/
+	full_text"
+ 
+%55 = load i8, i8* %6, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+7zext 8B+
+)
+	full_text
+
+%56 = zext i8 %55 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %55
+6add 8B+
+)
+	full_text
+
+%57 = add nsw i32 %56, 1
+'i32 8B
+
+	full_text
+	
+i32 %56
+)br 8B
+
+	full_text
+
+br label %58
+Dphi 8B9
+7
+	full_text*
+(
+&%59 = phi i32 [ 0, %53 ], [ %57, %54 ]
+'i32 8B
+
+	full_text
+	
+i32 %57
+9trunc 8B,
+*
+	full_text
+
+%60 = trunc i32 %59 to i8
+'i32 8B
+
+	full_text
+	
+i32 %59
+=store 8B0
+.
+	full_text!
+
+store i8 %60, i8* %6, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %60
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+)br 8B
+
+	full_text
+
+br label %76
+=load 8B1
+/
+	full_text"
+ 
+%62 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7zext 8B+
+)
+	full_text
+
+%63 = zext i8 %62 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %62
+8icmp 8B,
+*
+	full_text
+
+%64 = icmp eq i32 %63, 15
+'i32 8B
+
+	full_text
+	
+i32 %63
+<br 8B2
+0
+	full_text#
+!
+br i1 %64, label %65, label %70
+%i1 8B
+
+	full_text
+
+
+i1 %64
+;store 8B.
+,
+	full_text
+
+store i8 0, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+=load 8B1
+/
+	full_text"
+ 
+%66 = load i8, i8* %6, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+7zext 8B+
+)
+	full_text
+
+%67 = zext i8 %66 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %66
+6add 8B+
+)
+	full_text
+
+%68 = add nsw i32 %67, 1
+'i32 8B
+
+	full_text
+	
+i32 %67
+9trunc 8B,
+*
+	full_text
+
+%69 = trunc i32 %68 to i8
+'i32 8B
+
+	full_text
+	
+i32 %68
+=store 8B0
+.
+	full_text!
+
+store i8 %69, i8* %6, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %69
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+)br 8B
+
+	full_text
+
+br label %75
+=load 8B1
+/
+	full_text"
+ 
+%71 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7zext 8B+
+)
+	full_text
+
+%72 = zext i8 %71 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %71
+6add 8B+
+)
+	full_text
+
+%73 = add nsw i32 %72, 1
+'i32 8B
+
+	full_text
+	
+i32 %72
+9trunc 8B,
+*
+	full_text
+
+%74 = trunc i32 %73 to i8
+'i32 8B
+
+	full_text
+	
+i32 %73
+=store 8B0
+.
+	full_text!
+
+store i8 %74, i8* %5, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %74
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+)br 8B
+
+	full_text
+
+br label %75
+)br 8B
+
+	full_text
+
+br label %76
+)br 8B
+
+	full_text
+
+br label %77
+=load 8B1
+/
+	full_text"
+ 
+%78 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7zext 8B+
+)
+	full_text
+
+%79 = zext i8 %78 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %78
+3and 8B(
+&
+	full_text
+
+%80 = and i32 %79, 15
+'i32 8B
+
+	full_text
+	
+i32 %79
+9trunc 8B,
+*
+	full_text
+
+%81 = trunc i32 %80 to i8
+'i32 8B
+
+	full_text
+	
+i32 %80
+=store 8B0
+.
+	full_text!
+
+store i8 %81, i8* %5, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %81
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+=load 8B1
+/
+	full_text"
+ 
+%82 = load i8, i8* %6, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+7zext 8B+
+)
+	full_text
+
+%83 = zext i8 %82 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %82
+3and 8B(
+&
+	full_text
+
+%84 = and i32 %83, 15
+'i32 8B
+
+	full_text
+	
+i32 %83
+9trunc 8B,
+*
+	full_text
+
+%85 = trunc i32 %84 to i8
+'i32 8B
+
+	full_text
+	
+i32 %84
+=store 8B0
+.
+	full_text!
+
+store i8 %85, i8* %6, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %85
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+=load 8B1
+/
+	full_text"
+ 
+%86 = load i8, i8* %6, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+7zext 8B+
+)
+	full_text
+
+%87 = zext i8 %86 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %86
+2shl 8B'
+%
+	full_text
+
+%88 = shl i32 %87, 4
+'i32 8B
+
+	full_text
+	
+i32 %87
+=load 8B1
+/
+	full_text"
+ 
+%89 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7zext 8B+
+)
+	full_text
+
+%90 = zext i8 %89 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %89
+8add 8B-
++
+	full_text
+
+%91 = add nsw i32 %88, %90
+'i32 8B
+
+	full_text
+	
+i32 %88
+'i32 8B
+
+	full_text
+	
+i32 %90
+9trunc 8B,
+*
+	full_text
+
+%92 = trunc i32 %91 to i8
+'i32 8B
+
+	full_text
+	
+i32 %91
+ygetelementptr 8Bd
+b
+	full_textU
+S
+Q%93 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+>store 8B1
+/
+	full_text"
+ 
+store i8 %92, i8* %93, align 4
+%i8 8B
+
+	full_text
+
+
+i8 %92
+'i8* 8B
+
+	full_text
+	
+i8* %93
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%94 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 4
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+@load 8B4
+2
+	full_text%
+#
+!%95 = load i32, i32* %94, align 4
+)i32* 8B
+
+	full_text
+
+
+i32* %94
+ygetelementptr 8Bd
+b
+	full_textU
+S
+Q%96 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 2
+@store 8B3
+1
+	full_text$
+"
+ store i32 %95, i32* %96, align 4
+'i32 8B
+
+	full_text
+	
+i32 %95
+)i32* 8B
+
+	full_text
+
+
+i32* %96
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%97 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 3
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+@load 8B4
+2
+	full_text%
+#
+!%98 = load i32, i32* %97, align 4
+)i32* 8B
+
+	full_text
+
+
+i32* %97
+ygetelementptr 8Bd
+b
+	full_textU
+S
+Q%99 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+?load 8B3
+1
+	full_text$
+"
+ %100 = load i8, i8* %99, align 4
+'i8* 8B
+
+	full_text
+	
+i8* %99
+9zext 8B-
++
+	full_text
+
+%101 = zext i8 %100 to i32
+&i8 8B
+
+	full_text
+	
+i8 %100
+9icmp 8B-
++
+	full_text
+
+%102 = icmp eq i32 %101, 0
+(i32 8B
+
+	full_text
+
+
+i32 %101
+9zext 8B-
++
+	full_text
+
+%103 = zext i1 %102 to i64
+&i1 8B
+
+	full_text
+	
+i1 %102
+Dselect 8B6
+4
+	full_text'
+%
+#%104 = select i1 %102, i32 1, i32 0
+&i1 8B
+
+	full_text
+	
+i1 %102
+6and 8B+
+)
+	full_text
+
+%105 = and i32 %98, %104
+'i32 8B
+
+	full_text
+	
+i32 %98
+(i32 8B
+
+	full_text
+
+
+i32 %104
+zgetelementptr 8Be
+c
+	full_textV
+T
+R%106 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 3
+Bstore 8B5
+3
+	full_text&
+$
+"store i32 %105, i32* %106, align 4
+(i32 8B
+
+	full_text
+
+
+i32 %105
+*i32* 8B
+
+	full_text
+
+	i32* %106
+xgetelementptr 8Bc
+a
+	full_textT
+R
+P%107 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+@load 8B4
+2
+	full_text%
+#
+!%108 = load i8, i8* %107, align 1
+(i8* 8B
+
+	full_text
+
+
+i8* %107
+9zext 8B-
++
+	full_text
+
+%109 = zext i8 %108 to i32
+&i8 8B
+
+	full_text
+	
+i8 %108
+9icmp 8B-
++
+	full_text
+
+%110 = icmp eq i32 %109, 0
+(i32 8B
+
+	full_text
+
+
+i32 %109
+?br 8B5
+3
+	full_text&
+$
+"br i1 %110, label %111, label %115
+&i1 8B
+
+	full_text
+	
+i1 %110
+xgetelementptr 8Bc
+a
+	full_textT
+R
+P%112 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+Bload 8B6
+4
+	full_text'
+%
+#%113 = load i32, i32* %112, align 4
+*i32* 8B
+
+	full_text
+
+	i32* %112
+9icmp 8B-
++
+	full_text
+
+%114 = icmp eq i32 %113, 0
+(i32 8B
+
+	full_text
+
+
+i32 %113
+*br 8B 
+
+	full_text
+
+br label %115
+Jphi 8B?
+=
+	full_text0
+.
+,%116 = phi i1 [ false, %77 ], [ %114, %111 ]
+&i1 8B
+
+	full_text
+	
+i1 %114
+9zext 8B-
++
+	full_text
+
+%117 = zext i1 %116 to i64
+&i1 8B
+
+	full_text
+	
+i1 %116
+Dselect 8B6
+4
+	full_text'
+%
+#%118 = select i1 %116, i32 0, i32 1
+&i1 8B
+
+	full_text
+	
+i1 %116
+zgetelementptr 8Be
+c
+	full_textV
+T
+R%119 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 5
+Bstore 8B5
+3
+	full_text&
+$
+"store i32 %118, i32* %119, align 4
+(i32 8B
+
+	full_text
+
+
+i32 %118
+*i32* 8B
+
+	full_text
+
+	i32* %119
+zgetelementptr 8Be
+c
+	full_textV
+T
+R%120 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+Bstore 8B5
+3
+	full_text&
+$
+"store i32 %118, i32* %120, align 4
+(i32 8B
+
+	full_text
+
+
+i32 %118
+*i32* 8B
+
+	full_text
+
+	i32* %120
+zgetelementptr 8Be
+c
+	full_textV
+T
+R%121 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@load 8B4
+2
+	full_text%
+#
+!%122 = load i8, i8* %121, align 4
+(i8* 8B
+
+	full_text
+
+
+i8* %121
+9zext 8B-
++
+	full_text
+
+%123 = zext i8 %122 to i32
+&i8 8B
+
+	full_text
+	
+i8 %122
+6and 8B+
+)
+	full_text
+
+%124 = and i32 %123, 128
+(i32 8B
+
+	full_text
+
+
+i32 %123
+9icmp 8B-
++
+	full_text
+
+%125 = icmp eq i32 %124, 0
+(i32 8B
+
+	full_text
+
+
+i32 %124
+9zext 8B-
++
+	full_text
+
+%126 = zext i1 %125 to i64
+&i1 8B
+
+	full_text
+	
+i1 %125
+Dselect 8B6
+4
+	full_text'
+%
+#%127 = select i1 %125, i32 0, i32 1
+&i1 8B
+
+	full_text
+	
+i1 %125
+zgetelementptr 8Be
+c
+	full_textV
+T
+R%128 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 4
+Bstore 8B5
+3
+	full_text&
+$
+"store i32 %127, i32* %128, align 4
+(i32 8B
+
+	full_text
+
+
+i32 %127
+*i32* 8B
+
+	full_text
+
+	i32* %128
+&ret 8B
+
+	full_text
+
+
+ret void
+&i64 8B
+
+	full_text
+
+
+i64 %1
+&i64 8B
+
+	full_text
+
+
+i64 %2
+8struct* 8B'
+%
+	full_text
+
+%struct.output_t* %0
+Ealloca 8B7
+5
+	full_text(
+&
+$%4 = alloca %struct.input_t, align 4
+8alloca 8B*
+(
+	full_text
+
+%5 = alloca i8, align 1
+8alloca 8B*
+(
+	full_text
+
+%6 = alloca i8, align 1
+9alloca 8B+
+)
+	full_text
+
+%7 = alloca i16, align 2
+9alloca 8B+
+)
+	full_text
+
+%8 = alloca i16, align 2
+9alloca 8B+
+)
+	full_text
+
+%9 = alloca i16, align 2
+:alloca 8B,
+*
+	full_text
+
+%10 = alloca i16, align 2
+:alloca 8B,
+*
+	full_text
+
+%11 = alloca i32, align 4
+Tbitcast 8BE
+C
+	full_text6
+4
+2%12 = bitcast %struct.input_t* %4 to { i64, i64 }*
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+rgetelementptr 8B]
+[
+	full_textN
+L
+J%13 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %12, i32 0, i32 0
+/struct* 8B
+
+	full_text
+
+struct* %12
+?store 8B2
+0
+	full_text#
+!
+store i64 %1, i64* %13, align 4
+)i64* 8B
+
+	full_text
+
+
+i64* %13
+rgetelementptr 8B]
+[
+	full_textN
+L
+J%14 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %12, i32 0, i32 1
+/struct* 8B
+
+	full_text
+
+struct* %12
+?store 8B2
+0
+	full_text#
+!
+store i64 %2, i64* %14, align 4
+)i64* 8B
+
+	full_text
+
+
+i64* %14
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%15 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 0
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%16 = load i8, i8* %15, align 4
+'i8* 8B
+
+	full_text
+	
+i8* %15
+=store 8B0
+.
+	full_text!
+
+store i8 %16, i8* %5, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %16
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%17 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%18 = load i8, i8* %17, align 1
+'i8* 8B
+
+	full_text
+	
+i8* %17
+=store 8B0
+.
+	full_text!
+
+store i8 %18, i8* %6, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %18
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+=load 8B1
+/
+	full_text"
+ 
+%19 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7sext 8B+
+)
+	full_text
+
+%20 = sext i8 %19 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %19
+3and 8B(
+&
+	full_text
+
+%21 = and i32 %20, 15
+'i32 8B
+
+	full_text
+	
+i32 %20
+=load 8B1
+/
+	full_text"
+ 
+%22 = load i8, i8* %6, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+7sext 8B+
+)
+	full_text
+
+%23 = sext i8 %22 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %22
+3and 8B(
+&
+	full_text
+
+%24 = and i32 %23, 15
+'i32 8B
+
+	full_text
+	
+i32 %23
+8add 8B-
++
+	full_text
+
+%25 = add nsw i32 %21, %24
+'i32 8B
+
+	full_text
+	
+i32 %21
+'i32 8B
+
+	full_text
+	
+i32 %24
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%26 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+@load 8B4
+2
+	full_text%
+#
+!%27 = load i32, i32* %26, align 4
+)i32* 8B
+
+	full_text
+
+
+i32* %26
+7icmp 8B+
+)
+	full_text
+
+%28 = icmp ne i32 %27, 0
+'i32 8B
+
+	full_text
+	
+i32 %27
+7zext 8B+
+)
+	full_text
+
+%29 = zext i1 %28 to i64
+%i1 8B
+
+	full_text
+
+
+i1 %28
+Bselect 8B4
+2
+	full_text%
+#
+!%30 = select i1 %28, i32 1, i32 0
+%i1 8B
+
+	full_text
+
+
+i1 %28
+8add 8B-
++
+	full_text
+
+%31 = add nsw i32 %25, %30
+'i32 8B
+
+	full_text
+	
+i32 %25
+'i32 8B
+
+	full_text
+	
+i32 %30
+:trunc 8B-
++
+	full_text
+
+%32 = trunc i32 %31 to i16
+'i32 8B
+
+	full_text
+	
+i32 %31
+?store 8B2
+0
+	full_text#
+!
+store i16 %32, i16* %7, align 2
+'i16 8B
+
+	full_text
+	
+i16 %32
+(i16* 8B
+
+	full_text
+	
+i16* %7
+=load 8B1
+/
+	full_text"
+ 
+%33 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7sext 8B+
+)
+	full_text
+
+%34 = sext i8 %33 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %33
+4and 8B)
+'
+	full_text
+
+%35 = and i32 %34, 240
+'i32 8B
+
+	full_text
+	
+i32 %34
+=load 8B1
+/
+	full_text"
+ 
+%36 = load i8, i8* %6, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+7sext 8B+
+)
+	full_text
+
+%37 = sext i8 %36 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %36
+4and 8B)
+'
+	full_text
+
+%38 = and i32 %37, 240
+'i32 8B
+
+	full_text
+	
+i32 %37
+8add 8B-
++
+	full_text
+
+%39 = add nsw i32 %35, %38
+'i32 8B
+
+	full_text
+	
+i32 %35
+'i32 8B
+
+	full_text
+	
+i32 %38
+:trunc 8B-
++
+	full_text
+
+%40 = trunc i32 %39 to i16
+'i32 8B
+
+	full_text
+	
+i32 %39
+?store 8B2
+0
+	full_text#
+!
+store i16 %40, i16* %8, align 2
+'i16 8B
+
+	full_text
+	
+i16 %40
+(i16* 8B
+
+	full_text
+	
+i16* %8
+?load 8B3
+1
+	full_text$
+"
+ %41 = load i16, i16* %8, align 2
+(i16* 8B
+
+	full_text
+	
+i16* %8
+8zext 8B,
+*
+	full_text
+
+%42 = zext i16 %41 to i32
+'i16 8B
+
+	full_text
+	
+i16 %41
+?load 8B3
+1
+	full_text$
+"
+ %43 = load i16, i16* %7, align 2
+(i16* 8B
+
+	full_text
+	
+i16* %7
+8zext 8B,
+*
+	full_text
+
+%44 = zext i16 %43 to i32
+'i16 8B
+
+	full_text
+	
+i16 %43
+8add 8B-
++
+	full_text
+
+%45 = add nsw i32 %42, %44
+'i32 8B
+
+	full_text
+	
+i32 %42
+'i32 8B
+
+	full_text
+	
+i32 %44
+:trunc 8B-
++
+	full_text
+
+%46 = trunc i32 %45 to i16
+'i32 8B
+
+	full_text
+	
+i32 %45
+@store 8B3
+1
+	full_text$
+"
+ store i16 %46, i16* %10, align 2
+'i16 8B
+
+	full_text
+	
+i16 %46
+)i16* 8B
+
+	full_text
+
+
+i16* %10
+?store 8B2
+0
+	full_text#
+!
+store i16 %46, i16* %9, align 2
+'i16 8B
+
+	full_text
+	
+i16 %46
+(i16* 8B
+
+	full_text
+	
+i16* %9
+?load 8B3
+1
+	full_text$
+"
+ %47 = load i16, i16* %7, align 2
+(i16* 8B
+
+	full_text
+	
+i16* %7
+8zext 8B,
+*
+	full_text
+
+%48 = zext i16 %47 to i32
+'i16 8B
+
+	full_text
+	
+i16 %47
+8icmp 8B,
+*
+	full_text
+
+%49 = icmp sgt i32 %48, 9
+'i32 8B
+
+	full_text
+	
+i32 %48
+<br 8B2
+0
+	full_text#
+!
+br i1 %49, label %50, label %55
+%i1 8B
+
+	full_text
+
+
+i1 %49
+?load 8B3
+1
+	full_text$
+"
+ %51 = load i16, i16* %9, align 2
+(i16* 8B
+
+	full_text
+	
+i16* %9
+8zext 8B,
+*
+	full_text
+
+%52 = zext i16 %51 to i32
+'i16 8B
+
+	full_text
+	
+i16 %51
+6add 8B+
+)
+	full_text
+
+%53 = add nsw i32 %52, 6
+'i32 8B
+
+	full_text
+	
+i32 %52
+:trunc 8B-
++
+	full_text
+
+%54 = trunc i32 %53 to i16
+'i32 8B
+
+	full_text
+	
+i32 %53
+?store 8B2
+0
+	full_text#
+!
+store i16 %54, i16* %9, align 2
+'i16 8B
+
+	full_text
+	
+i16 %54
+(i16* 8B
+
+	full_text
+	
+i16* %9
+)br 8B
+
+	full_text
+
+br label %55
+?load 8B3
+1
+	full_text$
+"
+ %56 = load i16, i16* %9, align 2
+(i16* 8B
+
+	full_text
+	
+i16* %9
+8zext 8B,
+*
+	full_text
+
+%57 = zext i16 %56 to i32
+'i16 8B
+
+	full_text
+	
+i16 %56
+5and 8B*
+(
+	full_text
+
+%58 = and i32 %57, 1008
+'i32 8B
+
+	full_text
+	
+i32 %57
+:icmp 8B.
+,
+	full_text
+
+%59 = icmp sgt i32 %58, 144
+'i32 8B
+
+	full_text
+	
+i32 %58
+7zext 8B+
+)
+	full_text
+
+%60 = zext i1 %59 to i32
+%i1 8B
+
+	full_text
+
+
+i1 %59
+@store 8B3
+1
+	full_text$
+"
+ store i32 %60, i32* %11, align 4
+'i32 8B
+
+	full_text
+	
+i32 %60
+)i32* 8B
+
+	full_text
+
+
+i32* %11
+@load 8B4
+2
+	full_text%
+#
+!%61 = load i32, i32* %11, align 4
+)i32* 8B
+
+	full_text
+
+
+i32* %11
+7icmp 8B+
+)
+	full_text
+
+%62 = icmp ne i32 %61, 0
+'i32 8B
+
+	full_text
+	
+i32 %61
+<br 8B2
+0
+	full_text#
+!
+br i1 %62, label %63, label %68
+%i1 8B
+
+	full_text
+
+
+i1 %62
+?load 8B3
+1
+	full_text$
+"
+ %64 = load i16, i16* %9, align 2
+(i16* 8B
+
+	full_text
+	
+i16* %9
+8zext 8B,
+*
+	full_text
+
+%65 = zext i16 %64 to i32
+'i16 8B
+
+	full_text
+	
+i16 %64
+7add 8B,
+*
+	full_text
+
+%66 = add nsw i32 %65, 96
+'i32 8B
+
+	full_text
+	
+i32 %65
+:trunc 8B-
++
+	full_text
+
+%67 = trunc i32 %66 to i16
+'i32 8B
+
+	full_text
+	
+i32 %66
+?store 8B2
+0
+	full_text#
+!
+store i16 %67, i16* %9, align 2
+'i16 8B
+
+	full_text
+	
+i16 %67
+(i16* 8B
+
+	full_text
+	
+i16* %9
+)br 8B
+
+	full_text
+
+br label %68
+@load 8B4
+2
+	full_text%
+#
+!%69 = load i32, i32* %11, align 4
+)i32* 8B
+
+	full_text
+
+
+i32* %11
+ygetelementptr 8Bd
+b
+	full_textU
+S
+Q%70 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+@store 8B3
+1
+	full_text$
+"
+ store i32 %69, i32* %70, align 4
+'i32 8B
+
+	full_text
+	
+i32 %69
+)i32* 8B
+
+	full_text
+
+
+i32* %70
+ygetelementptr 8Bd
+b
+	full_textU
+S
+Q%71 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+@load 8B4
+2
+	full_text%
+#
+!%72 = load i32, i32* %71, align 4
+)i32* 8B
+
+	full_text
+
+
+i32* %71
+ygetelementptr 8Bd
+b
+	full_textU
+S
+Q%73 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 5
+@store 8B3
+1
+	full_text$
+"
+ store i32 %72, i32* %73, align 4
+'i32 8B
+
+	full_text
+	
+i32 %72
+)i32* 8B
+
+	full_text
+
+
+i32* %73
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%74 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 3
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+@load 8B4
+2
+	full_text%
+#
+!%75 = load i32, i32* %74, align 4
+)i32* 8B
+
+	full_text
+
+
+i32* %74
+?load 8B3
+1
+	full_text$
+"
+ %76 = load i16, i16* %9, align 2
+(i16* 8B
+
+	full_text
+	
+i16* %9
+9trunc 8B,
+*
+	full_text
+
+%77 = trunc i16 %76 to i8
+'i16 8B
+
+	full_text
+	
+i16 %76
+7sext 8B+
+)
+	full_text
+
+%78 = sext i8 %77 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %77
+7icmp 8B+
+)
+	full_text
+
+%79 = icmp eq i32 %78, 0
+'i32 8B
+
+	full_text
+	
+i32 %78
+7zext 8B+
+)
+	full_text
+
+%80 = zext i1 %79 to i32
+%i1 8B
+
+	full_text
+
+
+i1 %79
+4and 8B)
+'
+	full_text
+
+%81 = and i32 %75, %80
+'i32 8B
+
+	full_text
+	
+i32 %75
+'i32 8B
+
+	full_text
+	
+i32 %80
+ygetelementptr 8Bd
+b
+	full_textU
+S
+Q%82 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 3
+@store 8B3
+1
+	full_text$
+"
+ store i32 %81, i32* %82, align 4
+'i32 8B
+
+	full_text
+	
+i32 %81
+)i32* 8B
+
+	full_text
+
+
+i32* %82
+?load 8B3
+1
+	full_text$
+"
+ %83 = load i16, i16* %9, align 2
+(i16* 8B
+
+	full_text
+	
+i16* %9
+9trunc 8B,
+*
+	full_text
+
+%84 = trunc i16 %83 to i8
+'i16 8B
+
+	full_text
+	
+i16 %83
+7sext 8B+
+)
+	full_text
+
+%85 = sext i8 %84 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %84
+8icmp 8B,
+*
+	full_text
+
+%86 = icmp slt i32 %85, 0
+'i32 8B
+
+	full_text
+	
+i32 %85
+7zext 8B+
+)
+	full_text
+
+%87 = zext i1 %86 to i32
+%i1 8B
+
+	full_text
+
+
+i1 %86
+ygetelementptr 8Bd
+b
+	full_textU
+S
+Q%88 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 4
+@store 8B3
+1
+	full_text$
+"
+ store i32 %87, i32* %88, align 4
+'i32 8B
+
+	full_text
+	
+i32 %87
+)i32* 8B
+
+	full_text
+
+
+i32* %88
+@load 8B4
+2
+	full_text%
+#
+!%89 = load i16, i16* %10, align 2
+)i16* 8B
+
+	full_text
+
+
+i16* %10
+8zext 8B,
+*
+	full_text
+
+%90 = zext i16 %89 to i32
+'i16 8B
+
+	full_text
+	
+i16 %89
+4and 8B)
+'
+	full_text
+
+%91 = and i32 %90, 128
+'i32 8B
+
+	full_text
+	
+i32 %90
+7icmp 8B+
+)
+	full_text
+
+%92 = icmp eq i32 %91, 0
+'i32 8B
+
+	full_text
+	
+i32 %91
+<br 8B2
+0
+	full_text#
+!
+br i1 %92, label %93, label %98
+%i1 8B
+
+	full_text
+
+
+i1 %92
+?load 8B3
+1
+	full_text$
+"
+ %94 = load i16, i16* %9, align 2
+(i16* 8B
+
+	full_text
+	
+i16* %9
+8zext 8B,
+*
+	full_text
+
+%95 = zext i16 %94 to i32
+'i16 8B
+
+	full_text
+	
+i16 %94
+4and 8B)
+'
+	full_text
+
+%96 = and i32 %95, 128
+'i32 8B
+
+	full_text
+	
+i32 %95
+7icmp 8B+
+)
+	full_text
+
+%97 = icmp ne i32 %96, 0
+'i32 8B
+
+	full_text
+	
+i32 %96
+)br 8B
+
+	full_text
+
+br label %98
+Gphi 8B<
+:
+	full_text-
++
+)%99 = phi i1 [ false, %68 ], [ %97, %93 ]
+%i1 8B
+
+	full_text
+
+
+i1 %97
+8zext 8B,
+*
+	full_text
+
+%100 = zext i1 %99 to i32
+%i1 8B
+
+	full_text
+
+
+i1 %99
+zgetelementptr 8Be
+c
+	full_textV
+T
+R%101 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 2
+Bstore 8B5
+3
+	full_text&
+$
+"store i32 %100, i32* %101, align 4
+(i32 8B
+
+	full_text
+
+
+i32 %100
+*i32* 8B
+
+	full_text
+
+	i32* %101
+@load 8B4
+2
+	full_text%
+#
+!%102 = load i16, i16* %9, align 2
+(i16* 8B
+
+	full_text
+	
+i16* %9
+:zext 8B.
+,
+	full_text
+
+%103 = zext i16 %102 to i32
+(i16 8B
+
+	full_text
+
+
+i16 %102
+6and 8B+
+)
+	full_text
+
+%104 = and i32 %103, 255
+(i32 8B
+
+	full_text
+
+
+i32 %103
+;trunc 8B.
+,
+	full_text
+
+%105 = trunc i32 %104 to i8
+(i32 8B
+
+	full_text
+
+
+i32 %104
+zgetelementptr 8Be
+c
+	full_textV
+T
+R%106 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@store 8B3
+1
+	full_text$
+"
+ store i8 %105, i8* %106, align 4
+&i8 8B
+
+	full_text
+	
+i8 %105
+(i8* 8B
+
+	full_text
+
+
+i8* %106
+&ret 8B
+
+	full_text
+
+
+ret void
+&i64 8B
+
+	full_text
+
+
+i64 %2
+8struct* 8B'
+%
+	full_text
+
+%struct.output_t* %0
+&i64 8B
+
+	full_text
+
+
+i64 %1
+Ealloca 8B7
+5
+	full_text(
+&
+$%4 = alloca %struct.input_t, align 4
+8alloca 8B*
+(
+	full_text
+
+%5 = alloca i8, align 1
+8alloca 8B*
+(
+	full_text
+
+%6 = alloca i8, align 1
+9alloca 8B+
+)
+	full_text
+
+%7 = alloca i32, align 4
+Sbitcast 8BD
+B
+	full_text5
+3
+1%8 = bitcast %struct.input_t* %4 to { i64, i64 }*
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+pgetelementptr 8B[
+Y
+	full_textL
+J
+H%9 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %8, i32 0, i32 0
+.struct* 8B
+
+	full_text
+
+
+struct* %8
+>store 8B1
+/
+	full_text"
+ 
+store i64 %1, i64* %9, align 4
+(i64* 8B
+
+	full_text
+	
+i64* %9
+qgetelementptr 8B\
+Z
+	full_textM
+K
+I%10 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %8, i32 0, i32 1
+.struct* 8B
+
+	full_text
+
+
+struct* %8
+?store 8B2
+0
+	full_text#
+!
+store i64 %2, i64* %10, align 4
+)i64* 8B
+
+	full_text
+
+
+i64* %10
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%11 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 0
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%12 = load i8, i8* %11, align 4
+'i8* 8B
+
+	full_text
+	
+i8* %11
+7zext 8B+
+)
+	full_text
+
+%13 = zext i8 %12 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %12
+3and 8B(
+&
+	full_text
+
+%14 = and i32 %13, 15
+'i32 8B
+
+	full_text
+	
+i32 %13
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%15 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%16 = load i8, i8* %15, align 1
+'i8* 8B
+
+	full_text
+	
+i8* %15
+7zext 8B+
+)
+	full_text
+
+%17 = zext i8 %16 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %16
+3and 8B(
+&
+	full_text
+
+%18 = and i32 %17, 15
+'i32 8B
+
+	full_text
+	
+i32 %17
+8add 8B-
++
+	full_text
+
+%19 = add nsw i32 %14, %18
+'i32 8B
+
+	full_text
+	
+i32 %14
+'i32 8B
+
+	full_text
+	
+i32 %18
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%20 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+@load 8B4
+2
+	full_text%
+#
+!%21 = load i32, i32* %20, align 4
+)i32* 8B
+
+	full_text
+
+
+i32* %20
+4add 8B)
+'
+	full_text
+
+%22 = add i32 %19, %21
+'i32 8B
+
+	full_text
+	
+i32 %19
+'i32 8B
+
+	full_text
+	
+i32 %21
+9trunc 8B,
+*
+	full_text
+
+%23 = trunc i32 %22 to i8
+'i32 8B
+
+	full_text
+	
+i32 %22
+=store 8B0
+.
+	full_text!
+
+store i8 %23, i8* %5, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %23
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%24 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 0
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%25 = load i8, i8* %24, align 4
+'i8* 8B
+
+	full_text
+	
+i8* %24
+7zext 8B+
+)
+	full_text
+
+%26 = zext i8 %25 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %25
+4and 8B)
+'
+	full_text
+
+%27 = and i32 %26, 240
+'i32 8B
+
+	full_text
+	
+i32 %26
+4ashr 8B(
+&
+	full_text
+
+%28 = ashr i32 %27, 4
+'i32 8B
+
+	full_text
+	
+i32 %27
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%29 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%30 = load i8, i8* %29, align 1
+'i8* 8B
+
+	full_text
+	
+i8* %29
+7zext 8B+
+)
+	full_text
+
+%31 = zext i8 %30 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %30
+4and 8B)
+'
+	full_text
+
+%32 = and i32 %31, 240
+'i32 8B
+
+	full_text
+	
+i32 %31
+4ashr 8B(
+&
+	full_text
+
+%33 = ashr i32 %32, 4
+'i32 8B
+
+	full_text
+	
+i32 %32
+8add 8B-
++
+	full_text
+
+%34 = add nsw i32 %28, %33
+'i32 8B
+
+	full_text
+	
+i32 %28
+'i32 8B
+
+	full_text
+	
+i32 %33
+9trunc 8B,
+*
+	full_text
+
+%35 = trunc i32 %34 to i8
+'i32 8B
+
+	full_text
+	
+i32 %34
+=store 8B0
+.
+	full_text!
+
+store i8 %35, i8* %6, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %35
+&i8* 8B
+
+	full_text
+
+
+i8* %6
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%36 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 0
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%37 = load i8, i8* %36, align 4
+'i8* 8B
+
+	full_text
+	
+i8* %36
+7zext 8B+
+)
+	full_text
+
+%38 = zext i8 %37 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %37
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%39 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+>load 8B2
+0
+	full_text#
+!
+%40 = load i8, i8* %39, align 1
+'i8* 8B
+
+	full_text
+	
+i8* %39
+7zext 8B+
+)
+	full_text
+
+%41 = zext i8 %40 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %40
+8add 8B-
++
+	full_text
+
+%42 = add nsw i32 %38, %41
+'i32 8B
+
+	full_text
+	
+i32 %38
+'i32 8B
+
+	full_text
+	
+i32 %41
+wgetelementptr 8Bb
+`
+	full_textS
+Q
+O%43 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+.struct* 8B
+
+	full_text
+
+
+struct* %4
+@load 8B4
+2
+	full_text%
+#
+!%44 = load i32, i32* %43, align 4
+)i32* 8B
+
+	full_text
+
+
+i32* %43
+4add 8B)
+'
+	full_text
+
+%45 = add i32 %42, %44
+'i32 8B
+
+	full_text
+	
+i32 %42
+'i32 8B
+
+	full_text
+	
+i32 %44
+4and 8B)
+'
+	full_text
+
+%46 = and i32 %45, 128
+'i32 8B
+
+	full_text
+	
+i32 %45
+?store 8B2
+0
+	full_text#
+!
+store i32 %46, i32* %7, align 4
+'i32 8B
+
+	full_text
+	
+i32 %46
+(i32* 8B
+
+	full_text
+	
+i32* %7
+=load 8B1
+/
+	full_text"
+ 
+%47 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7zext 8B+
+)
+	full_text
+
+%48 = zext i8 %47 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %47
+8icmp 8B,
+*
+	full_text
+
+%49 = icmp sgt i32 %48, 9
+'i32 8B
+
+	full_text
+	
+i32 %48
+<br 8B2
+0
+	full_text#
+!
+br i1 %49, label %50, label %54
+%i1 8B
+
+	full_text
+
+
+i1 %49
+=load 8B1
+/
+	full_text"
+ 
+%51 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7zext 8B+
+)
+	full_text
+
+%52 = zext i8 %51 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %51
+6add 8B+
+)
+	full_text
+
+%53 = add nsw i32 %52, 6
+'i32 8B
+
+	full_text
+	
+i32 %52
+)br 8B
+
+	full_text
+
+br label %57
+=load 8B1
+/
+	full_text"
+ 
+%55 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7zext 8B+
+)
+	full_text
+
+%56 = zext i8 %55 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %55
+)br 8B
+
+	full_text
+
+br label %57
+Fphi 8B;
+9
+	full_text,
+*
+(%58 = phi i32 [ %53, %50 ], [ %56, %54 ]
+'i32 8B
+
+	full_text
+	
+i32 %53
+'i32 8B
+
+	full_text
+	
+i32 %56
+9trunc 8B,
+*
+	full_text
+
+%59 = trunc i32 %58 to i8
+'i32 8B
+
+	full_text
+	
+i32 %58
+=store 8B0
+.
+	full_text!
+
+store i8 %59, i8* %5, align 1
+%i8 8B
+
+	full_text
+
+
+i8 %59
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+=load 8B1
+/
+	full_text"
+ 
+%60 = load i8, i8* %5, align 1
+&i8* 8B
+
+	full_text
+
+
+i8* %5
+7zext 8B+
+)
+	full_text
+
+%61 = zext i8 %60 to i32
+%i8 8B
+
+	full_text
+
+
+i8 %60
+9icmp 8B-
++
+	full_text
+
+%62 = icmp sgt i32 %61, 31
+'i32 8B
+
+	full_text
+	
+i32 %61
+<br 8B2
+0
+	full_text#
+!
+br i1 %62, label %63, label %67
+%i1 8B
+
+	full_text
+
+
+i1 %62
+=load 8 B1
+/
+	full_text"
+ 
+%64 = load i8, i8* %6, align 1
+&i8* 8 B
+
+	full_text
+
+
+i8* %6
+7zext 8 B+
+)
+	full_text
+
+%65 = zext i8 %64 to i32
+%i8 8 B
+
+	full_text
+
+
+i8 %64
+6add 8 B+
+)
+	full_text
+
+%66 = add nsw i32 %65, 2
+'i32 8 B
+
+	full_text
+	
+i32 %65
+)br 8 B
+
+	full_text
+
+br label %80
+=load 8!B1
+/
+	full_text"
+ 
+%68 = load i8, i8* %5, align 1
+&i8* 8!B
+
+	full_text
+
+
+i8* %5
+7zext 8!B+
+)
+	full_text
+
+%69 = zext i8 %68 to i32
+%i8 8!B
+
+	full_text
+
+
+i8 %68
+9icmp 8!B-
++
+	full_text
+
+%70 = icmp sgt i32 %69, 15
+'i32 8!B
+
+	full_text
+	
+i32 %69
+<br 8!B2
+0
+	full_text#
+!
+br i1 %70, label %71, label %75
+%i1 8!B
+
+	full_text
+
+
+i1 %70
+=load 8"B1
+/
+	full_text"
+ 
+%72 = load i8, i8* %6, align 1
+&i8* 8"B
+
+	full_text
+
+
+i8* %6
+7zext 8"B+
+)
+	full_text
+
+%73 = zext i8 %72 to i32
+%i8 8"B
+
+	full_text
+
+
+i8 %72
+6add 8"B+
+)
+	full_text
+
+%74 = add nsw i32 %73, 1
+'i32 8"B
+
+	full_text
+	
+i32 %73
+)br 8"B
+
+	full_text
+
+br label %78
+=load 8#B1
+/
+	full_text"
+ 
+%76 = load i8, i8* %6, align 1
+&i8* 8#B
+
+	full_text
+
+
+i8* %6
+7zext 8#B+
+)
+	full_text
+
+%77 = zext i8 %76 to i32
+%i8 8#B
+
+	full_text
+
+
+i8 %76
+)br 8#B
+
+	full_text
+
+br label %78
+Fphi 8$B;
+9
+	full_text,
+*
+(%79 = phi i32 [ %74, %71 ], [ %77, %75 ]
+'i32 8$B
+
+	full_text
+	
+i32 %74
+'i32 8$B
+
+	full_text
+	
+i32 %77
+)br 8$B
+
+	full_text
+
+br label %80
+Fphi 8%B;
+9
+	full_text,
+*
+(%81 = phi i32 [ %66, %63 ], [ %79, %78 ]
+'i32 8%B
+
+	full_text
+	
+i32 %66
+'i32 8%B
+
+	full_text
+	
+i32 %79
+9trunc 8%B,
+*
+	full_text
+
+%82 = trunc i32 %81 to i8
+'i32 8%B
+
+	full_text
+	
+i32 %81
+=store 8%B0
+.
+	full_text!
+
+store i8 %82, i8* %6, align 1
+%i8 8%B
+
+	full_text
+
+
+i8 %82
+&i8* 8%B
+
+	full_text
+
+
+i8* %6
+=load 8%B1
+/
+	full_text"
+ 
+%83 = load i8, i8* %6, align 1
+&i8* 8%B
+
+	full_text
+
+
+i8* %6
+7zext 8%B+
+)
+	full_text
+
+%84 = zext i8 %83 to i32
+%i8 8%B
+
+	full_text
+
+
+i8 %83
+8icmp 8%B,
+*
+	full_text
+
+%85 = icmp sgt i32 %84, 9
+'i32 8%B
+
+	full_text
+	
+i32 %84
+<br 8%B2
+0
+	full_text#
+!
+br i1 %85, label %86, label %90
+%i1 8%B
+
+	full_text
+
+
+i1 %85
+=load 8&B1
+/
+	full_text"
+ 
+%87 = load i8, i8* %6, align 1
+&i8* 8&B
+
+	full_text
+
+
+i8* %6
+7zext 8&B+
+)
+	full_text
+
+%88 = zext i8 %87 to i32
+%i8 8&B
+
+	full_text
+
+
+i8 %87
+6add 8&B+
+)
+	full_text
+
+%89 = add nsw i32 %88, 6
+'i32 8&B
+
+	full_text
+	
+i32 %88
+)br 8&B
+
+	full_text
+
+br label %93
+=load 8'B1
+/
+	full_text"
+ 
+%91 = load i8, i8* %6, align 1
+&i8* 8'B
+
+	full_text
+
+
+i8* %6
+7zext 8'B+
+)
+	full_text
+
+%92 = zext i8 %91 to i32
+%i8 8'B
+
+	full_text
+
+
+i8 %91
+)br 8'B
+
+	full_text
+
+br label %93
+Fphi 8(B;
+9
+	full_text,
+*
+(%94 = phi i32 [ %89, %86 ], [ %92, %90 ]
+'i32 8(B
+
+	full_text
+	
+i32 %89
+'i32 8(B
+
+	full_text
+	
+i32 %92
+9trunc 8(B,
+*
+	full_text
+
+%95 = trunc i32 %94 to i8
+'i32 8(B
+
+	full_text
+	
+i32 %94
+=store 8(B0
+.
+	full_text!
+
+store i8 %95, i8* %6, align 1
+%i8 8(B
+
+	full_text
+
+
+i8 %95
+&i8* 8(B
+
+	full_text
+
+
+i8* %6
+=load 8(B1
+/
+	full_text"
+ 
+%96 = load i8, i8* %6, align 1
+&i8* 8(B
+
+	full_text
+
+
+i8* %6
+7zext 8(B+
+)
+	full_text
+
+%97 = zext i8 %96 to i32
+%i8 8(B
+
+	full_text
+
+
+i8 %96
+8icmp 8(B,
+*
+	full_text
+
+%98 = icmp sgt i32 %97, 9
+'i32 8(B
+
+	full_text
+	
+i32 %97
+7zext 8(B+
+)
+	full_text
+
+%99 = zext i1 %98 to i64
+%i1 8(B
+
+	full_text
+
+
+i1 %98
+Cselect 8(B5
+3
+	full_text&
+$
+"%100 = select i1 %98, i32 1, i32 0
+%i1 8(B
+
+	full_text
+
+
+i1 %98
+zgetelementptr 8(Be
+c
+	full_textV
+T
+R%101 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+Bstore 8(B5
+3
+	full_text&
+$
+"store i32 %100, i32* %101, align 4
+(i32 8(B
+
+	full_text
+
+
+i32 %100
+*i32* 8(B
+
+	full_text
+
+	i32* %101
+zgetelementptr 8(Be
+c
+	full_textV
+T
+R%102 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+Bload 8(B6
+4
+	full_text'
+%
+#%103 = load i32, i32* %102, align 4
+*i32* 8(B
+
+	full_text
+
+	i32* %102
+zgetelementptr 8(Be
+c
+	full_textV
+T
+R%104 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 5
+Bstore 8(B5
+3
+	full_text&
+$
+"store i32 %103, i32* %104, align 4
+(i32 8(B
+
+	full_text
+
+
+i32 %103
+*i32* 8(B
+
+	full_text
+
+	i32* %104
+>load 8(B2
+0
+	full_text#
+!
+%105 = load i8, i8* %5, align 1
+&i8* 8(B
+
+	full_text
+
+
+i8* %5
+9zext 8(B-
++
+	full_text
+
+%106 = zext i8 %105 to i32
+&i8 8(B
+
+	full_text
+	
+i8 %105
+5and 8(B*
+(
+	full_text
+
+%107 = and i32 %106, 15
+(i32 8(B
+
+	full_text
+
+
+i32 %106
+;trunc 8(B.
+,
+	full_text
+
+%108 = trunc i32 %107 to i8
+(i32 8(B
+
+	full_text
+
+
+i32 %107
+>store 8(B1
+/
+	full_text"
+ 
+store i8 %108, i8* %5, align 1
+&i8 8(B
+
+	full_text
+	
+i8 %108
+&i8* 8(B
+
+	full_text
+
+
+i8* %5
+>load 8(B2
+0
+	full_text#
+!
+%109 = load i8, i8* %6, align 1
+&i8* 8(B
+
+	full_text
+
+
+i8* %6
+9zext 8(B-
++
+	full_text
+
+%110 = zext i8 %109 to i32
+&i8 8(B
+
+	full_text
+	
+i8 %109
+5and 8(B*
+(
+	full_text
+
+%111 = and i32 %110, 15
+(i32 8(B
+
+	full_text
+
+
+i32 %110
+;trunc 8(B.
+,
+	full_text
+
+%112 = trunc i32 %111 to i8
+(i32 8(B
+
+	full_text
+
+
+i32 %111
+>store 8(B1
+/
+	full_text"
+ 
+store i8 %112, i8* %6, align 1
+&i8 8(B
+
+	full_text
+	
+i8 %112
+&i8* 8(B
+
+	full_text
+
+
+i8* %6
+>load 8(B2
+0
+	full_text#
+!
+%113 = load i8, i8* %6, align 1
+&i8* 8(B
+
+	full_text
+
+
+i8* %6
+9zext 8(B-
++
+	full_text
+
+%114 = zext i8 %113 to i32
+&i8 8(B
+
+	full_text
+	
+i8 %113
+4shl 8(B)
+'
+	full_text
+
+%115 = shl i32 %114, 4
+(i32 8(B
+
+	full_text
+
+
+i32 %114
+>load 8(B2
+0
+	full_text#
+!
+%116 = load i8, i8* %5, align 1
+&i8* 8(B
+
+	full_text
+
+
+i8* %5
+9zext 8(B-
++
+	full_text
+
+%117 = zext i8 %116 to i32
+&i8 8(B
+
+	full_text
+	
+i8 %116
+;add 8(B0
+.
+	full_text!
+
+%118 = add nsw i32 %115, %117
+(i32 8(B
+
+	full_text
+
+
+i32 %115
+(i32 8(B
+
+	full_text
+
+
+i32 %117
+;trunc 8(B.
+,
+	full_text
+
+%119 = trunc i32 %118 to i8
+(i32 8(B
+
+	full_text
+
+
+i32 %118
+zgetelementptr 8(Be
+c
+	full_textV
+T
+R%120 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@store 8(B3
+1
+	full_text$
+"
+ store i8 %119, i8* %120, align 4
+&i8 8(B
+
+	full_text
+	
+i8 %119
+(i8* 8(B
+
+	full_text
+
+
+i8* %120
+xgetelementptr 8(Bc
+a
+	full_textT
+R
+P%121 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 3
+.struct* 8(B
+
+	full_text
+
+
+struct* %4
+Bload 8(B6
+4
+	full_text'
+%
+#%122 = load i32, i32* %121, align 4
+*i32* 8(B
+
+	full_text
+
+	i32* %121
+zgetelementptr 8(Be
+c
+	full_textV
+T
+R%123 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@load 8(B4
+2
+	full_text%
+#
+!%124 = load i8, i8* %123, align 4
+(i8* 8(B
+
+	full_text
+
+
+i8* %123
+9zext 8(B-
++
+	full_text
+
+%125 = zext i8 %124 to i32
+&i8 8(B
+
+	full_text
+	
+i8 %124
+9icmp 8(B-
++
+	full_text
+
+%126 = icmp eq i32 %125, 0
+(i32 8(B
+
+	full_text
+
+
+i32 %125
+9zext 8(B-
++
+	full_text
+
+%127 = zext i1 %126 to i32
+&i1 8(B
+
+	full_text
+	
+i1 %126
+7and 8(B,
+*
+	full_text
+
+%128 = and i32 %122, %127
+(i32 8(B
+
+	full_text
+
+
+i32 %122
+(i32 8(B
+
+	full_text
+
+
+i32 %127
+zgetelementptr 8(Be
+c
+	full_textV
+T
+R%129 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 3
+Bstore 8(B5
+3
+	full_text&
+$
+"store i32 %128, i32* %129, align 4
+(i32 8(B
+
+	full_text
+
+
+i32 %128
+*i32* 8(B
+
+	full_text
+
+	i32* %129
+zgetelementptr 8(Be
+c
+	full_textV
+T
+R%130 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@load 8(B4
+2
+	full_text%
+#
+!%131 = load i8, i8* %130, align 4
+(i8* 8(B
+
+	full_text
+
+
+i8* %130
+9zext 8(B-
++
+	full_text
+
+%132 = zext i8 %131 to i32
+&i8 8(B
+
+	full_text
+	
+i8 %131
+6and 8(B+
+)
+	full_text
+
+%133 = and i32 %132, 128
+(i32 8(B
+
+	full_text
+
+
+i32 %132
+;icmp 8(B/
+-
+	full_text 
+
+%134 = icmp eq i32 %133, 128
+(i32 8(B
+
+	full_text
+
+
+i32 %133
+9zext 8(B-
++
+	full_text
+
+%135 = zext i1 %134 to i64
+&i1 8(B
+
+	full_text
+	
+i1 %134
+Dselect 8(B6
+4
+	full_text'
+%
+#%136 = select i1 %134, i32 1, i32 0
+&i1 8(B
+
+	full_text
+	
+i1 %134
+zgetelementptr 8(Be
+c
+	full_textV
+T
+R%137 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 4
+Bstore 8(B5
+3
+	full_text&
+$
+"store i32 %136, i32* %137, align 4
+(i32 8(B
+
+	full_text
+
+
+i32 %136
+*i32* 8(B
+
+	full_text
+
+	i32* %137
+@load 8(B4
+2
+	full_text%
+#
+!%138 = load i32, i32* %7, align 4
+(i32* 8(B
+
+	full_text
+	
+i32* %7
+9icmp 8(B-
++
+	full_text
+
+%139 = icmp eq i32 %138, 0
+(i32 8(B
+
+	full_text
+
+
+i32 %138
+?br 8(B5
+3
+	full_text&
+$
+"br i1 %139, label %140, label %146
+&i1 8(B
+
+	full_text
+	
+i1 %139
+zgetelementptr 8)Be
+c
+	full_textV
+T
+R%141 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@load 8)B4
+2
+	full_text%
+#
+!%142 = load i8, i8* %141, align 4
+(i8* 8)B
+
+	full_text
+
+
+i8* %141
+9zext 8)B-
++
+	full_text
+
+%143 = zext i8 %142 to i32
+&i8 8)B
+
+	full_text
+	
+i8 %142
+6and 8)B+
+)
+	full_text
+
+%144 = and i32 %143, 128
+(i32 8)B
+
+	full_text
+
+
+i32 %143
+9icmp 8)B-
++
+	full_text
+
+%145 = icmp ne i32 %144, 0
+(i32 8)B
+
+	full_text
+
+
+i32 %144
+*br 8)B 
+
+	full_text
+
+br label %146
+Jphi 8*B?
+=
+	full_text0
+.
+,%147 = phi i1 [ false, %93 ], [ %145, %140 ]
+&i1 8*B
+
+	full_text
+	
+i1 %145
+9zext 8*B-
++
+	full_text
+
+%148 = zext i1 %147 to i32
+&i1 8*B
+
+	full_text
+	
+i1 %147
+zgetelementptr 8*Be
+c
+	full_textV
+T
+R%149 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 2
+Bstore 8*B5
+3
+	full_text&
+$
+"store i32 %148, i32* %149, align 4
+(i32 8*B
+
+	full_text
+
+
+i32 %148
+*i32* 8*B
+
+	full_text
+
+	i32* %149
+&ret 8*B
+
+	full_text
+
+
+ret void
+&i64 8+B
+
+	full_text
+
+
+i64 %1
+&i64 8+B
+
+	full_text
+
+
+i64 %2
+8struct* 8+B'
+%
+	full_text
+
+%struct.output_t* %0
+Ealloca 8+B7
+5
+	full_text(
+&
+$%4 = alloca %struct.input_t, align 4
+8alloca 8+B*
+(
+	full_text
+
+%5 = alloca i8, align 1
+8alloca 8+B*
+(
+	full_text
+
+%6 = alloca i8, align 1
+9alloca 8+B+
+)
+	full_text
+
+%7 = alloca i16, align 2
+9alloca 8+B+
+)
+	full_text
+
+%8 = alloca i16, align 2
+9alloca 8+B+
+)
+	full_text
+
+%9 = alloca i16, align 2
+:alloca 8+B,
+*
+	full_text
+
+%10 = alloca i16, align 2
+:alloca 8+B,
+*
+	full_text
+
+%11 = alloca i32, align 4
+Tbitcast 8+BE
+C
+	full_text6
+4
+2%12 = bitcast %struct.input_t* %4 to { i64, i64 }*
+.struct* 8+B
+
+	full_text
+
+
+struct* %4
+rgetelementptr 8+B]
+[
+	full_textN
+L
+J%13 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %12, i32 0, i32 0
+/struct* 8+B
+
+	full_text
+
+struct* %12
+?store 8+B2
+0
+	full_text#
+!
+store i64 %1, i64* %13, align 4
+)i64* 8+B
+
+	full_text
+
+
+i64* %13
+rgetelementptr 8+B]
+[
+	full_textN
+L
+J%14 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %12, i32 0, i32 1
+/struct* 8+B
+
+	full_text
+
+struct* %12
+?store 8+B2
+0
+	full_text#
+!
+store i64 %2, i64* %14, align 4
+)i64* 8+B
+
+	full_text
+
+
+i64* %14
+wgetelementptr 8+Bb
+`
+	full_textS
+Q
+O%15 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 0
+.struct* 8+B
+
+	full_text
+
+
+struct* %4
+>load 8+B2
+0
+	full_text#
+!
+%16 = load i8, i8* %15, align 4
+'i8* 8+B
+
+	full_text
+	
+i8* %15
+=store 8+B0
+.
+	full_text!
+
+store i8 %16, i8* %5, align 1
+%i8 8+B
+
+	full_text
+
+
+i8 %16
+&i8* 8+B
+
+	full_text
+
+
+i8* %5
+wgetelementptr 8+Bb
+`
+	full_textS
+Q
+O%17 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 8+B
+
+	full_text
+
+
+struct* %4
+>load 8+B2
+0
+	full_text#
+!
+%18 = load i8, i8* %17, align 1
+'i8* 8+B
+
+	full_text
+	
+i8* %17
+=store 8+B0
+.
+	full_text!
+
+store i8 %18, i8* %6, align 1
+%i8 8+B
+
+	full_text
+
+
+i8 %18
+&i8* 8+B
+
+	full_text
+
+
+i8* %6
+=load 8+B1
+/
+	full_text"
+ 
+%19 = load i8, i8* %6, align 1
+&i8* 8+B
+
+	full_text
+
+
+i8* %6
+7sext 8+B+
+)
+	full_text
+
+%20 = sext i8 %19 to i32
+%i8 8+B
+
+	full_text
+
+
+i8 %19
+3and 8+B(
+&
+	full_text
+
+%21 = and i32 %20, 15
+'i32 8+B
+
+	full_text
+	
+i32 %20
+=load 8+B1
+/
+	full_text"
+ 
+%22 = load i8, i8* %5, align 1
+&i8* 8+B
+
+	full_text
+
+
+i8* %5
+7sext 8+B+
+)
+	full_text
+
+%23 = sext i8 %22 to i32
+%i8 8+B
+
+	full_text
+
+
+i8 %22
+3and 8+B(
+&
+	full_text
+
+%24 = and i32 %23, 15
+'i32 8+B
+
+	full_text
+	
+i32 %23
+8sub 8+B-
++
+	full_text
+
+%25 = sub nsw i32 %21, %24
+'i32 8+B
+
+	full_text
+	
+i32 %21
+'i32 8+B
+
+	full_text
+	
+i32 %24
+wgetelementptr 8+Bb
+`
+	full_textS
+Q
+O%26 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+.struct* 8+B
+
+	full_text
+
+
+struct* %4
+@load 8+B4
+2
+	full_text%
+#
+!%27 = load i32, i32* %26, align 4
+)i32* 8+B
+
+	full_text
+
+
+i32* %26
+7icmp 8+B+
+)
+	full_text
+
+%28 = icmp ne i32 %27, 0
+'i32 8+B
+
+	full_text
+	
+i32 %27
+7zext 8+B+
+)
+	full_text
+
+%29 = zext i1 %28 to i64
+%i1 8+B
+
+	full_text
+
+
+i1 %28
+Bselect 8+B4
+2
+	full_text%
+#
+!%30 = select i1 %28, i32 1, i32 0
+%i1 8+B
+
+	full_text
+
+
+i1 %28
+8sub 8+B-
++
+	full_text
+
+%31 = sub nsw i32 %25, %30
+'i32 8+B
+
+	full_text
+	
+i32 %25
+'i32 8+B
+
+	full_text
+	
+i32 %30
+:trunc 8+B-
++
+	full_text
+
+%32 = trunc i32 %31 to i16
+'i32 8+B
+
+	full_text
+	
+i32 %31
+?store 8+B2
+0
+	full_text#
+!
+store i16 %32, i16* %7, align 2
+'i16 8+B
+
+	full_text
+	
+i16 %32
+(i16* 8+B
+
+	full_text
+	
+i16* %7
+=load 8+B1
+/
+	full_text"
+ 
+%33 = load i8, i8* %6, align 1
+&i8* 8+B
+
+	full_text
+
+
+i8* %6
+7sext 8+B+
+)
+	full_text
+
+%34 = sext i8 %33 to i32
+%i8 8+B
+
+	full_text
+
+
+i8 %33
+4and 8+B)
+'
+	full_text
+
+%35 = and i32 %34, 240
+'i32 8+B
+
+	full_text
+	
+i32 %34
+=load 8+B1
+/
+	full_text"
+ 
+%36 = load i8, i8* %5, align 1
+&i8* 8+B
+
+	full_text
+
+
+i8* %5
+7sext 8+B+
+)
+	full_text
+
+%37 = sext i8 %36 to i32
+%i8 8+B
+
+	full_text
+
+
+i8 %36
+4and 8+B)
+'
+	full_text
+
+%38 = and i32 %37, 240
+'i32 8+B
+
+	full_text
+	
+i32 %37
+8sub 8+B-
++
+	full_text
+
+%39 = sub nsw i32 %35, %38
+'i32 8+B
+
+	full_text
+	
+i32 %35
+'i32 8+B
+
+	full_text
+	
+i32 %38
+:trunc 8+B-
++
+	full_text
+
+%40 = trunc i32 %39 to i16
+'i32 8+B
+
+	full_text
+	
+i32 %39
+?store 8+B2
+0
+	full_text#
+!
+store i16 %40, i16* %8, align 2
+'i16 8+B
+
+	full_text
+	
+i16 %40
+(i16* 8+B
+
+	full_text
+	
+i16* %8
+>store 8+B1
+/
+	full_text"
+ 
+store i32 0, i32* %11, align 4
+)i32* 8+B
+
+	full_text
+
+
+i32* %11
+?load 8+B3
+1
+	full_text$
+"
+ %41 = load i16, i16* %8, align 2
+(i16* 8+B
+
+	full_text
+	
+i16* %8
+8zext 8+B,
+*
+	full_text
+
+%42 = zext i16 %41 to i32
+'i16 8+B
+
+	full_text
+	
+i16 %41
+?load 8+B3
+1
+	full_text$
+"
+ %43 = load i16, i16* %7, align 2
+(i16* 8+B
+
+	full_text
+	
+i16* %7
+8zext 8+B,
+*
+	full_text
+
+%44 = zext i16 %43 to i32
+'i16 8+B
+
+	full_text
+	
+i16 %43
+8add 8+B-
++
+	full_text
+
+%45 = add nsw i32 %42, %44
+'i32 8+B
+
+	full_text
+	
+i32 %42
+'i32 8+B
+
+	full_text
+	
+i32 %44
+:trunc 8+B-
++
+	full_text
+
+%46 = trunc i32 %45 to i16
+'i32 8+B
+
+	full_text
+	
+i32 %45
+@store 8+B3
+1
+	full_text$
+"
+ store i16 %46, i16* %10, align 2
+'i16 8+B
+
+	full_text
+	
+i16 %46
+)i16* 8+B
+
+	full_text
+
+
+i16* %10
+?store 8+B2
+0
+	full_text#
+!
+store i16 %46, i16* %9, align 2
+'i16 8+B
+
+	full_text
+	
+i16 %46
+(i16* 8+B
+
+	full_text
+	
+i16* %9
+?load 8+B3
+1
+	full_text$
+"
+ %47 = load i16, i16* %7, align 2
+(i16* 8+B
+
+	full_text
+	
+i16* %7
+8zext 8+B,
+*
+	full_text
+
+%48 = zext i16 %47 to i32
+'i16 8+B
+
+	full_text
+	
+i16 %47
+4and 8+B)
+'
+	full_text
+
+%49 = and i32 %48, 240
+'i32 8+B
+
+	full_text
+	
+i32 %48
+7icmp 8+B+
+)
+	full_text
+
+%50 = icmp ne i32 %49, 0
+'i32 8+B
+
+	full_text
+	
+i32 %49
+<br 8+B2
+0
+	full_text#
+!
+br i1 %50, label %51, label %56
+%i1 8+B
+
+	full_text
+
+
+i1 %50
+?load 8,B3
+1
+	full_text$
+"
+ %52 = load i16, i16* %9, align 2
+(i16* 8,B
+
+	full_text
+	
+i16* %9
+8zext 8,B,
+*
+	full_text
+
+%53 = zext i16 %52 to i32
+'i16 8,B
+
+	full_text
+	
+i16 %52
+6sub 8,B+
+)
+	full_text
+
+%54 = sub nsw i32 %53, 6
+'i32 8,B
+
+	full_text
+	
+i32 %53
+:trunc 8,B-
++
+	full_text
+
+%55 = trunc i32 %54 to i16
+'i32 8,B
+
+	full_text
+	
+i32 %54
+?store 8,B2
+0
+	full_text#
+!
+store i16 %55, i16* %9, align 2
+'i16 8,B
+
+	full_text
+	
+i16 %55
+(i16* 8,B
+
+	full_text
+	
+i16* %9
+>store 8,B1
+/
+	full_text"
+ 
+store i32 6, i32* %11, align 4
+)i32* 8,B
+
+	full_text
+
+
+i32* %11
+)br 8,B
+
+	full_text
+
+br label %56
+=load 8-B1
+/
+	full_text"
+ 
+%57 = load i8, i8* %6, align 1
+&i8* 8-B
+
+	full_text
+
+
+i8* %6
+7sext 8-B+
+)
+	full_text
+
+%58 = sext i8 %57 to i32
+%i8 8-B
+
+	full_text
+
+
+i8 %57
+4and 8-B)
+'
+	full_text
+
+%59 = and i32 %58, 255
+'i32 8-B
+
+	full_text
+	
+i32 %58
+=load 8-B1
+/
+	full_text"
+ 
+%60 = load i8, i8* %5, align 1
+&i8* 8-B
+
+	full_text
+
+
+i8* %5
+7sext 8-B+
+)
+	full_text
+
+%61 = sext i8 %60 to i32
+%i8 8-B
+
+	full_text
+
+
+i8 %60
+4and 8-B)
+'
+	full_text
+
+%62 = and i32 %61, 255
+'i32 8-B
+
+	full_text
+	
+i32 %61
+8sub 8-B-
++
+	full_text
+
+%63 = sub nsw i32 %59, %62
+'i32 8-B
+
+	full_text
+	
+i32 %59
+'i32 8-B
+
+	full_text
+	
+i32 %62
+wgetelementptr 8-Bb
+`
+	full_textS
+Q
+O%64 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+.struct* 8-B
+
+	full_text
+
+
+struct* %4
+@load 8-B4
+2
+	full_text%
+#
+!%65 = load i32, i32* %64, align 4
+)i32* 8-B
+
+	full_text
+
+
+i32* %64
+7icmp 8-B+
+)
+	full_text
+
+%66 = icmp ne i32 %65, 0
+'i32 8-B
+
+	full_text
+	
+i32 %65
+7zext 8-B+
+)
+	full_text
+
+%67 = zext i1 %66 to i64
+%i1 8-B
+
+	full_text
+
+
+i1 %66
+Bselect 8-B4
+2
+	full_text%
+#
+!%68 = select i1 %66, i32 1, i32 0
+%i1 8-B
+
+	full_text
+
+
+i1 %66
+8sub 8-B-
++
+	full_text
+
+%69 = sub nsw i32 %63, %68
+'i32 8-B
+
+	full_text
+	
+i32 %63
+'i32 8-B
+
+	full_text
+	
+i32 %68
+4and 8-B)
+'
+	full_text
+
+%70 = and i32 %69, 256
+'i32 8-B
+
+	full_text
+	
+i32 %69
+:icmp 8-B.
+,
+	full_text
+
+%71 = icmp sgt i32 %70, 255
+'i32 8-B
+
+	full_text
+	
+i32 %70
+<br 8-B2
+0
+	full_text#
+!
+br i1 %71, label %72, label %77
+%i1 8-B
+
+	full_text
+
+
+i1 %71
+?load 8.B3
+1
+	full_text$
+"
+ %73 = load i16, i16* %9, align 2
+(i16* 8.B
+
+	full_text
+	
+i16* %9
+8zext 8.B,
+*
+	full_text
+
+%74 = zext i16 %73 to i32
+'i16 8.B
+
+	full_text
+	
+i16 %73
+7sub 8.B,
+*
+	full_text
+
+%75 = sub nsw i32 %74, 96
+'i32 8.B
+
+	full_text
+	
+i32 %74
+:trunc 8.B-
++
+	full_text
+
+%76 = trunc i32 %75 to i16
+'i32 8.B
+
+	full_text
+	
+i32 %75
+?store 8.B2
+0
+	full_text#
+!
+store i16 %76, i16* %9, align 2
+'i16 8.B
+
+	full_text
+	
+i16 %76
+(i16* 8.B
+
+	full_text
+	
+i16* %9
+)br 8.B
+
+	full_text
+
+br label %77
+=load 8/B1
+/
+	full_text"
+ 
+%78 = load i8, i8* %6, align 1
+&i8* 8/B
+
+	full_text
+
+
+i8* %6
+7sext 8/B+
+)
+	full_text
+
+%79 = sext i8 %78 to i32
+%i8 8/B
+
+	full_text
+
+
+i8 %78
+4and 8/B)
+'
+	full_text
+
+%80 = and i32 %79, 255
+'i32 8/B
+
+	full_text
+	
+i32 %79
+=load 8/B1
+/
+	full_text"
+ 
+%81 = load i8, i8* %5, align 1
+&i8* 8/B
+
+	full_text
+
+
+i8* %5
+7sext 8/B+
+)
+	full_text
+
+%82 = sext i8 %81 to i32
+%i8 8/B
+
+	full_text
+
+
+i8 %81
+4and 8/B)
+'
+	full_text
+
+%83 = and i32 %82, 255
+'i32 8/B
+
+	full_text
+	
+i32 %82
+8sub 8/B-
++
+	full_text
+
+%84 = sub nsw i32 %80, %83
+'i32 8/B
+
+	full_text
+	
+i32 %80
+'i32 8/B
+
+	full_text
+	
+i32 %83
+@load 8/B4
+2
+	full_text%
+#
+!%85 = load i32, i32* %11, align 4
+)i32* 8/B
+
+	full_text
+
+
+i32* %11
+8sub 8/B-
++
+	full_text
+
+%86 = sub nsw i32 %84, %85
+'i32 8/B
+
+	full_text
+	
+i32 %84
+'i32 8/B
+
+	full_text
+	
+i32 %85
+wgetelementptr 8/Bb
+`
+	full_textS
+Q
+O%87 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+.struct* 8/B
+
+	full_text
+
+
+struct* %4
+@load 8/B4
+2
+	full_text%
+#
+!%88 = load i32, i32* %87, align 4
+)i32* 8/B
+
+	full_text
+
+
+i32* %87
+7icmp 8/B+
+)
+	full_text
+
+%89 = icmp ne i32 %88, 0
+'i32 8/B
+
+	full_text
+	
+i32 %88
+7zext 8/B+
+)
+	full_text
+
+%90 = zext i1 %89 to i64
+%i1 8/B
+
+	full_text
+
+
+i1 %89
+Bselect 8/B4
+2
+	full_text%
+#
+!%91 = select i1 %89, i32 1, i32 0
+%i1 8/B
+
+	full_text
+
+
+i1 %89
+8sub 8/B-
++
+	full_text
+
+%92 = sub nsw i32 %86, %91
+'i32 8/B
+
+	full_text
+	
+i32 %86
+'i32 8/B
+
+	full_text
+	
+i32 %91
+4and 8/B)
+'
+	full_text
+
+%93 = and i32 %92, 768
+'i32 8/B
+
+	full_text
+	
+i32 %92
+:icmp 8/B.
+,
+	full_text
+
+%94 = icmp sgt i32 %93, 255
+'i32 8/B
+
+	full_text
+	
+i32 %93
+7zext 8/B+
+)
+	full_text
+
+%95 = zext i1 %94 to i32
+%i1 8/B
+
+	full_text
+
+
+i1 %94
+ygetelementptr 8/Bd
+b
+	full_textU
+S
+Q%96 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+@store 8/B3
+1
+	full_text$
+"
+ store i32 %95, i32* %96, align 4
+'i32 8/B
+
+	full_text
+	
+i32 %95
+)i32* 8/B
+
+	full_text
+
+
+i32* %96
+ygetelementptr 8/Bd
+b
+	full_textU
+S
+Q%97 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+@load 8/B4
+2
+	full_text%
+#
+!%98 = load i32, i32* %97, align 4
+)i32* 8/B
+
+	full_text
+
+
+i32* %97
+ygetelementptr 8/Bd
+b
+	full_textU
+S
+Q%99 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 5
+@store 8/B3
+1
+	full_text$
+"
+ store i32 %98, i32* %99, align 4
+'i32 8/B
+
+	full_text
+	
+i32 %98
+)i32* 8/B
+
+	full_text
+
+
+i32* %99
+xgetelementptr 8/Bc
+a
+	full_textT
+R
+P%100 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 3
+.struct* 8/B
+
+	full_text
+
+
+struct* %4
+Bload 8/B6
+4
+	full_text'
+%
+#%101 = load i32, i32* %100, align 4
+*i32* 8/B
+
+	full_text
+
+	i32* %100
+@load 8/B4
+2
+	full_text%
+#
+!%102 = load i16, i16* %9, align 2
+(i16* 8/B
+
+	full_text
+	
+i16* %9
+;trunc 8/B.
+,
+	full_text
+
+%103 = trunc i16 %102 to i8
+(i16 8/B
+
+	full_text
+
+
+i16 %102
+9sext 8/B-
++
+	full_text
+
+%104 = sext i8 %103 to i32
+&i8 8/B
+
+	full_text
+	
+i8 %103
+9icmp 8/B-
++
+	full_text
+
+%105 = icmp eq i32 %104, 0
+(i32 8/B
+
+	full_text
+
+
+i32 %104
+9zext 8/B-
++
+	full_text
+
+%106 = zext i1 %105 to i32
+&i1 8/B
+
+	full_text
+	
+i1 %105
+7and 8/B,
+*
+	full_text
+
+%107 = and i32 %101, %106
+(i32 8/B
+
+	full_text
+
+
+i32 %101
+(i32 8/B
+
+	full_text
+
+
+i32 %106
+zgetelementptr 8/Be
+c
+	full_textV
+T
+R%108 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 3
+Bstore 8/B5
+3
+	full_text&
+$
+"store i32 %107, i32* %108, align 4
+(i32 8/B
+
+	full_text
+
+
+i32 %107
+*i32* 8/B
+
+	full_text
+
+	i32* %108
+@load 8/B4
+2
+	full_text%
+#
+!%109 = load i16, i16* %9, align 2
+(i16* 8/B
+
+	full_text
+	
+i16* %9
+;trunc 8/B.
+,
+	full_text
+
+%110 = trunc i16 %109 to i8
+(i16 8/B
+
+	full_text
+
+
+i16 %109
+9sext 8/B-
++
+	full_text
+
+%111 = sext i8 %110 to i32
+&i8 8/B
+
+	full_text
+	
+i8 %110
+:icmp 8/B.
+,
+	full_text
+
+%112 = icmp slt i32 %111, 0
+(i32 8/B
+
+	full_text
+
+
+i32 %111
+9zext 8/B-
++
+	full_text
+
+%113 = zext i1 %112 to i32
+&i1 8/B
+
+	full_text
+	
+i1 %112
+zgetelementptr 8/Be
+c
+	full_textV
+T
+R%114 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 4
+Bstore 8/B5
+3
+	full_text&
+$
+"store i32 %113, i32* %114, align 4
+(i32 8/B
+
+	full_text
+
+
+i32 %113
+*i32* 8/B
+
+	full_text
+
+	i32* %114
+Aload 8/B5
+3
+	full_text&
+$
+"%115 = load i16, i16* %10, align 2
+)i16* 8/B
+
+	full_text
+
+
+i16* %10
+:zext 8/B.
+,
+	full_text
+
+%116 = zext i16 %115 to i32
+(i16 8/B
+
+	full_text
+
+
+i16 %115
+6and 8/B+
+)
+	full_text
+
+%117 = and i32 %116, 128
+(i32 8/B
+
+	full_text
+
+
+i32 %116
+9icmp 8/B-
++
+	full_text
+
+%118 = icmp ne i32 %117, 0
+(i32 8/B
+
+	full_text
+
+
+i32 %117
+?br 8/B5
+3
+	full_text&
+$
+"br i1 %118, label %119, label %124
+&i1 8/B
+
+	full_text
+	
+i1 %118
+@load 80B4
+2
+	full_text%
+#
+!%120 = load i16, i16* %9, align 2
+(i16* 80B
+
+	full_text
+	
+i16* %9
+:zext 80B.
+,
+	full_text
+
+%121 = zext i16 %120 to i32
+(i16 80B
+
+	full_text
+
+
+i16 %120
+6and 80B+
+)
+	full_text
+
+%122 = and i32 %121, 128
+(i32 80B
+
+	full_text
+
+
+i32 %121
+9icmp 80B-
++
+	full_text
+
+%123 = icmp eq i32 %122, 0
+(i32 80B
+
+	full_text
+
+
+i32 %122
+*br 80B 
+
+	full_text
+
+br label %124
+Jphi 81B?
+=
+	full_text0
+.
+,%125 = phi i1 [ false, %77 ], [ %123, %119 ]
+&i1 81B
+
+	full_text
+	
+i1 %123
+9zext 81B-
++
+	full_text
+
+%126 = zext i1 %125 to i32
+&i1 81B
+
+	full_text
+	
+i1 %125
+zgetelementptr 81Be
+c
+	full_textV
+T
+R%127 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 2
+Bstore 81B5
+3
+	full_text&
+$
+"store i32 %126, i32* %127, align 4
+(i32 81B
+
+	full_text
+
+
+i32 %126
+*i32* 81B
+
+	full_text
+
+	i32* %127
+@load 81B4
+2
+	full_text%
+#
+!%128 = load i16, i16* %9, align 2
+(i16* 81B
+
+	full_text
+	
+i16* %9
+:zext 81B.
+,
+	full_text
+
+%129 = zext i16 %128 to i32
+(i16 81B
+
+	full_text
+
+
+i16 %128
+6and 81B+
+)
+	full_text
+
+%130 = and i32 %129, 255
+(i32 81B
+
+	full_text
+
+
+i32 %129
+;trunc 81B.
+,
+	full_text
+
+%131 = trunc i32 %130 to i8
+(i32 81B
+
+	full_text
+
+
+i32 %130
+zgetelementptr 81Be
+c
+	full_textV
+T
+R%132 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@store 81B3
+1
+	full_text$
+"
+ store i8 %131, i8* %132, align 4
+&i8 81B
+
+	full_text
+	
+i8 %131
+(i8* 81B
+
+	full_text
+
+
+i8* %132
+&ret 81B
+
+	full_text
+
+
+ret void
+8struct* 82B'
+%
+	full_text
+
+%struct.output_t* %0
+&i64 82B
+
+	full_text
+
+
+i64 %1
+&i64 82B
+
+	full_text
+
+
+i64 %2
+Ealloca 82B7
+5
+	full_text(
+&
+$%4 = alloca %struct.input_t, align 4
+8alloca 82B*
+(
+	full_text
+
+%5 = alloca i8, align 1
+8alloca 82B*
+(
+	full_text
+
+%6 = alloca i8, align 1
+9alloca 82B+
+)
+	full_text
+
+%7 = alloca i32, align 4
+Sbitcast 82BD
+B
+	full_text5
+3
+1%8 = bitcast %struct.input_t* %4 to { i64, i64 }*
+.struct* 82B
+
+	full_text
+
+
+struct* %4
+pgetelementptr 82B[
+Y
+	full_textL
+J
+H%9 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %8, i32 0, i32 0
+.struct* 82B
+
+	full_text
+
+
+struct* %8
+>store 82B1
+/
+	full_text"
+ 
+store i64 %1, i64* %9, align 4
+(i64* 82B
+
+	full_text
+	
+i64* %9
+qgetelementptr 82B\
+Z
+	full_textM
+K
+I%10 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %8, i32 0, i32 1
+.struct* 82B
+
+	full_text
+
+
+struct* %8
+?store 82B2
+0
+	full_text#
+!
+store i64 %2, i64* %10, align 4
+)i64* 82B
+
+	full_text
+
+
+i64* %10
+wgetelementptr 82Bb
+`
+	full_textS
+Q
+O%11 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 82B
+
+	full_text
+
+
+struct* %4
+>load 82B2
+0
+	full_text#
+!
+%12 = load i8, i8* %11, align 1
+'i8* 82B
+
+	full_text
+	
+i8* %11
+7zext 82B+
+)
+	full_text
+
+%13 = zext i8 %12 to i32
+%i8 82B
+
+	full_text
+
+
+i8 %12
+3and 82B(
+&
+	full_text
+
+%14 = and i32 %13, 15
+'i32 82B
+
+	full_text
+	
+i32 %13
+7add 82B,
+*
+	full_text
+
+%15 = add nsw i32 32, %14
+'i32 82B
+
+	full_text
+	
+i32 %14
+wgetelementptr 82Bb
+`
+	full_textS
+Q
+O%16 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 0
+.struct* 82B
+
+	full_text
+
+
+struct* %4
+>load 82B2
+0
+	full_text#
+!
+%17 = load i8, i8* %16, align 4
+'i8* 82B
+
+	full_text
+	
+i8* %16
+7zext 82B+
+)
+	full_text
+
+%18 = zext i8 %17 to i32
+%i8 82B
+
+	full_text
+
+
+i8 %17
+3and 82B(
+&
+	full_text
+
+%19 = and i32 %18, 15
+'i32 82B
+
+	full_text
+	
+i32 %18
+8sub 82B-
++
+	full_text
+
+%20 = sub nsw i32 %15, %19
+'i32 82B
+
+	full_text
+	
+i32 %15
+'i32 82B
+
+	full_text
+	
+i32 %19
+wgetelementptr 82Bb
+`
+	full_textS
+Q
+O%21 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+.struct* 82B
+
+	full_text
+
+
+struct* %4
+@load 82B4
+2
+	full_text%
+#
+!%22 = load i32, i32* %21, align 4
+)i32* 82B
+
+	full_text
+
+
+i32* %21
+4sub 82B)
+'
+	full_text
+
+%23 = sub i32 %20, %22
+'i32 82B
+
+	full_text
+	
+i32 %20
+'i32 82B
+
+	full_text
+	
+i32 %22
+9trunc 82B,
+*
+	full_text
+
+%24 = trunc i32 %23 to i8
+'i32 82B
+
+	full_text
+	
+i32 %23
+=store 82B0
+.
+	full_text!
+
+store i8 %24, i8* %5, align 1
+%i8 82B
+
+	full_text
+
+
+i8 %24
+&i8* 82B
+
+	full_text
+
+
+i8* %5
+wgetelementptr 82Bb
+`
+	full_textS
+Q
+O%25 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 82B
+
+	full_text
+
+
+struct* %4
+>load 82B2
+0
+	full_text#
+!
+%26 = load i8, i8* %25, align 1
+'i8* 82B
+
+	full_text
+	
+i8* %25
+7zext 82B+
+)
+	full_text
+
+%27 = zext i8 %26 to i32
+%i8 82B
+
+	full_text
+
+
+i8 %26
+4and 82B)
+'
+	full_text
+
+%28 = and i32 %27, 240
+'i32 82B
+
+	full_text
+	
+i32 %27
+4ashr 82B(
+&
+	full_text
+
+%29 = ashr i32 %28, 4
+'i32 82B
+
+	full_text
+	
+i32 %28
+7add 82B,
+*
+	full_text
+
+%30 = add nsw i32 32, %29
+'i32 82B
+
+	full_text
+	
+i32 %29
+wgetelementptr 82Bb
+`
+	full_textS
+Q
+O%31 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 0
+.struct* 82B
+
+	full_text
+
+
+struct* %4
+>load 82B2
+0
+	full_text#
+!
+%32 = load i8, i8* %31, align 4
+'i8* 82B
+
+	full_text
+	
+i8* %31
+7zext 82B+
+)
+	full_text
+
+%33 = zext i8 %32 to i32
+%i8 82B
+
+	full_text
+
+
+i8 %32
+4and 82B)
+'
+	full_text
+
+%34 = and i32 %33, 240
+'i32 82B
+
+	full_text
+	
+i32 %33
+4ashr 82B(
+&
+	full_text
+
+%35 = ashr i32 %34, 4
+'i32 82B
+
+	full_text
+	
+i32 %34
+8sub 82B-
++
+	full_text
+
+%36 = sub nsw i32 %30, %35
+'i32 82B
+
+	full_text
+	
+i32 %30
+'i32 82B
+
+	full_text
+	
+i32 %35
+9trunc 82B,
+*
+	full_text
+
+%37 = trunc i32 %36 to i8
+'i32 82B
+
+	full_text
+	
+i32 %36
+=store 82B0
+.
+	full_text!
+
+store i8 %37, i8* %6, align 1
+%i8 82B
+
+	full_text
+
+
+i8 %37
+&i8* 82B
+
+	full_text
+
+
+i8* %6
+wgetelementptr 82Bb
+`
+	full_textS
+Q
+O%38 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 1
+.struct* 82B
+
+	full_text
+
+
+struct* %4
+>load 82B2
+0
+	full_text#
+!
+%39 = load i8, i8* %38, align 1
+'i8* 82B
+
+	full_text
+	
+i8* %38
+7zext 82B+
+)
+	full_text
+
+%40 = zext i8 %39 to i32
+%i8 82B
+
+	full_text
+
+
+i8 %39
+wgetelementptr 82Bb
+`
+	full_textS
+Q
+O%41 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 0
+.struct* 82B
+
+	full_text
+
+
+struct* %4
+>load 82B2
+0
+	full_text#
+!
+%42 = load i8, i8* %41, align 4
+'i8* 82B
+
+	full_text
+	
+i8* %41
+7zext 82B+
+)
+	full_text
+
+%43 = zext i8 %42 to i32
+%i8 82B
+
+	full_text
+
+
+i8 %42
+8sub 82B-
++
+	full_text
+
+%44 = sub nsw i32 %40, %43
+'i32 82B
+
+	full_text
+	
+i32 %40
+'i32 82B
+
+	full_text
+	
+i32 %43
+wgetelementptr 82Bb
+`
+	full_textS
+Q
+O%45 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 2
+.struct* 82B
+
+	full_text
+
+
+struct* %4
+@load 82B4
+2
+	full_text%
+#
+!%46 = load i32, i32* %45, align 4
+)i32* 82B
+
+	full_text
+
+
+i32* %45
+4sub 82B)
+'
+	full_text
+
+%47 = sub i32 %44, %46
+'i32 82B
+
+	full_text
+	
+i32 %44
+'i32 82B
+
+	full_text
+	
+i32 %46
+?store 82B2
+0
+	full_text#
+!
+store i32 %47, i32* %7, align 4
+'i32 82B
+
+	full_text
+	
+i32 %47
+(i32* 82B
+
+	full_text
+	
+i32* %7
+=load 82B1
+/
+	full_text"
+ 
+%48 = load i8, i8* %5, align 1
+&i8* 82B
+
+	full_text
+
+
+i8* %5
+7zext 82B+
+)
+	full_text
+
+%49 = zext i8 %48 to i32
+%i8 82B
+
+	full_text
+
+
+i8 %48
+9icmp 82B-
++
+	full_text
+
+%50 = icmp slt i32 %49, 32
+'i32 82B
+
+	full_text
+	
+i32 %49
+<br 82B2
+0
+	full_text#
+!
+br i1 %50, label %51, label %55
+%i1 82B
+
+	full_text
+
+
+i1 %50
+=load 83B1
+/
+	full_text"
+ 
+%52 = load i8, i8* %5, align 1
+&i8* 83B
+
+	full_text
+
+
+i8* %5
+7zext 83B+
+)
+	full_text
+
+%53 = zext i8 %52 to i32
+%i8 83B
+
+	full_text
+
+
+i8 %52
+6sub 83B+
+)
+	full_text
+
+%54 = sub nsw i32 %53, 6
+'i32 83B
+
+	full_text
+	
+i32 %53
+)br 83B
+
+	full_text
+
+br label %58
+=load 84B1
+/
+	full_text"
+ 
+%56 = load i8, i8* %5, align 1
+&i8* 84B
+
+	full_text
+
+
+i8* %5
+7zext 84B+
+)
+	full_text
+
+%57 = zext i8 %56 to i32
+%i8 84B
+
+	full_text
+
+
+i8 %56
+)br 84B
+
+	full_text
+
+br label %58
+Fphi 85B;
+9
+	full_text,
+*
+(%59 = phi i32 [ %54, %51 ], [ %57, %55 ]
+'i32 85B
+
+	full_text
+	
+i32 %54
+'i32 85B
+
+	full_text
+	
+i32 %57
+9trunc 85B,
+*
+	full_text
+
+%60 = trunc i32 %59 to i8
+'i32 85B
+
+	full_text
+	
+i32 %59
+=store 85B0
+.
+	full_text!
+
+store i8 %60, i8* %5, align 1
+%i8 85B
+
+	full_text
+
+
+i8 %60
+&i8* 85B
+
+	full_text
+
+
+i8* %5
+=load 85B1
+/
+	full_text"
+ 
+%61 = load i8, i8* %5, align 1
+&i8* 85B
+
+	full_text
+
+
+i8* %5
+7zext 85B+
+)
+	full_text
+
+%62 = zext i8 %61 to i32
+%i8 85B
+
+	full_text
+
+
+i8 %61
+9icmp 85B-
++
+	full_text
+
+%63 = icmp slt i32 %62, 16
+'i32 85B
+
+	full_text
+	
+i32 %62
+<br 85B2
+0
+	full_text#
+!
+br i1 %63, label %64, label %68
+%i1 85B
+
+	full_text
+
+
+i1 %63
+=load 86B1
+/
+	full_text"
+ 
+%65 = load i8, i8* %6, align 1
+&i8* 86B
+
+	full_text
+
+
+i8* %6
+7zext 86B+
+)
+	full_text
+
+%66 = zext i8 %65 to i32
+%i8 86B
+
+	full_text
+
+
+i8 %65
+6sub 86B+
+)
+	full_text
+
+%67 = sub nsw i32 %66, 2
+'i32 86B
+
+	full_text
+	
+i32 %66
+)br 86B
+
+	full_text
+
+br label %81
+=load 87B1
+/
+	full_text"
+ 
+%69 = load i8, i8* %5, align 1
+&i8* 87B
+
+	full_text
+
+
+i8* %5
+7zext 87B+
+)
+	full_text
+
+%70 = zext i8 %69 to i32
+%i8 87B
+
+	full_text
+
+
+i8 %69
+9icmp 87B-
++
+	full_text
+
+%71 = icmp slt i32 %70, 32
+'i32 87B
+
+	full_text
+	
+i32 %70
+<br 87B2
+0
+	full_text#
+!
+br i1 %71, label %72, label %76
+%i1 87B
+
+	full_text
+
+
+i1 %71
+=load 88B1
+/
+	full_text"
+ 
+%73 = load i8, i8* %6, align 1
+&i8* 88B
+
+	full_text
+
+
+i8* %6
+7zext 88B+
+)
+	full_text
+
+%74 = zext i8 %73 to i32
+%i8 88B
+
+	full_text
+
+
+i8 %73
+6sub 88B+
+)
+	full_text
+
+%75 = sub nsw i32 %74, 1
+'i32 88B
+
+	full_text
+	
+i32 %74
+)br 88B
+
+	full_text
+
+br label %79
+=load 89B1
+/
+	full_text"
+ 
+%77 = load i8, i8* %6, align 1
+&i8* 89B
+
+	full_text
+
+
+i8* %6
+7zext 89B+
+)
+	full_text
+
+%78 = zext i8 %77 to i32
+%i8 89B
+
+	full_text
+
+
+i8 %77
+)br 89B
+
+	full_text
+
+br label %79
+Fphi 8:B;
+9
+	full_text,
+*
+(%80 = phi i32 [ %75, %72 ], [ %78, %76 ]
+'i32 8:B
+
+	full_text
+	
+i32 %75
+'i32 8:B
+
+	full_text
+	
+i32 %78
+)br 8:B
+
+	full_text
+
+br label %81
+Fphi 8;B;
+9
+	full_text,
+*
+(%82 = phi i32 [ %67, %64 ], [ %80, %79 ]
+'i32 8;B
+
+	full_text
+	
+i32 %67
+'i32 8;B
+
+	full_text
+	
+i32 %80
+9trunc 8;B,
+*
+	full_text
+
+%83 = trunc i32 %82 to i8
+'i32 8;B
+
+	full_text
+	
+i32 %82
+=store 8;B0
+.
+	full_text!
+
+store i8 %83, i8* %6, align 1
+%i8 8;B
+
+	full_text
+
+
+i8 %83
+&i8* 8;B
+
+	full_text
+
+
+i8* %6
+=load 8;B1
+/
+	full_text"
+ 
+%84 = load i8, i8* %6, align 1
+&i8* 8;B
+
+	full_text
+
+
+i8* %6
+7zext 8;B+
+)
+	full_text
+
+%85 = zext i8 %84 to i32
+%i8 8;B
+
+	full_text
+
+
+i8 %84
+9icmp 8;B-
++
+	full_text
+
+%86 = icmp slt i32 %85, 32
+'i32 8;B
+
+	full_text
+	
+i32 %85
+<br 8;B2
+0
+	full_text#
+!
+br i1 %86, label %87, label %95
+%i1 8;B
+
+	full_text
+
+
+i1 %86
+?load 8<B3
+1
+	full_text$
+"
+ %88 = load i32, i32* %7, align 4
+(i32* 8<B
+
+	full_text
+	
+i32* %7
+4and 8<B)
+'
+	full_text
+
+%89 = and i32 %88, 256
+'i32 8<B
+
+	full_text
+	
+i32 %88
+:icmp 8<B.
+,
+	full_text
+
+%90 = icmp sgt i32 %89, 255
+'i32 8<B
+
+	full_text
+	
+i32 %89
+<br 8<B2
+0
+	full_text#
+!
+br i1 %90, label %91, label %95
+%i1 8<B
+
+	full_text
+
+
+i1 %90
+=load 8=B1
+/
+	full_text"
+ 
+%92 = load i8, i8* %6, align 1
+&i8* 8=B
+
+	full_text
+
+
+i8* %6
+7zext 8=B+
+)
+	full_text
+
+%93 = zext i8 %92 to i32
+%i8 8=B
+
+	full_text
+
+
+i8 %92
+6sub 8=B+
+)
+	full_text
+
+%94 = sub nsw i32 %93, 6
+'i32 8=B
+
+	full_text
+	
+i32 %93
+)br 8=B
+
+	full_text
+
+br label %98
+=load 8>B1
+/
+	full_text"
+ 
+%96 = load i8, i8* %6, align 1
+&i8* 8>B
+
+	full_text
+
+
+i8* %6
+7zext 8>B+
+)
+	full_text
+
+%97 = zext i8 %96 to i32
+%i8 8>B
+
+	full_text
+
+
+i8 %96
+)br 8>B
+
+	full_text
+
+br label %98
+Fphi 8?B;
+9
+	full_text,
+*
+(%99 = phi i32 [ %94, %91 ], [ %97, %95 ]
+'i32 8?B
+
+	full_text
+	
+i32 %94
+'i32 8?B
+
+	full_text
+	
+i32 %97
+:trunc 8?B-
++
+	full_text
+
+%100 = trunc i32 %99 to i8
+'i32 8?B
+
+	full_text
+	
+i32 %99
+>store 8?B1
+/
+	full_text"
+ 
+store i8 %100, i8* %6, align 1
+&i8 8?B
+
+	full_text
+	
+i8 %100
+&i8* 8?B
+
+	full_text
+
+
+i8* %6
+>load 8?B2
+0
+	full_text#
+!
+%101 = load i8, i8* %6, align 1
+&i8* 8?B
+
+	full_text
+
+
+i8* %6
+9zext 8?B-
++
+	full_text
+
+%102 = zext i8 %101 to i32
+&i8 8?B
+
+	full_text
+	
+i8 %101
+;icmp 8?B/
+-
+	full_text 
+
+%103 = icmp slt i32 %102, 32
+(i32 8?B
+
+	full_text
+
+
+i32 %102
+9zext 8?B-
++
+	full_text
+
+%104 = zext i1 %103 to i64
+&i1 8?B
+
+	full_text
+	
+i1 %103
+Dselect 8?B6
+4
+	full_text'
+%
+#%105 = select i1 %103, i32 1, i32 0
+&i1 8?B
+
+	full_text
+	
+i1 %103
+zgetelementptr 8?Be
+c
+	full_textV
+T
+R%106 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+Bstore 8?B5
+3
+	full_text&
+$
+"store i32 %105, i32* %106, align 4
+(i32 8?B
+
+	full_text
+
+
+i32 %105
+*i32* 8?B
+
+	full_text
+
+	i32* %106
+zgetelementptr 8?Be
+c
+	full_textV
+T
+R%107 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 1
+Bload 8?B6
+4
+	full_text'
+%
+#%108 = load i32, i32* %107, align 4
+*i32* 8?B
+
+	full_text
+
+	i32* %107
+zgetelementptr 8?Be
+c
+	full_textV
+T
+R%109 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 5
+Bstore 8?B5
+3
+	full_text&
+$
+"store i32 %108, i32* %109, align 4
+(i32 8?B
+
+	full_text
+
+
+i32 %108
+*i32* 8?B
+
+	full_text
+
+	i32* %109
+>load 8?B2
+0
+	full_text#
+!
+%110 = load i8, i8* %5, align 1
+&i8* 8?B
+
+	full_text
+
+
+i8* %5
+9zext 8?B-
++
+	full_text
+
+%111 = zext i8 %110 to i32
+&i8 8?B
+
+	full_text
+	
+i8 %110
+5and 8?B*
+(
+	full_text
+
+%112 = and i32 %111, 15
+(i32 8?B
+
+	full_text
+
+
+i32 %111
+;trunc 8?B.
+,
+	full_text
+
+%113 = trunc i32 %112 to i8
+(i32 8?B
+
+	full_text
+
+
+i32 %112
+>store 8?B1
+/
+	full_text"
+ 
+store i8 %113, i8* %5, align 1
+&i8 8?B
+
+	full_text
+	
+i8 %113
+&i8* 8?B
+
+	full_text
+
+
+i8* %5
+>load 8?B2
+0
+	full_text#
+!
+%114 = load i8, i8* %6, align 1
+&i8* 8?B
+
+	full_text
+
+
+i8* %6
+9zext 8?B-
++
+	full_text
+
+%115 = zext i8 %114 to i32
+&i8 8?B
+
+	full_text
+	
+i8 %114
+5and 8?B*
+(
+	full_text
+
+%116 = and i32 %115, 15
+(i32 8?B
+
+	full_text
+
+
+i32 %115
+;trunc 8?B.
+,
+	full_text
+
+%117 = trunc i32 %116 to i8
+(i32 8?B
+
+	full_text
+
+
+i32 %116
+>store 8?B1
+/
+	full_text"
+ 
+store i8 %117, i8* %6, align 1
+&i8 8?B
+
+	full_text
+	
+i8 %117
+&i8* 8?B
+
+	full_text
+
+
+i8* %6
+>load 8?B2
+0
+	full_text#
+!
+%118 = load i8, i8* %6, align 1
+&i8* 8?B
+
+	full_text
+
+
+i8* %6
+9zext 8?B-
++
+	full_text
+
+%119 = zext i8 %118 to i32
+&i8 8?B
+
+	full_text
+	
+i8 %118
+4shl 8?B)
+'
+	full_text
+
+%120 = shl i32 %119, 4
+(i32 8?B
+
+	full_text
+
+
+i32 %119
+>load 8?B2
+0
+	full_text#
+!
+%121 = load i8, i8* %5, align 1
+&i8* 8?B
+
+	full_text
+
+
+i8* %5
+9zext 8?B-
++
+	full_text
+
+%122 = zext i8 %121 to i32
+&i8 8?B
+
+	full_text
+	
+i8 %121
+;add 8?B0
+.
+	full_text!
+
+%123 = add nsw i32 %120, %122
+(i32 8?B
+
+	full_text
+
+
+i32 %120
+(i32 8?B
+
+	full_text
+
+
+i32 %122
+;trunc 8?B.
+,
+	full_text
+
+%124 = trunc i32 %123 to i8
+(i32 8?B
+
+	full_text
+
+
+i32 %123
+zgetelementptr 8?Be
+c
+	full_textV
+T
+R%125 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@store 8?B3
+1
+	full_text$
+"
+ store i8 %124, i8* %125, align 4
+&i8 8?B
+
+	full_text
+	
+i8 %124
+(i8* 8?B
+
+	full_text
+
+
+i8* %125
+xgetelementptr 8?Bc
+a
+	full_textT
+R
+P%126 = getelementptr inbounds %struct.input_t, %struct.input_t* %4, i32 0, i32 3
+.struct* 8?B
+
+	full_text
+
+
+struct* %4
+Bload 8?B6
+4
+	full_text'
+%
+#%127 = load i32, i32* %126, align 4
+*i32* 8?B
+
+	full_text
+
+	i32* %126
+zgetelementptr 8?Be
+c
+	full_textV
+T
+R%128 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@load 8?B4
+2
+	full_text%
+#
+!%129 = load i8, i8* %128, align 4
+(i8* 8?B
+
+	full_text
+
+
+i8* %128
+9zext 8?B-
++
+	full_text
+
+%130 = zext i8 %129 to i32
+&i8 8?B
+
+	full_text
+	
+i8 %129
+9icmp 8?B-
++
+	full_text
+
+%131 = icmp eq i32 %130, 0
+(i32 8?B
+
+	full_text
+
+
+i32 %130
+9zext 8?B-
++
+	full_text
+
+%132 = zext i1 %131 to i32
+&i1 8?B
+
+	full_text
+	
+i1 %131
+7and 8?B,
+*
+	full_text
+
+%133 = and i32 %127, %132
+(i32 8?B
+
+	full_text
+
+
+i32 %127
+(i32 8?B
+
+	full_text
+
+
+i32 %132
+zgetelementptr 8?Be
+c
+	full_textV
+T
+R%134 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 3
+Bstore 8?B5
+3
+	full_text&
+$
+"store i32 %133, i32* %134, align 4
+(i32 8?B
+
+	full_text
+
+
+i32 %133
+*i32* 8?B
+
+	full_text
+
+	i32* %134
+zgetelementptr 8?Be
+c
+	full_textV
+T
+R%135 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@load 8?B4
+2
+	full_text%
+#
+!%136 = load i8, i8* %135, align 4
+(i8* 8?B
+
+	full_text
+
+
+i8* %135
+9zext 8?B-
++
+	full_text
+
+%137 = zext i8 %136 to i32
+&i8 8?B
+
+	full_text
+	
+i8 %136
+6and 8?B+
+)
+	full_text
+
+%138 = and i32 %137, 128
+(i32 8?B
+
+	full_text
+
+
+i32 %137
+;icmp 8?B/
+-
+	full_text 
+
+%139 = icmp eq i32 %138, 128
+(i32 8?B
+
+	full_text
+
+
+i32 %138
+9zext 8?B-
++
+	full_text
+
+%140 = zext i1 %139 to i64
+&i1 8?B
+
+	full_text
+	
+i1 %139
+Dselect 8?B6
+4
+	full_text'
+%
+#%141 = select i1 %139, i32 1, i32 0
+&i1 8?B
+
+	full_text
+	
+i1 %139
+zgetelementptr 8?Be
+c
+	full_textV
+T
+R%142 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 4
+Bstore 8?B5
+3
+	full_text&
+$
+"store i32 %141, i32* %142, align 4
+(i32 8?B
+
+	full_text
+
+
+i32 %141
+*i32* 8?B
+
+	full_text
+
+	i32* %142
+@load 8?B4
+2
+	full_text%
+#
+!%143 = load i32, i32* %7, align 4
+(i32* 8?B
+
+	full_text
+	
+i32* %7
+6and 8?B+
+)
+	full_text
+
+%144 = and i32 %143, 128
+(i32 8?B
+
+	full_text
+
+
+i32 %143
+9icmp 8?B-
++
+	full_text
+
+%145 = icmp ne i32 %144, 0
+(i32 8?B
+
+	full_text
+
+
+i32 %144
+?br 8?B5
+3
+	full_text&
+$
+"br i1 %145, label %146, label %152
+&i1 8?B
+
+	full_text
+	
+i1 %145
+zgetelementptr 8@Be
+c
+	full_textV
+T
+R%147 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 0
+@load 8@B4
+2
+	full_text%
+#
+!%148 = load i8, i8* %147, align 4
+(i8* 8@B
+
+	full_text
+
+
+i8* %147
+9zext 8@B-
++
+	full_text
+
+%149 = zext i8 %148 to i32
+&i8 8@B
+
+	full_text
+	
+i8 %148
+6and 8@B+
+)
+	full_text
+
+%150 = and i32 %149, 128
+(i32 8@B
+
+	full_text
+
+
+i32 %149
+9icmp 8@B-
++
+	full_text
+
+%151 = icmp eq i32 %150, 0
+(i32 8@B
+
+	full_text
+
+
+i32 %150
+*br 8@B 
+
+	full_text
+
+br label %152
+Jphi 8AB?
+=
+	full_text0
+.
+,%153 = phi i1 [ false, %98 ], [ %151, %146 ]
+&i1 8AB
+
+	full_text
+	
+i1 %151
+9zext 8AB-
++
+	full_text
+
+%154 = zext i1 %153 to i32
+&i1 8AB
+
+	full_text
+	
+i1 %153
+zgetelementptr 8ABe
+c
+	full_textV
+T
+R%155 = getelementptr inbounds %struct.output_t, %struct.output_t* %0, i32 0, i32 2
+Bstore 8AB5
+3
+	full_text&
+$
+"store i32 %154, i32* %155, align 4
+(i32 8AB
+
+	full_text
+
+
+i32 %154
+*i32* 8AB
+
+	full_text
+
+	i32* %155
+&ret 8AB
+
+	full_text
+
+
+ret void
+&i64 8BB
+
+	full_text
+
+
+i64 %1
+&i64 8BB
+
+	full_text
+
+
+i64 %2
+8struct* 8BB'
+%
+	full_text
+
+%struct.output_t* %0
+Ealloca 8BB7
+5
+	full_text(
+&
+$%5 = alloca %struct.input_t, align 4
+Sbitcast 8BBD
+B
+	full_text5
+3
+1%6 = bitcast %struct.input_t* %5 to { i64, i64 }*
+.struct* 8BB
+
+	full_text
+
+
+struct* %5
+pgetelementptr 8BB[
+Y
+	full_textL
+J
+H%7 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %6, i32 0, i32 0
+.struct* 8BB
+
+	full_text
+
+
+struct* %6
+>store 8BB1
+/
+	full_text"
+ 
+store i64 %0, i64* %7, align 4
+(i64* 8BB
+
+	full_text
+	
+i64* %7
+pgetelementptr 8BB[
+Y
+	full_textL
+J
+H%8 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %6, i32 0, i32 1
+.struct* 8BB
+
+	full_text
+
+
+struct* %6
+>store 8BB1
+/
+	full_text"
+ 
+store i64 %1, i64* %8, align 4
+(i64* 8BB
+
+	full_text
+	
+i64* %8
+xgetelementptr 8BBc
+a
+	full_textT
+R
+P%9 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 0
+=load 8BB1
+/
+	full_text"
+ 
+%10 = load i8, i8* %9, align 8
+&i8* 8BB
+
+	full_text
+
+
+i8* %9
+7zext 8BB+
+)
+	full_text
+
+%11 = zext i8 %10 to i32
+%i8 8BB
+
+	full_text
+
+
+i8 %10
+ygetelementptr 8BBd
+b
+	full_textU
+S
+Q%12 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 0
+>load 8BB2
+0
+	full_text#
+!
+%13 = load i8, i8* %12, align 8
+'i8* 8BB
+
+	full_text
+	
+i8* %12
+7zext 8BB+
+)
+	full_text
+
+%14 = zext i8 %13 to i32
+%i8 8BB
+
+	full_text
+
+
+i8 %13
+9icmp 8BB-
++
+	full_text
+
+%15 = icmp eq i32 %11, %14
+'i32 8BB
+
+	full_text
+	
+i32 %11
+'i32 8BB
+
+	full_text
+	
+i32 %14
+<br 8BB2
+0
+	full_text#
+!
+br i1 %15, label %16, label %47
+%i1 8BB
+
+	full_text
+
+
+i1 %15
+ygetelementptr 8CBd
+b
+	full_textU
+S
+Q%17 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 1
+@load 8CB4
+2
+	full_text%
+#
+!%18 = load i32, i32* %17, align 4
+)i32* 8CB
+
+	full_text
+
+
+i32* %17
+ygetelementptr 8CBd
+b
+	full_textU
+S
+Q%19 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 1
+@load 8CB4
+2
+	full_text%
+#
+!%20 = load i32, i32* %19, align 4
+)i32* 8CB
+
+	full_text
+
+
+i32* %19
+9icmp 8CB-
++
+	full_text
+
+%21 = icmp eq i32 %18, %20
+'i32 8CB
+
+	full_text
+	
+i32 %18
+'i32 8CB
+
+	full_text
+	
+i32 %20
+<br 8CB2
+0
+	full_text#
+!
+br i1 %21, label %22, label %47
+%i1 8CB
+
+	full_text
+
+
+i1 %21
+ygetelementptr 8DBd
+b
+	full_textU
+S
+Q%23 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 2
+@load 8DB4
+2
+	full_text%
+#
+!%24 = load i32, i32* %23, align 8
+)i32* 8DB
+
+	full_text
+
+
+i32* %23
+ygetelementptr 8DBd
+b
+	full_textU
+S
+Q%25 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 2
+@load 8DB4
+2
+	full_text%
+#
+!%26 = load i32, i32* %25, align 8
+)i32* 8DB
+
+	full_text
+
+
+i32* %25
+9icmp 8DB-
++
+	full_text
+
+%27 = icmp eq i32 %24, %26
+'i32 8DB
+
+	full_text
+	
+i32 %24
+'i32 8DB
+
+	full_text
+	
+i32 %26
+<br 8DB2
+0
+	full_text#
+!
+br i1 %27, label %28, label %47
+%i1 8DB
+
+	full_text
+
+
+i1 %27
+ygetelementptr 8EBd
+b
+	full_textU
+S
+Q%29 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 3
+@load 8EB4
+2
+	full_text%
+#
+!%30 = load i32, i32* %29, align 4
+)i32* 8EB
+
+	full_text
+
+
+i32* %29
+ygetelementptr 8EBd
+b
+	full_textU
+S
+Q%31 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 3
+@load 8EB4
+2
+	full_text%
+#
+!%32 = load i32, i32* %31, align 4
+)i32* 8EB
+
+	full_text
+
+
+i32* %31
+9icmp 8EB-
++
+	full_text
+
+%33 = icmp eq i32 %30, %32
+'i32 8EB
+
+	full_text
+	
+i32 %30
+'i32 8EB
+
+	full_text
+	
+i32 %32
+<br 8EB2
+0
+	full_text#
+!
+br i1 %33, label %34, label %47
+%i1 8EB
+
+	full_text
+
+
+i1 %33
+ygetelementptr 8FBd
+b
+	full_textU
+S
+Q%35 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 4
+@load 8FB4
+2
+	full_text%
+#
+!%36 = load i32, i32* %35, align 8
+)i32* 8FB
+
+	full_text
+
+
+i32* %35
+ygetelementptr 8FBd
+b
+	full_textU
+S
+Q%37 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 4
+@load 8FB4
+2
+	full_text%
+#
+!%38 = load i32, i32* %37, align 8
+)i32* 8FB
+
+	full_text
+
+
+i32* %37
+9icmp 8FB-
++
+	full_text
+
+%39 = icmp eq i32 %36, %38
+'i32 8FB
+
+	full_text
+	
+i32 %36
+'i32 8FB
+
+	full_text
+	
+i32 %38
+<br 8FB2
+0
+	full_text#
+!
+br i1 %39, label %40, label %47
+%i1 8FB
+
+	full_text
+
+
+i1 %39
+ygetelementptr 8GBd
+b
+	full_textU
+S
+Q%41 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 5
+@load 8GB4
+2
+	full_text%
+#
+!%42 = load i32, i32* %41, align 4
+)i32* 8GB
+
+	full_text
+
+
+i32* %41
+ygetelementptr 8GBd
+b
+	full_textU
+S
+Q%43 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 5
+@load 8GB4
+2
+	full_text%
+#
+!%44 = load i32, i32* %43, align 4
+)i32* 8GB
+
+	full_text
+
+
+i32* %43
+9icmp 8GB-
++
+	full_text
+
+%45 = icmp eq i32 %42, %44
+'i32 8GB
+
+	full_text
+	
+i32 %42
+'i32 8GB
+
+	full_text
+	
+i32 %44
+<br 8GB2
+0
+	full_text#
+!
+br i1 %45, label %46, label %47
+%i1 8GB
+
+	full_text
+
+
+i1 %45
+*br 8HB 
+
+	full_text
+
+br label %134
+wgetelementptr 8IBb
+`
+	full_textS
+Q
+O%48 = getelementptr inbounds %struct.input_t, %struct.input_t* %5, i32 0, i32 1
+.struct* 8IB
+
+	full_text
+
+
+struct* %5
+>load 8IB2
+0
+	full_text#
+!
+%49 = load i8, i8* %48, align 1
+'i8* 8IB
+
+	full_text
+	
+i8* %48
+7zext 8IB+
+)
+	full_text
+
+%50 = zext i8 %49 to i32
+%i8 8IB
+
+	full_text
+
+
+i8 %49
+wgetelementptr 8IBb
+`
+	full_textS
+Q
+O%51 = getelementptr inbounds %struct.input_t, %struct.input_t* %5, i32 0, i32 0
+.struct* 8IB
+
+	full_text
+
+
+struct* %5
+>load 8IB2
+0
+	full_text#
+!
+%52 = load i8, i8* %51, align 4
+'i8* 8IB
+
+	full_text
+	
+i8* %51
+7zext 8IB+
+)
+	full_text
+
+%53 = zext i8 %52 to i32
+%i8 8IB
+
+	full_text
+
+
+i8 %52
+wgetelementptr 8IBb
+`
+	full_textS
+Q
+O%54 = getelementptr inbounds %struct.input_t, %struct.input_t* %5, i32 0, i32 2
+.struct* 8IB
+
+	full_text
+
+
+struct* %5
+@load 8IB4
+2
+	full_text%
+#
+!%55 = load i32, i32* %54, align 4
+)i32* 8IB
+
+	full_text
+
+
+i32* %54
+®call 8IBõ
+ò
+	full_textä
+á
+Ñ%56 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([50 x i8], [50 x i8]* @.str, i64 0, i64 0), i32 %50, i32 %53, i32 %55)
+'i32 8IB
+
+	full_text
+	
+i32 %50
+'i32 8IB
+
+	full_text
+	
+i32 %53
+'i32 8IB
+
+	full_text
+	
+i32 %55
+ygetelementptr 8IBd
+b
+	full_textU
+S
+Q%57 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 0
+>load 8IB2
+0
+	full_text#
+!
+%58 = load i8, i8* %57, align 8
+'i8* 8IB
+
+	full_text
+	
+i8* %57
+7zext 8IB+
+)
+	full_text
+
+%59 = zext i8 %58 to i32
+%i8 8IB
+
+	full_text
+
+
+i8 %58
+ygetelementptr 8IBd
+b
+	full_textU
+S
+Q%60 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 0
+>load 8IB2
+0
+	full_text#
+!
+%61 = load i8, i8* %60, align 8
+'i8* 8IB
+
+	full_text
+	
+i8* %60
+7zext 8IB+
+)
+	full_text
+
+%62 = zext i8 %61 to i32
+%i8 8IB
+
+	full_text
+
+
+i8 %61
+9icmp 8IB-
++
+	full_text
+
+%63 = icmp ne i32 %59, %62
+'i32 8IB
+
+	full_text
+	
+i32 %59
+'i32 8IB
+
+	full_text
+	
+i32 %62
+<br 8IB2
+0
+	full_text#
+!
+br i1 %63, label %64, label %72
+%i1 8IB
+
+	full_text
+
+
+i1 %63
+ygetelementptr 8JBd
+b
+	full_textU
+S
+Q%65 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 0
+>load 8JB2
+0
+	full_text#
+!
+%66 = load i8, i8* %65, align 8
+'i8* 8JB
+
+	full_text
+	
+i8* %65
+7zext 8JB+
+)
+	full_text
+
+%67 = zext i8 %66 to i32
+%i8 8JB
+
+	full_text
+
+
+i8 %66
+ygetelementptr 8JBd
+b
+	full_textU
+S
+Q%68 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 0
+>load 8JB2
+0
+	full_text#
+!
+%69 = load i8, i8* %68, align 8
+'i8* 8JB
+
+	full_text
+	
+i8* %68
+7zext 8JB+
+)
+	full_text
+
+%70 = zext i8 %69 to i32
+%i8 8JB
+
+	full_text
+
+
+i8 %69
+ücall 8JBí
+è
+	full_textÅ
+
+}%71 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([24 x i8], [24 x i8]* @.str.1, i64 0, i64 0), i32 %67, i32 %70)
+'i32 8JB
+
+	full_text
+	
+i32 %67
+'i32 8JB
+
+	full_text
+	
+i32 %70
+)br 8JB
+
+	full_text
+
+br label %72
+ygetelementptr 8KBd
+b
+	full_textU
+S
+Q%73 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 1
+@load 8KB4
+2
+	full_text%
+#
+!%74 = load i32, i32* %73, align 4
+)i32* 8KB
+
+	full_text
+
+
+i32* %73
+ygetelementptr 8KBd
+b
+	full_textU
+S
+Q%75 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 1
+@load 8KB4
+2
+	full_text%
+#
+!%76 = load i32, i32* %75, align 4
+)i32* 8KB
+
+	full_text
+
+
+i32* %75
+9icmp 8KB-
++
+	full_text
+
+%77 = icmp ne i32 %74, %76
+'i32 8KB
+
+	full_text
+	
+i32 %74
+'i32 8KB
+
+	full_text
+	
+i32 %76
+<br 8KB2
+0
+	full_text#
+!
+br i1 %77, label %78, label %84
+%i1 8KB
+
+	full_text
+
+
+i1 %77
+ygetelementptr 8LBd
+b
+	full_textU
+S
+Q%79 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 1
+@load 8LB4
+2
+	full_text%
+#
+!%80 = load i32, i32* %79, align 4
+)i32* 8LB
+
+	full_text
+
+
+i32* %79
+ygetelementptr 8LBd
+b
+	full_textU
+S
+Q%81 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 1
+@load 8LB4
+2
+	full_text%
+#
+!%82 = load i32, i32* %81, align 4
+)i32* 8LB
+
+	full_text
+
+
+i32* %81
+ücall 8LBí
+è
+	full_textÅ
+
+}%83 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.2, i64 0, i64 0), i32 %80, i32 %82)
+'i32 8LB
+
+	full_text
+	
+i32 %80
+'i32 8LB
+
+	full_text
+	
+i32 %82
+)br 8LB
+
+	full_text
+
+br label %84
+ygetelementptr 8MBd
+b
+	full_textU
+S
+Q%85 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 2
+@load 8MB4
+2
+	full_text%
+#
+!%86 = load i32, i32* %85, align 8
+)i32* 8MB
+
+	full_text
+
+
+i32* %85
+ygetelementptr 8MBd
+b
+	full_textU
+S
+Q%87 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 2
+@load 8MB4
+2
+	full_text%
+#
+!%88 = load i32, i32* %87, align 8
+)i32* 8MB
+
+	full_text
+
+
+i32* %87
+9icmp 8MB-
++
+	full_text
+
+%89 = icmp ne i32 %86, %88
+'i32 8MB
+
+	full_text
+	
+i32 %86
+'i32 8MB
+
+	full_text
+	
+i32 %88
+<br 8MB2
+0
+	full_text#
+!
+br i1 %89, label %90, label %96
+%i1 8MB
+
+	full_text
+
+
+i1 %89
+ygetelementptr 8NBd
+b
+	full_textU
+S
+Q%91 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 2
+@load 8NB4
+2
+	full_text%
+#
+!%92 = load i32, i32* %91, align 8
+)i32* 8NB
+
+	full_text
+
+
+i32* %91
+ygetelementptr 8NBd
+b
+	full_textU
+S
+Q%93 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 2
+@load 8NB4
+2
+	full_text%
+#
+!%94 = load i32, i32* %93, align 8
+)i32* 8NB
+
+	full_text
+
+
+i32* %93
+ücall 8NBí
+è
+	full_textÅ
+
+}%95 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.3, i64 0, i64 0), i32 %92, i32 %94)
+'i32 8NB
+
+	full_text
+	
+i32 %92
+'i32 8NB
+
+	full_text
+	
+i32 %94
+)br 8NB
+
+	full_text
+
+br label %96
+ygetelementptr 8OBd
+b
+	full_textU
+S
+Q%97 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 3
+@load 8OB4
+2
+	full_text%
+#
+!%98 = load i32, i32* %97, align 4
+)i32* 8OB
+
+	full_text
+
+
+i32* %97
+ygetelementptr 8OBd
+b
+	full_textU
+S
+Q%99 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 3
+Aload 8OB5
+3
+	full_text&
+$
+"%100 = load i32, i32* %99, align 4
+)i32* 8OB
+
+	full_text
+
+
+i32* %99
+;icmp 8OB/
+-
+	full_text 
+
+%101 = icmp ne i32 %98, %100
+'i32 8OB
+
+	full_text
+	
+i32 %98
+(i32 8OB
+
+	full_text
+
+
+i32 %100
+?br 8OB5
+3
+	full_text&
+$
+"br i1 %101, label %102, label %108
+&i1 8OB
+
+	full_text
+	
+i1 %101
+zgetelementptr 8PBe
+c
+	full_textV
+T
+R%103 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 3
+Bload 8PB6
+4
+	full_text'
+%
+#%104 = load i32, i32* %103, align 4
+*i32* 8PB
+
+	full_text
+
+	i32* %103
+zgetelementptr 8PBe
+c
+	full_textV
+T
+R%105 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 3
+Bload 8PB6
+4
+	full_text'
+%
+#%106 = load i32, i32* %105, align 4
+*i32* 8PB
+
+	full_text
+
+	i32* %105
+§call 8PBó
+î
+	full_textÜ
+É
+Ä%107 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.4, i64 0, i64 0), i32 %104, i32 %106)
+(i32 8PB
+
+	full_text
+
+
+i32 %104
+(i32 8PB
+
+	full_text
+
+
+i32 %106
+*br 8PB 
+
+	full_text
+
+br label %108
+zgetelementptr 8QBe
+c
+	full_textV
+T
+R%109 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 4
+Bload 8QB6
+4
+	full_text'
+%
+#%110 = load i32, i32* %109, align 8
+*i32* 8QB
+
+	full_text
+
+	i32* %109
+zgetelementptr 8QBe
+c
+	full_textV
+T
+R%111 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 4
+Bload 8QB6
+4
+	full_text'
+%
+#%112 = load i32, i32* %111, align 8
+*i32* 8QB
+
+	full_text
+
+	i32* %111
+<icmp 8QB0
+.
+	full_text!
+
+%113 = icmp ne i32 %110, %112
+(i32 8QB
+
+	full_text
+
+
+i32 %110
+(i32 8QB
+
+	full_text
+
+
+i32 %112
+?br 8QB5
+3
+	full_text&
+$
+"br i1 %113, label %114, label %120
+&i1 8QB
+
+	full_text
+	
+i1 %113
+zgetelementptr 8RBe
+c
+	full_textV
+T
+R%115 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 4
+Bload 8RB6
+4
+	full_text'
+%
+#%116 = load i32, i32* %115, align 8
+*i32* 8RB
+
+	full_text
+
+	i32* %115
+zgetelementptr 8RBe
+c
+	full_textV
+T
+R%117 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 4
+Bload 8RB6
+4
+	full_text'
+%
+#%118 = load i32, i32* %117, align 8
+*i32* 8RB
+
+	full_text
+
+	i32* %117
+§call 8RBó
+î
+	full_textÜ
+É
+Ä%119 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.5, i64 0, i64 0), i32 %116, i32 %118)
+(i32 8RB
+
+	full_text
+
+
+i32 %116
+(i32 8RB
+
+	full_text
+
+
+i32 %118
+*br 8RB 
+
+	full_text
+
+br label %120
+zgetelementptr 8SBe
+c
+	full_textV
+T
+R%121 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 5
+Bload 8SB6
+4
+	full_text'
+%
+#%122 = load i32, i32* %121, align 4
+*i32* 8SB
+
+	full_text
+
+	i32* %121
+zgetelementptr 8SBe
+c
+	full_textV
+T
+R%123 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 5
+Bload 8SB6
+4
+	full_text'
+%
+#%124 = load i32, i32* %123, align 4
+*i32* 8SB
+
+	full_text
+
+	i32* %123
+<icmp 8SB0
+.
+	full_text!
+
+%125 = icmp ne i32 %122, %124
+(i32 8SB
+
+	full_text
+
+
+i32 %122
+(i32 8SB
+
+	full_text
+
+
+i32 %124
+?br 8SB5
+3
+	full_text&
+$
+"br i1 %125, label %126, label %132
+&i1 8SB
+
+	full_text
+	
+i1 %125
+zgetelementptr 8TBe
+c
+	full_textV
+T
+R%127 = getelementptr inbounds %struct.output_t, %struct.output_t* %2, i32 0, i32 5
+Bload 8TB6
+4
+	full_text'
+%
+#%128 = load i32, i32* %127, align 4
+*i32* 8TB
+
+	full_text
+
+	i32* %127
+zgetelementptr 8TBe
+c
+	full_textV
+T
+R%129 = getelementptr inbounds %struct.output_t, %struct.output_t* %3, i32 0, i32 5
+Bload 8TB6
+4
+	full_text'
+%
+#%130 = load i32, i32* %129, align 4
+*i32* 8TB
+
+	full_text
+
+	i32* %129
+§call 8TBó
+î
+	full_textÜ
+É
+Ä%131 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.6, i64 0, i64 0), i32 %128, i32 %130)
+(i32 8TB
+
+	full_text
+
+
+i32 %128
+(i32 8TB
+
+	full_text
+
+
+i32 %130
+*br 8TB 
+
+	full_text
+
+br label %132
+âcall 8UB}
+{
+	full_textn
+l
+j%133 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.7, i64 0, i64 0))
+Gstore 8UB:
+8
+	full_text+
+)
+'store i32 1, i32* @test_failed, align 4
+*br 8UB 
+
+	full_text
+
+br label %134
+&ret 8VB
+
+	full_text
+
+
+ret void
+&i64 8WB
+
+	full_text
+
+
+i64 %0
+&i64 8WB
+
+	full_text
+
+
+i64 %1
+8struct* 8WB'
+%
+	full_text
+
+%struct.output_t* %2
+8struct* 8WB'
+%
+	full_text
+
+%struct.output_t* %3
+-; undefined function B
+
+	full_text
+
+ 
+9alloca 8WB+
+)
+	full_text
+
+%3 = alloca i32, align 4
+9alloca 8WB+
+)
+	full_text
+
+%4 = alloca i32, align 4
+:alloca 8WB,
+*
+	full_text
+
+%5 = alloca i8**, align 8
+Ealloca 8WB7
+5
+	full_text(
+&
+$%6 = alloca %struct.input_t, align 4
+9alloca 8WB+
+)
+	full_text
+
+%7 = alloca i32, align 4
+9alloca 8WB+
+)
+	full_text
+
+%8 = alloca i32, align 4
+9alloca 8WB+
+)
+	full_text
+
+%9 = alloca i32, align 4
+:alloca 8WB,
+*
+	full_text
+
+%10 = alloca i32, align 4
+:alloca 8WB,
+*
+	full_text
+
+%11 = alloca i32, align 4
+Galloca 8WB9
+7
+	full_text*
+(
+&%12 = alloca %struct.output_t, align 4
+Falloca 8WB8
+6
+	full_text)
+'
+%%13 = alloca %struct.input_t, align 4
+Galloca 8WB9
+7
+	full_text*
+(
+&%14 = alloca %struct.output_t, align 4
+Falloca 8WB8
+6
+	full_text)
+'
+%%15 = alloca %struct.input_t, align 4
+Falloca 8WB8
+6
+	full_text)
+'
+%%16 = alloca %struct.input_t, align 4
+Galloca 8WB9
+7
+	full_text*
+(
+&%17 = alloca %struct.output_t, align 8
+Galloca 8WB9
+7
+	full_text*
+(
+&%18 = alloca %struct.output_t, align 8
+Galloca 8WB9
+7
+	full_text*
+(
+&%19 = alloca %struct.output_t, align 4
+Falloca 8WB8
+6
+	full_text)
+'
+%%20 = alloca %struct.input_t, align 4
+Galloca 8WB9
+7
+	full_text*
+(
+&%21 = alloca %struct.output_t, align 4
+Falloca 8WB8
+6
+	full_text)
+'
+%%22 = alloca %struct.input_t, align 4
+Falloca 8WB8
+6
+	full_text)
+'
+%%23 = alloca %struct.input_t, align 4
+Galloca 8WB9
+7
+	full_text*
+(
+&%24 = alloca %struct.output_t, align 8
+Galloca 8WB9
+7
+	full_text*
+(
+&%25 = alloca %struct.output_t, align 8
+Galloca 8WB9
+7
+	full_text*
+(
+&%26 = alloca %struct.output_t, align 4
+Falloca 8WB8
+6
+	full_text)
+'
+%%27 = alloca %struct.input_t, align 4
+Galloca 8WB9
+7
+	full_text*
+(
+&%28 = alloca %struct.output_t, align 4
+Falloca 8WB8
+6
+	full_text)
+'
+%%29 = alloca %struct.input_t, align 4
+Falloca 8WB8
+6
+	full_text)
+'
+%%30 = alloca %struct.input_t, align 4
+Galloca 8WB9
+7
+	full_text*
+(
+&%31 = alloca %struct.output_t, align 8
+Galloca 8WB9
+7
+	full_text*
+(
+&%32 = alloca %struct.output_t, align 8
+=store 8WB0
+.
+	full_text!
+
+store i32 0, i32* %3, align 4
+(i32* 8WB
+
+	full_text
+	
+i32* %3
+>store 8WB1
+/
+	full_text"
+ 
+store i32 %0, i32* %4, align 4
+(i32* 8WB
+
+	full_text
+	
+i32* %4
+@store 8WB3
+1
+	full_text$
+"
+ store i8** %1, i8*** %5, align 8
+*i8*** 8WB
+
+	full_text
+
+
+i8*** %5
+=store 8WB0
+.
+	full_text!
+
+store i32 0, i32* %7, align 4
+(i32* 8WB
+
+	full_text
+	
+i32* %7
+)br 8WB
+
+	full_text
+
+br label %33
+?load 8XB3
+1
+	full_text$
+"
+ %34 = load i32, i32* %7, align 4
+(i32* 8XB
+
+	full_text
+	
+i32* %7
+:icmp 8XB.
+,
+	full_text
+
+%35 = icmp slt i32 %34, 256
+'i32 8XB
+
+	full_text
+	
+i32 %34
+=br 8XB3
+1
+	full_text$
+"
+ br i1 %35, label %36, label %159
+%i1 8XB
+
+	full_text
+
+
+i1 %35
+=store 8YB0
+.
+	full_text!
+
+store i32 0, i32* %8, align 4
+(i32* 8YB
+
+	full_text
+	
+i32* %8
+)br 8YB
+
+	full_text
+
+br label %37
+?load 8ZB3
+1
+	full_text$
+"
+ %38 = load i32, i32* %8, align 4
+(i32* 8ZB
+
+	full_text
+	
+i32* %8
+:icmp 8ZB.
+,
+	full_text
+
+%39 = icmp slt i32 %38, 256
+'i32 8ZB
+
+	full_text
+	
+i32 %38
+=br 8ZB3
+1
+	full_text$
+"
+ br i1 %39, label %40, label %155
+%i1 8ZB
+
+	full_text
+
+
+i1 %39
+=store 8[B0
+.
+	full_text!
+
+store i32 0, i32* %9, align 4
+(i32* 8[B
+
+	full_text
+	
+i32* %9
+)br 8[B
+
+	full_text
+
+br label %41
+?load 8\B3
+1
+	full_text$
+"
+ %42 = load i32, i32* %9, align 4
+(i32* 8\B
+
+	full_text
+	
+i32* %9
+8icmp 8\B,
+*
+	full_text
+
+%43 = icmp slt i32 %42, 2
+'i32 8\B
+
+	full_text
+	
+i32 %42
+=br 8\B3
+1
+	full_text$
+"
+ br i1 %43, label %44, label %151
+%i1 8\B
+
+	full_text
+
+
+i1 %43
+>store 8]B1
+/
+	full_text"
+ 
+store i32 0, i32* %10, align 4
+)i32* 8]B
+
+	full_text
+
+
+i32* %10
+)br 8]B
+
+	full_text
+
+br label %45
+@load 8^B4
+2
+	full_text%
+#
+!%46 = load i32, i32* %10, align 4
+)i32* 8^B
+
+	full_text
+
+
+i32* %10
+8icmp 8^B,
+*
+	full_text
+
+%47 = icmp slt i32 %46, 2
+'i32 8^B
+
+	full_text
+	
+i32 %46
+=br 8^B3
+1
+	full_text$
+"
+ br i1 %47, label %48, label %147
+%i1 8^B
+
+	full_text
+
+
+i1 %47
+>store 8_B1
+/
+	full_text"
+ 
+store i32 0, i32* %11, align 4
+)i32* 8_B
+
+	full_text
+
+
+i32* %11
+)br 8_B
+
+	full_text
+
+br label %49
+@load 8`B4
+2
+	full_text%
+#
+!%50 = load i32, i32* %11, align 4
+)i32* 8`B
+
+	full_text
+
+
+i32* %11
+8icmp 8`B,
+*
+	full_text
+
+%51 = icmp slt i32 %50, 2
+'i32 8`B
+
+	full_text
+	
+i32 %50
+=br 8`B3
+1
+	full_text$
+"
+ br i1 %51, label %52, label %143
+%i1 8`B
+
+	full_text
+
+
+i1 %51
+?load 8aB3
+1
+	full_text$
+"
+ %53 = load i32, i32* %7, align 4
+(i32* 8aB
+
+	full_text
+	
+i32* %7
+9trunc 8aB,
+*
+	full_text
+
+%54 = trunc i32 %53 to i8
+'i32 8aB
+
+	full_text
+	
+i32 %53
+wgetelementptr 8aBb
+`
+	full_textS
+Q
+O%55 = getelementptr inbounds %struct.input_t, %struct.input_t* %6, i32 0, i32 0
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+>store 8aB1
+/
+	full_text"
+ 
+store i8 %54, i8* %55, align 4
+%i8 8aB
+
+	full_text
+
+
+i8 %54
+'i8* 8aB
+
+	full_text
+	
+i8* %55
+?load 8aB3
+1
+	full_text$
+"
+ %56 = load i32, i32* %8, align 4
+(i32* 8aB
+
+	full_text
+	
+i32* %8
+9trunc 8aB,
+*
+	full_text
+
+%57 = trunc i32 %56 to i8
+'i32 8aB
+
+	full_text
+	
+i32 %56
+wgetelementptr 8aBb
+`
+	full_textS
+Q
+O%58 = getelementptr inbounds %struct.input_t, %struct.input_t* %6, i32 0, i32 1
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+>store 8aB1
+/
+	full_text"
+ 
+store i8 %57, i8* %58, align 1
+%i8 8aB
+
+	full_text
+
+
+i8 %57
+'i8* 8aB
+
+	full_text
+	
+i8* %58
+?load 8aB3
+1
+	full_text$
+"
+ %59 = load i32, i32* %9, align 4
+(i32* 8aB
+
+	full_text
+	
+i32* %9
+wgetelementptr 8aBb
+`
+	full_textS
+Q
+O%60 = getelementptr inbounds %struct.input_t, %struct.input_t* %6, i32 0, i32 2
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+@store 8aB3
+1
+	full_text$
+"
+ store i32 %59, i32* %60, align 4
+'i32 8aB
+
+	full_text
+	
+i32 %59
+)i32* 8aB
+
+	full_text
+
+
+i32* %60
+@load 8aB4
+2
+	full_text%
+#
+!%61 = load i32, i32* %10, align 4
+)i32* 8aB
+
+	full_text
+
+
+i32* %10
+wgetelementptr 8aBb
+`
+	full_textS
+Q
+O%62 = getelementptr inbounds %struct.input_t, %struct.input_t* %6, i32 0, i32 3
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+@store 8aB3
+1
+	full_text$
+"
+ store i32 %61, i32* %62, align 4
+'i32 8aB
+
+	full_text
+	
+i32 %61
+)i32* 8aB
+
+	full_text
+
+
+i32* %62
+@load 8aB4
+2
+	full_text%
+#
+!%63 = load i32, i32* %11, align 4
+)i32* 8aB
+
+	full_text
+
+
+i32* %11
+wgetelementptr 8aBb
+`
+	full_textS
+Q
+O%64 = getelementptr inbounds %struct.input_t, %struct.input_t* %6, i32 0, i32 4
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+@store 8aB3
+1
+	full_text$
+"
+ store i32 %63, i32* %64, align 4
+'i32 8aB
+
+	full_text
+	
+i32 %63
+)i32* 8aB
+
+	full_text
+
+
+i32* %64
+Kbitcast 8aB<
+:
+	full_text-
++
+)%65 = bitcast %struct.input_t* %13 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %13
+Jbitcast 8aB;
+9
+	full_text,
+*
+(%66 = bitcast %struct.input_t* %6 to i8*
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+wcall 8aBk
+i
+	full_text\
+Z
+Xcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %65, i8* align 4 %66, i64 16, i1 false)
+'i8* 8aB
+
+	full_text
+	
+i8* %65
+'i8* 8aB
+
+	full_text
+	
+i8* %66
+Ubitcast 8aBF
+D
+	full_text7
+5
+3%67 = bitcast %struct.input_t* %13 to { i64, i64 }*
+/struct* 8aB
+
+	full_text
+
+struct* %13
+rgetelementptr 8aB]
+[
+	full_textN
+L
+J%68 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %67, i32 0, i32 0
+/struct* 8aB
+
+	full_text
+
+struct* %67
+@load 8aB4
+2
+	full_text%
+#
+!%69 = load i64, i64* %68, align 4
+)i64* 8aB
+
+	full_text
+
+
+i64* %68
+rgetelementptr 8aB]
+[
+	full_textN
+L
+J%70 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %67, i32 0, i32 1
+/struct* 8aB
+
+	full_text
+
+struct* %67
+@load 8aB4
+2
+	full_text%
+#
+!%71 = load i64, i64* %70, align 4
+)i64* 8aB
+
+	full_text
+
+
+i64* %70
+kcall 8aB_
+]
+	full_textP
+N
+Lcall void @_Z8uae_nbcd7input_t(%struct.output_t* sret %12, i64 %69, i64 %71)
+/struct* 8aB
+
+	full_text
+
+struct* %12
+'i64 8aB
+
+	full_text
+	
+i64 %69
+'i64 8aB
+
+	full_text
+	
+i64 %71
+Kbitcast 8aB<
+:
+	full_text-
++
+)%72 = bitcast %struct.input_t* %15 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %15
+Jbitcast 8aB;
+9
+	full_text,
+*
+(%73 = bitcast %struct.input_t* %6 to i8*
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+wcall 8aBk
+i
+	full_text\
+Z
+Xcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %72, i8* align 4 %73, i64 16, i1 false)
+'i8* 8aB
+
+	full_text
+	
+i8* %72
+'i8* 8aB
+
+	full_text
+	
+i8* %73
+Ubitcast 8aBF
+D
+	full_text7
+5
+3%74 = bitcast %struct.input_t* %15 to { i64, i64 }*
+/struct* 8aB
+
+	full_text
+
+struct* %15
+rgetelementptr 8aB]
+[
+	full_textN
+L
+J%75 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %74, i32 0, i32 0
+/struct* 8aB
+
+	full_text
+
+struct* %74
+@load 8aB4
+2
+	full_text%
+#
+!%76 = load i64, i64* %75, align 4
+)i64* 8aB
+
+	full_text
+
+
+i64* %75
+rgetelementptr 8aB]
+[
+	full_textN
+L
+J%77 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %74, i32 0, i32 1
+/struct* 8aB
+
+	full_text
+
+struct* %74
+@load 8aB4
+2
+	full_text%
+#
+!%78 = load i64, i64* %77, align 4
+)i64* 8aB
+
+	full_text
+
+
+i64* %77
+pcall 8aBd
+b
+	full_textU
+S
+Qcall void @_Z12verilog_nbcd7input_t(%struct.output_t* sret %14, i64 %76, i64 %78)
+/struct* 8aB
+
+	full_text
+
+struct* %14
+'i64 8aB
+
+	full_text
+	
+i64 %76
+'i64 8aB
+
+	full_text
+	
+i64 %78
+Kbitcast 8aB<
+:
+	full_text-
++
+)%79 = bitcast %struct.input_t* %16 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %16
+Jbitcast 8aB;
+9
+	full_text,
+*
+(%80 = bitcast %struct.input_t* %6 to i8*
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+wcall 8aBk
+i
+	full_text\
+Z
+Xcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %79, i8* align 4 %80, i64 16, i1 false)
+'i8* 8aB
+
+	full_text
+	
+i8* %79
+'i8* 8aB
+
+	full_text
+	
+i8* %80
+Lbitcast 8aB=
+;
+	full_text.
+,
+*%81 = bitcast %struct.output_t* %17 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %17
+Lbitcast 8aB=
+;
+	full_text.
+,
+*%82 = bitcast %struct.output_t* %12 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %12
+wcall 8aBk
+i
+	full_text\
+Z
+Xcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %81, i8* align 4 %82, i64 24, i1 false)
+'i8* 8aB
+
+	full_text
+	
+i8* %81
+'i8* 8aB
+
+	full_text
+	
+i8* %82
+Lbitcast 8aB=
+;
+	full_text.
+,
+*%83 = bitcast %struct.output_t* %18 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %18
+Lbitcast 8aB=
+;
+	full_text.
+,
+*%84 = bitcast %struct.output_t* %14 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %14
+wcall 8aBk
+i
+	full_text\
+Z
+Xcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %83, i8* align 4 %84, i64 24, i1 false)
+'i8* 8aB
+
+	full_text
+	
+i8* %83
+'i8* 8aB
+
+	full_text
+	
+i8* %84
+Ubitcast 8aBF
+D
+	full_text7
+5
+3%85 = bitcast %struct.input_t* %16 to { i64, i64 }*
+/struct* 8aB
+
+	full_text
+
+struct* %16
+rgetelementptr 8aB]
+[
+	full_textN
+L
+J%86 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %85, i32 0, i32 0
+/struct* 8aB
+
+	full_text
+
+struct* %85
+@load 8aB4
+2
+	full_text%
+#
+!%87 = load i64, i64* %86, align 4
+)i64* 8aB
+
+	full_text
+
+
+i64* %86
+rgetelementptr 8aB]
+[
+	full_textN
+L
+J%88 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %85, i32 0, i32 1
+/struct* 8aB
+
+	full_text
+
+struct* %85
+@load 8aB4
+2
+	full_text%
+#
+!%89 = load i64, i64* %88, align 4
+)i64* 8aB
+
+	full_text
+
+
+i64* %88
+Õcall 8aB¿
+Ω
+	full_textØ
+¨
+©call void @_Z7compare7input_t8output_tS0_(i64 %87, i64 %89, %struct.output_t* byval(%struct.output_t) align 8 %17, %struct.output_t* byval(%struct.output_t) align 8 %18)
+'i64 8aB
+
+	full_text
+	
+i64 %87
+'i64 8aB
+
+	full_text
+	
+i64 %89
+/struct* 8aB
+
+	full_text
+
+struct* %17
+/struct* 8aB
+
+	full_text
+
+struct* %18
+Kbitcast 8aB<
+:
+	full_text-
++
+)%90 = bitcast %struct.input_t* %20 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %20
+Jbitcast 8aB;
+9
+	full_text,
+*
+(%91 = bitcast %struct.input_t* %6 to i8*
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+wcall 8aBk
+i
+	full_text\
+Z
+Xcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %90, i8* align 4 %91, i64 16, i1 false)
+'i8* 8aB
+
+	full_text
+	
+i8* %90
+'i8* 8aB
+
+	full_text
+	
+i8* %91
+Ubitcast 8aBF
+D
+	full_text7
+5
+3%92 = bitcast %struct.input_t* %20 to { i64, i64 }*
+/struct* 8aB
+
+	full_text
+
+struct* %20
+rgetelementptr 8aB]
+[
+	full_textN
+L
+J%93 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %92, i32 0, i32 0
+/struct* 8aB
+
+	full_text
+
+struct* %92
+@load 8aB4
+2
+	full_text%
+#
+!%94 = load i64, i64* %93, align 4
+)i64* 8aB
+
+	full_text
+
+
+i64* %93
+rgetelementptr 8aB]
+[
+	full_textN
+L
+J%95 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %92, i32 0, i32 1
+/struct* 8aB
+
+	full_text
+
+struct* %92
+@load 8aB4
+2
+	full_text%
+#
+!%96 = load i64, i64* %95, align 4
+)i64* 8aB
+
+	full_text
+
+
+i64* %95
+kcall 8aB_
+]
+	full_textP
+N
+Lcall void @_Z8uae_abcd7input_t(%struct.output_t* sret %19, i64 %94, i64 %96)
+/struct* 8aB
+
+	full_text
+
+struct* %19
+'i64 8aB
+
+	full_text
+	
+i64 %94
+'i64 8aB
+
+	full_text
+	
+i64 %96
+Kbitcast 8aB<
+:
+	full_text-
++
+)%97 = bitcast %struct.input_t* %22 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %22
+Jbitcast 8aB;
+9
+	full_text,
+*
+(%98 = bitcast %struct.input_t* %6 to i8*
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+wcall 8aBk
+i
+	full_text\
+Z
+Xcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %97, i8* align 4 %98, i64 16, i1 false)
+'i8* 8aB
+
+	full_text
+	
+i8* %97
+'i8* 8aB
+
+	full_text
+	
+i8* %98
+Ubitcast 8aBF
+D
+	full_text7
+5
+3%99 = bitcast %struct.input_t* %22 to { i64, i64 }*
+/struct* 8aB
+
+	full_text
+
+struct* %22
+sgetelementptr 8aB^
+\
+	full_textO
+M
+K%100 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %99, i32 0, i32 0
+/struct* 8aB
+
+	full_text
+
+struct* %99
+Bload 8aB6
+4
+	full_text'
+%
+#%101 = load i64, i64* %100, align 4
+*i64* 8aB
+
+	full_text
+
+	i64* %100
+sgetelementptr 8aB^
+\
+	full_textO
+M
+K%102 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %99, i32 0, i32 1
+/struct* 8aB
+
+	full_text
+
+struct* %99
+Bload 8aB6
+4
+	full_text'
+%
+#%103 = load i64, i64* %102, align 4
+*i64* 8aB
+
+	full_text
+
+	i64* %102
+rcall 8aBf
+d
+	full_textW
+U
+Scall void @_Z12verilog_abcd7input_t(%struct.output_t* sret %21, i64 %101, i64 %103)
+/struct* 8aB
+
+	full_text
+
+struct* %21
+(i64 8aB
+
+	full_text
+
+
+i64 %101
+(i64 8aB
+
+	full_text
+
+
+i64 %103
+Lbitcast 8aB=
+;
+	full_text.
+,
+*%104 = bitcast %struct.input_t* %23 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %23
+Kbitcast 8aB<
+:
+	full_text-
++
+)%105 = bitcast %struct.input_t* %6 to i8*
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+ycall 8aBm
+k
+	full_text^
+\
+Zcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %104, i8* align 4 %105, i64 16, i1 false)
+(i8* 8aB
+
+	full_text
+
+
+i8* %104
+(i8* 8aB
+
+	full_text
+
+
+i8* %105
+Mbitcast 8aB>
+<
+	full_text/
+-
++%106 = bitcast %struct.output_t* %24 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %24
+Mbitcast 8aB>
+<
+	full_text/
+-
++%107 = bitcast %struct.output_t* %19 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %19
+ycall 8aBm
+k
+	full_text^
+\
+Zcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %106, i8* align 4 %107, i64 24, i1 false)
+(i8* 8aB
+
+	full_text
+
+
+i8* %106
+(i8* 8aB
+
+	full_text
+
+
+i8* %107
+Mbitcast 8aB>
+<
+	full_text/
+-
++%108 = bitcast %struct.output_t* %25 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %25
+Mbitcast 8aB>
+<
+	full_text/
+-
++%109 = bitcast %struct.output_t* %21 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %21
+ycall 8aBm
+k
+	full_text^
+\
+Zcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %108, i8* align 4 %109, i64 24, i1 false)
+(i8* 8aB
+
+	full_text
+
+
+i8* %108
+(i8* 8aB
+
+	full_text
+
+
+i8* %109
+Vbitcast 8aBG
+E
+	full_text8
+6
+4%110 = bitcast %struct.input_t* %23 to { i64, i64 }*
+/struct* 8aB
+
+	full_text
+
+struct* %23
+tgetelementptr 8aB_
+]
+	full_textP
+N
+L%111 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %110, i32 0, i32 0
+0struct* 8aB
+
+	full_text
+
+struct* %110
+Bload 8aB6
+4
+	full_text'
+%
+#%112 = load i64, i64* %111, align 4
+*i64* 8aB
+
+	full_text
+
+	i64* %111
+tgetelementptr 8aB_
+]
+	full_textP
+N
+L%113 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %110, i32 0, i32 1
+0struct* 8aB
+
+	full_text
+
+struct* %110
+Bload 8aB6
+4
+	full_text'
+%
+#%114 = load i64, i64* %113, align 4
+*i64* 8aB
+
+	full_text
+
+	i64* %113
+œcall 8aB¬
+ø
+	full_text±
+Æ
+´call void @_Z7compare7input_t8output_tS0_(i64 %112, i64 %114, %struct.output_t* byval(%struct.output_t) align 8 %24, %struct.output_t* byval(%struct.output_t) align 8 %25)
+(i64 8aB
+
+	full_text
+
+
+i64 %112
+(i64 8aB
+
+	full_text
+
+
+i64 %114
+/struct* 8aB
+
+	full_text
+
+struct* %24
+/struct* 8aB
+
+	full_text
+
+struct* %25
+Lbitcast 8aB=
+;
+	full_text.
+,
+*%115 = bitcast %struct.input_t* %27 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %27
+Kbitcast 8aB<
+:
+	full_text-
++
+)%116 = bitcast %struct.input_t* %6 to i8*
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+ycall 8aBm
+k
+	full_text^
+\
+Zcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %115, i8* align 4 %116, i64 16, i1 false)
+(i8* 8aB
+
+	full_text
+
+
+i8* %115
+(i8* 8aB
+
+	full_text
+
+
+i8* %116
+Vbitcast 8aBG
+E
+	full_text8
+6
+4%117 = bitcast %struct.input_t* %27 to { i64, i64 }*
+/struct* 8aB
+
+	full_text
+
+struct* %27
+tgetelementptr 8aB_
+]
+	full_textP
+N
+L%118 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %117, i32 0, i32 0
+0struct* 8aB
+
+	full_text
+
+struct* %117
+Bload 8aB6
+4
+	full_text'
+%
+#%119 = load i64, i64* %118, align 4
+*i64* 8aB
+
+	full_text
+
+	i64* %118
+tgetelementptr 8aB_
+]
+	full_textP
+N
+L%120 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %117, i32 0, i32 1
+0struct* 8aB
+
+	full_text
+
+struct* %117
+Bload 8aB6
+4
+	full_text'
+%
+#%121 = load i64, i64* %120, align 4
+*i64* 8aB
+
+	full_text
+
+	i64* %120
+mcall 8aBa
+_
+	full_textR
+P
+Ncall void @_Z8uae_sbcd7input_t(%struct.output_t* sret %26, i64 %119, i64 %121)
+/struct* 8aB
+
+	full_text
+
+struct* %26
+(i64 8aB
+
+	full_text
+
+
+i64 %119
+(i64 8aB
+
+	full_text
+
+
+i64 %121
+Lbitcast 8aB=
+;
+	full_text.
+,
+*%122 = bitcast %struct.input_t* %29 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %29
+Kbitcast 8aB<
+:
+	full_text-
++
+)%123 = bitcast %struct.input_t* %6 to i8*
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+ycall 8aBm
+k
+	full_text^
+\
+Zcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %122, i8* align 4 %123, i64 16, i1 false)
+(i8* 8aB
+
+	full_text
+
+
+i8* %122
+(i8* 8aB
+
+	full_text
+
+
+i8* %123
+Vbitcast 8aBG
+E
+	full_text8
+6
+4%124 = bitcast %struct.input_t* %29 to { i64, i64 }*
+/struct* 8aB
+
+	full_text
+
+struct* %29
+tgetelementptr 8aB_
+]
+	full_textP
+N
+L%125 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %124, i32 0, i32 0
+0struct* 8aB
+
+	full_text
+
+struct* %124
+Bload 8aB6
+4
+	full_text'
+%
+#%126 = load i64, i64* %125, align 4
+*i64* 8aB
+
+	full_text
+
+	i64* %125
+tgetelementptr 8aB_
+]
+	full_textP
+N
+L%127 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %124, i32 0, i32 1
+0struct* 8aB
+
+	full_text
+
+struct* %124
+Bload 8aB6
+4
+	full_text'
+%
+#%128 = load i64, i64* %127, align 4
+*i64* 8aB
+
+	full_text
+
+	i64* %127
+rcall 8aBf
+d
+	full_textW
+U
+Scall void @_Z12verilog_sbcd7input_t(%struct.output_t* sret %28, i64 %126, i64 %128)
+/struct* 8aB
+
+	full_text
+
+struct* %28
+(i64 8aB
+
+	full_text
+
+
+i64 %126
+(i64 8aB
+
+	full_text
+
+
+i64 %128
+Lbitcast 8aB=
+;
+	full_text.
+,
+*%129 = bitcast %struct.input_t* %30 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %30
+Kbitcast 8aB<
+:
+	full_text-
++
+)%130 = bitcast %struct.input_t* %6 to i8*
+.struct* 8aB
+
+	full_text
+
+
+struct* %6
+ycall 8aBm
+k
+	full_text^
+\
+Zcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %129, i8* align 4 %130, i64 16, i1 false)
+(i8* 8aB
+
+	full_text
+
+
+i8* %129
+(i8* 8aB
+
+	full_text
+
+
+i8* %130
+Mbitcast 8aB>
+<
+	full_text/
+-
++%131 = bitcast %struct.output_t* %31 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %31
+Mbitcast 8aB>
+<
+	full_text/
+-
++%132 = bitcast %struct.output_t* %26 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %26
+ycall 8aBm
+k
+	full_text^
+\
+Zcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %131, i8* align 4 %132, i64 24, i1 false)
+(i8* 8aB
+
+	full_text
+
+
+i8* %131
+(i8* 8aB
+
+	full_text
+
+
+i8* %132
+Mbitcast 8aB>
+<
+	full_text/
+-
++%133 = bitcast %struct.output_t* %32 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %32
+Mbitcast 8aB>
+<
+	full_text/
+-
++%134 = bitcast %struct.output_t* %28 to i8*
+/struct* 8aB
+
+	full_text
+
+struct* %28
+ycall 8aBm
+k
+	full_text^
+\
+Zcall void @llvm.memcpy.p0i8.p0i8.i64(i8* align 4 %133, i8* align 4 %134, i64 24, i1 false)
+(i8* 8aB
+
+	full_text
+
+
+i8* %133
+(i8* 8aB
+
+	full_text
+
+
+i8* %134
+Vbitcast 8aBG
+E
+	full_text8
+6
+4%135 = bitcast %struct.input_t* %30 to { i64, i64 }*
+/struct* 8aB
+
+	full_text
+
+struct* %30
+tgetelementptr 8aB_
+]
+	full_textP
+N
+L%136 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %135, i32 0, i32 0
+0struct* 8aB
+
+	full_text
+
+struct* %135
+Bload 8aB6
+4
+	full_text'
+%
+#%137 = load i64, i64* %136, align 4
+*i64* 8aB
+
+	full_text
+
+	i64* %136
+tgetelementptr 8aB_
+]
+	full_textP
+N
+L%138 = getelementptr inbounds { i64, i64 }, { i64, i64 }* %135, i32 0, i32 1
+0struct* 8aB
+
+	full_text
+
+struct* %135
+Bload 8aB6
+4
+	full_text'
+%
+#%139 = load i64, i64* %138, align 4
+*i64* 8aB
+
+	full_text
+
+	i64* %138
+œcall 8aB¬
+ø
+	full_text±
+Æ
+´call void @_Z7compare7input_t8output_tS0_(i64 %137, i64 %139, %struct.output_t* byval(%struct.output_t) align 8 %31, %struct.output_t* byval(%struct.output_t) align 8 %32)
+(i64 8aB
+
+	full_text
+
+
+i64 %137
+(i64 8aB
+
+	full_text
+
+
+i64 %139
+/struct* 8aB
+
+	full_text
+
+struct* %31
+/struct* 8aB
+
+	full_text
+
+struct* %32
+*br 8aB 
+
+	full_text
+
+br label %140
+Aload 8bB5
+3
+	full_text&
+$
+"%141 = load i32, i32* %11, align 4
+)i32* 8bB
+
+	full_text
+
+
+i32* %11
+8add 8bB-
++
+	full_text
+
+%142 = add nsw i32 %141, 1
+(i32 8bB
+
+	full_text
+
+
+i32 %141
+Astore 8bB4
+2
+	full_text%
+#
+!store i32 %142, i32* %11, align 4
+(i32 8bB
+
+	full_text
+
+
+i32 %142
+)i32* 8bB
+
+	full_text
+
+
+i32* %11
+)br 8bB
+
+	full_text
+
+br label %49
+*br 8cB 
+
+	full_text
+
+br label %144
+Aload 8dB5
+3
+	full_text&
+$
+"%145 = load i32, i32* %10, align 4
+)i32* 8dB
+
+	full_text
+
+
+i32* %10
+8add 8dB-
++
+	full_text
+
+%146 = add nsw i32 %145, 1
+(i32 8dB
+
+	full_text
+
+
+i32 %145
+Astore 8dB4
+2
+	full_text%
+#
+!store i32 %146, i32* %10, align 4
+(i32 8dB
+
+	full_text
+
+
+i32 %146
+)i32* 8dB
+
+	full_text
+
+
+i32* %10
+)br 8dB
+
+	full_text
+
+br label %45
+*br 8eB 
+
+	full_text
+
+br label %148
+@load 8fB4
+2
+	full_text%
+#
+!%149 = load i32, i32* %9, align 4
+(i32* 8fB
+
+	full_text
+	
+i32* %9
+8add 8fB-
++
+	full_text
+
+%150 = add nsw i32 %149, 1
+(i32 8fB
+
+	full_text
+
+
+i32 %149
+@store 8fB3
+1
+	full_text$
+"
+ store i32 %150, i32* %9, align 4
+(i32 8fB
+
+	full_text
+
+
+i32 %150
+(i32* 8fB
+
+	full_text
+	
+i32* %9
+)br 8fB
+
+	full_text
+
+br label %41
+*br 8gB 
+
+	full_text
+
+br label %152
+@load 8hB4
+2
+	full_text%
+#
+!%153 = load i32, i32* %8, align 4
+(i32* 8hB
+
+	full_text
+	
+i32* %8
+8add 8hB-
++
+	full_text
+
+%154 = add nsw i32 %153, 1
+(i32 8hB
+
+	full_text
+
+
+i32 %153
+@store 8hB3
+1
+	full_text$
+"
+ store i32 %154, i32* %8, align 4
+(i32 8hB
+
+	full_text
+
+
+i32 %154
+(i32* 8hB
+
+	full_text
+	
+i32* %8
+)br 8hB
+
+	full_text
+
+br label %37
+*br 8iB 
+
+	full_text
+
+br label %156
+@load 8jB4
+2
+	full_text%
+#
+!%157 = load i32, i32* %7, align 4
+(i32* 8jB
+
+	full_text
+	
+i32* %7
+8add 8jB-
++
+	full_text
+
+%158 = add nsw i32 %157, 1
+(i32 8jB
+
+	full_text
+
+
+i32 %157
+@store 8jB3
+1
+	full_text$
+"
+ store i32 %158, i32* %7, align 4
+(i32 8jB
+
+	full_text
+
+
+i32 %158
+(i32* 8jB
+
+	full_text
+	
+i32* %7
+)br 8jB
+
+	full_text
+
+br label %33
+Jload 8kB>
+<
+	full_text/
+-
++%160 = load i32, i32* @test_failed, align 4
+9icmp 8kB-
++
+	full_text
+
+%161 = icmp ne i32 %160, 0
+(i32 8kB
+
+	full_text
+
+
+i32 %160
+?br 8kB5
+3
+	full_text&
+$
+"br i1 %161, label %162, label %164
+&i1 8kB
+
+	full_text
+	
+i1 %161
+ãcall 8lB
+}
+	full_textp
+n
+l%163 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.8, i64 0, i64 0))
+*br 8lB 
+
+	full_text
+
+br label %166
+ãcall 8mB
+}
+	full_textp
+n
+l%165 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.9, i64 0, i64 0))
+*br 8mB 
+
+	full_text
+
+br label %166
+'ret 8nB
+
+	full_text
+
+	ret i32 0
+(i8** 8oB
+
+	full_text
+	
+i8** %1
+&i32 8oB
+
+	full_text
+
+
+i32 %0
+-; undefined function 	B
+
+	full_text
+
+ 
+$i328oB
+
+	full_text
+
+
+i32 32
+#i328oB
+
+	full_text	
+
+i32 3
+$i648oB
+
+	full_text
+
+
+i64 16
+#i328oB
+
+	full_text	
+
+i32 2
+di8*8oBY
+W
+	full_textJ
+H
+Fi8* getelementptr inbounds ([50 x i8], [50 x i8]* @.str, i64 0, i64 0)
+fi8*8oB[
+Y
+	full_textL
+J
+Hi8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.3, i64 0, i64 0)
+$i648oB
+
+	full_text
+
+
+i64 24
+fi8*8oB[
+Y
+	full_textL
+J
+Hi8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.2, i64 0, i64 0)
+#i328oB
+
+	full_text	
+
+i32 1
+#i328oB
+
+	full_text	
+
+i32 9
+fi8*8oB[
+Y
+	full_textL
+J
+Hi8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.9, i64 0, i64 0)
+$i328oB
+
+	full_text
+
+
+i32 96
+%i328oB
+
+	full_text
+	
+i32 256
+fi8*8oB[
+Y
+	full_textL
+J
+Hi8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.4, i64 0, i64 0)
+Mi32*8oBA
+?
+	full_text2
+0
+.@test_failed = dso_local global i32 0, align 4
+#i328oB
+
+	full_text	
+
+i32 0
+%i328oB
+
+	full_text
+	
+i32 144
+di8*8oBY
+W
+	full_textJ
+H
+Fi8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.7, i64 0, i64 0)
+%i328oB
+
+	full_text
+	
+i32 255
+%i328oB
+
+	full_text
+	
+i32 240
+$i328oB
+
+	full_text
+
+
+i32 25
+$i328oB
+
+	full_text
+
+
+i32 15
+#i328oB
+
+	full_text	
+
+i32 4
+!i88oB
+
+	full_text
+
+i8 0
+fi8*8oB[
+Y
+	full_textL
+J
+Hi8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.5, i64 0, i64 0)
+%i328oB
+
+	full_text
+	
+i32 768
+$i328oB
+
+	full_text
+
+
+i32 16
+fi8*8oB[
+Y
+	full_textL
+J
+Hi8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.6, i64 0, i64 0)
+%i328oB
+
+	full_text
+	
+i32 128
+fi8*8oB[
+Y
+	full_textL
+J
+Hi8* getelementptr inbounds ([24 x i8], [24 x i8]* @.str.1, i64 0, i64 0)
+fi8*8oB[
+Y
+	full_textL
+J
+Hi8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.8, i64 0, i64 0)
+&i328oB
+
+	full_text
+
+
+i32 1008
+#i328oB
+
+	full_text	
+
+i32 5
+#i328oB
+
+	full_text	
+
+i32 6
+%i328oB
+
+	full_text
+	
+i32 496
+$i328oB
+
+	full_text
+
+
+i32 31
+%i18oB
+
+	full_text
+
+
+i1 false        	
+ 		                       !    "# "" $% $& $$ '( '' )* )+ )) ,- ,, ./ .. 01 00 23 22 45 44 67 68 66 9: 99 ;< ;; => == ?@ ?B AA CD CC EF EE GH GG IJ IK II LN MM OP OO QR QQ ST SS UV UW UU XY XX Z[ Z\ ZZ ]^ ]] _` __ ab aa cd cc ef ee gh gi gg jk jj lm ll no nq pp rs rr tu tt vw vv xy xz xx {} || ~ ~~ ÄÅ ÄÄ ÇÉ ÇÇ ÑÑ ÖÜ Ö
+á ÖÖ àà âä ââ ãã åç å
+é åå èê èè ëí ëë ìî ìì ïñ ïï óò óó ôö ôô õú õõ ùû ùù ü† ü
+° üü ¢¢ £§ £
+• ££ ¶ß ¶¶ ®© ®® ™´ ™™ ¨≠ ¨¨ ÆØ ÆÆ ∞± ∞∞ ≤≤ ≥¥ ≥
+µ ≥≥ ∂∑ ∂∂ ∏π ∏∏ ∫∫ ªº ª
+Ω ªª æø ææ ¿¡ ¿¿ ¬√ ¬¬ ƒ≈ ƒƒ ∆∆ «» «
+… ««  À Ã Õ ÑÕ àÕ ãÕ ¢Õ ≤Õ ∫Õ ∆  
+	            !  # %" &$ (' * + -, /. 10 32 54 7 8 :9 <; >= @ BA DC FE HG J K NM P RQ TO VS WU YX [ \ ^] `_ ba dc fe h i kj ml o qp sr ut wv y z }| ~ Å~ ÉÇ ÜÑ áà äâ çã é êè í îì ñï òó öô úô ûë †ù °ü §¢ • ß¶ ©® ´™ ≠¨ Ø¨ ±∞ ¥≤ µ ∑∂ π∏ º∫ Ω øæ ¡¿ √¬ ≈ƒ »∆ …? A? ML Mn pn |{ |Œ œœ –– —“ —— ”‘ ”” ’
+÷ ’’ ◊ÿ ◊◊ Ÿ
+⁄ ŸŸ €‹ €€ ›ﬁ ›› ﬂ‡ ﬂﬂ ·‚ ·· „
+‰ „„ ÂÊ ÂÂ ÁË Á
+È ÁÁ ÍÎ ÍÍ ÏÌ ÏÏ ÓÔ ÓÓ Ò  ÚÛ ÚÚ Ù
+ı ÙÙ ˆ˜ ˆˆ ¯˘ ¯
+˙ ¯¯ ˚¸ ˚˚ ˝˛ ˝˝ ˇÄ ˇˇ ÅÇ ÅÅ ÉÑ ÉÉ ÖÜ Öà áá âä ââ ãå ãã çé çç èê è
+ë èè íî ìì ïñ ïï óò óó ôö ôô õú õ
+ù õõ ûü ûû †° †† ¢£ ¢¢ §• §§ ¶ß ¶
+® ¶¶ ©™ ©© ´¨ ´´ ≠Æ ≠≠ Ø∞ Ø≤ ±± ≥¥ ≥≥ µ∂ µµ ∑∏ ∑
+∫ ππ ªº ªª Ωæ ΩΩ ø¿ øø ¡¬ ¡≈ ƒƒ ∆« ∆∆ »… »»  
+Ã ÀÀ ÕŒ ÕÕ œ– œ
+— œœ “‘ ”” ’÷ ’’ ◊ÿ ◊◊ Ÿ⁄ Ÿ
+‹ €€ ›ﬁ ›› ﬂ‡ ﬂﬂ ·‚ ·· „‰ „„ ÂÊ Â
+Á ÂÂ ËÍ ÈÈ ÎÏ ÎÎ ÌÓ ÌÌ Ô ÔÔ ÒÚ Ò
+Û ÒÒ Ù¯ ˜˜ ˘˙ ˘˘ ˚¸ ˚˚ ˝˛ ˝˝ ˇÄ ˇ
+Å ˇˇ ÇÉ ÇÇ ÑÖ ÑÑ Üá ÜÜ àâ àà äã ä
+å ää çé çç èê èè ëí ëë ìî ìì ïñ ïï óò ó
+ô óó öõ öö úú ùû ù
+ü ùù †° †† ¢£ ¢¢ §§ •¶ •
+ß •• ®© ®® ™´ ™™ ¨¨ ≠Æ ≠≠ Ø∞ ØØ ±≤ ±± ≥¥ ≥≥ µ∂ µµ ∑∏ ∑
+π ∑∑ ∫∫ ªº ª
+Ω ªª æø ææ ¿¡ ¿¿ ¬√ ¬¬ ƒ≈ ƒƒ ∆« ∆… »»  À    ÃÕ ÃÃ Œ
+– œœ —“ —— ”‘ ”” ’’ ÷◊ ÷
+ÿ ÷÷ ŸŸ ⁄€ ⁄
+‹ ⁄⁄ ›› ﬁﬂ ﬁﬁ ‡· ‡‡ ‚„ ‚‚ ‰Â ‰‰ ÊÁ ÊÊ ËÈ ËË ÍÍ ÎÏ Î
+Ì ÎÎ ÓÔ ’ ŸÒ úÒ §Ò ¨Ò ∫Ò ’Ò ŸÒ ›Ò ÍŒ “— ‘” ÷— ÿ◊ ⁄Œ ‹€ ﬁ› ‡ﬂ ‚· ‰„ ÊÂ Ëœ ÈŒ ÎÍ ÌÏ ÔÓ Ò ÛÚ ıÙ ˜ˆ ˘– ˙Œ ¸˚ ˛˝ Äˇ ÇÅ ÑÉ Ü– àá äâ åã éç ê– ëœ îì ñï òó öô úœ ù– üû °† £¢ •§ ß– ®Œ ™© ¨´ Æ≠ ∞œ ≤± ¥≥ ∂µ ∏œ ∫– ºª æΩ ¿ø ¬– ≈ƒ «∆ …» ÃÀ ŒÕ –– —œ ‘” ÷’ ÿ◊ ⁄œ ‹– ﬁ› ‡ﬂ ‚· ‰„ Ê– Áœ ÍÈ ÏÎ ÓÌ Ô Úœ Ûœ ¯˜ ˙˘ ¸˚ ˛˝ Äœ Å– ÉÇ ÖÑ áÜ âà ã– å– éç êè íœ îì ñë òï ôó õö ûú üŒ °† £¢ ¶§ ßŒ ©® ´¨ Æ≠ ∞Ø ≤± ¥± ∂™ ∏µ π∑ º∫ ΩŒ øæ ¡¿ √¬ ≈ƒ «Œ …» À  ÕÃ –œ “œ ‘” ◊’ ÿ” €Ÿ ‹› ﬂﬁ ·‡ „‚ Â‰ Á‰ ÈË ÏÍ ÌÖ áÖ ìí ìØ ±Ø ˜∑ π∑ ”∆ »∆ œ¡ √¡ ƒŸ €Ÿ ÈŒ œ√ À  ÀË ıÙ ı“ ˆı ˆˆ ˜Ú ÛÛ ÙÙ ıı ˆˆ ˜˜ ¯¯ ˘˘ ˙˚ ˙˙ ¸˝ ¸¸ ˛
+ˇ ˛˛ ÄÅ ÄÄ Ç
+É ÇÇ ÑÖ ÑÑ Üá ÜÜ àâ à
+ä àà ãå ãã çé çç èê è
+ë èè íì íí îï îî ñó ññ òô òò öõ öö úù úú ûü û
+† ûû °¢ °° £§ ££ •¶ •• ß® ßß ©™ ©© ´¨ ´
+≠ ´´ ÆØ ÆÆ ∞± ∞
+≤ ∞∞ ≥¥ ≥≥ µ∂ µµ ∑∏ ∑∑ π∫ ππ ªº ªª Ωæ ΩΩ ø¿ ø
+¡ øø ¬√ ¬¬ ƒ≈ ƒ
+∆ ƒƒ «» «« …  …… ÀÃ ÀÀ ÕŒ ÕÕ œ– œ
+— œœ “” ““ ‘’ ‘
+÷ ‘‘ ◊ÿ ◊
+Ÿ ◊◊ ⁄€ ⁄⁄ ‹› ‹‹ ﬁﬂ ﬁﬁ ‡· ‡„ ‚‚ ‰Â ‰‰ ÊÁ ÊÊ ËÈ ËË ÍÎ Í
+Ï ÍÍ ÌÔ ÓÓ Ò  ÚÛ ÚÚ Ùı ÙÙ ˆ˜ ˆˆ ¯˘ ¯
+˙ ¯¯ ˚¸ ˚˚ ˝˛ ˝˝ ˇÄ ˇÇ ÅÅ ÉÑ ÉÉ ÖÜ ÖÖ áà áá âä â
+ã ââ åé çç èè êë ê
+í êê ìì îï îî ññ óò ó
+ô óó öõ öö úù úú ûü ûû †° †† ¢£ ¢¢ §• §§ ¶ß ¶¶ ®© ®
+™ ®® ´´ ¨≠ ¨
+Æ ¨¨ Ø∞ ØØ ±≤ ±± ≥¥ ≥≥ µ∂ µµ ∑∏ ∑∑ ππ ∫ª ∫
+º ∫∫ Ωæ ΩΩ ø¿ øø ¡¬ ¡¡ √ƒ √√ ≈∆ ≈» «« …  …… ÀÃ ÀÀ ÕŒ ÕÕ œ
+— –– “” ““ ‘‘ ’÷ ’
+◊ ’’ ÿŸ ÿÿ ⁄€ ⁄⁄ ‹› ‹‹ ﬁﬂ ﬁﬁ ‡‡ ·‚ ·
+„ ·· ‰Â ÇÊ èÊ ìÊ ñÊ ´Ê πÊ ‘Ê ‡Á ˛Ú ˚˙ ˝¸ ˇ˙ ÅÄ ÉÚ ÖÑ áÜ âÛ äÚ åã éç êÙ ëÛ ìí ïî óÙ ôò õö ùñ üú †Ú ¢° §£ ¶• ®• ™û ¨© ≠´ ØÆ ±ı ≤Û ¥≥ ∂µ ∏Ù ∫π ºª æ∑ ¿Ω ¡ø √¬ ≈ˆ ∆ˆ »«  ı ÃÀ Œ… –Õ —œ ”“ ’¯ ÷“ ÿ˜ Ÿı €⁄ ›‹ ﬂﬁ ·˜ „‚ Â‰ ÁÊ ÈË Î˜ Ï˜ ÔÓ Ò ÛÚ ıÙ ˜ˆ ˘˘ ˙˘ ¸˚ ˛˝ Ä˜ ÇÅ ÑÉ ÜÖ àá ä˜ ã˘ éç ëè íì ïî òñ ôÚ õö ù˜ üû °† £¢ •§ ßú ©¶ ™® ≠´ Æ˜ ∞Ø ≤± ¥≥ ∂µ ∏∑ ªπ º¯ æΩ ¿ø ¬¡ ƒ√ ∆˜ »«  … ÃÀ ŒÕ —– ”“ ÷‘ ◊˜ Ÿÿ €⁄ ›‹ ﬂﬁ ‚‡ „‡ ‚‡ ÓÌ Óˇ Åˇ çå ç≈ «≈ –œ –Ë ÈÈ ÍÍ ÎÎ ÏÌ ÏÏ ÓÔ ÓÓ 
+Ò  ÚÛ ÚÚ Ù
+ı ÙÙ ˆ˜ ˆˆ ¯˘ ¯¯ ˙˚ ˙˙ ¸˝ ¸¸ ˛ˇ ˛˛ ÄÅ ÄÄ ÇÉ ÇÇ ÑÖ ÑÑ Üá Ü
+à ÜÜ âä ââ ãå ãã çé ç
+è çç êë êê íì í
+î íí ïñ ïï óò óó ôö ôô õú õõ ùû ùù ü† üü °¢ °° £§ ££ •¶ •• ß® ßß ©™ ©
+´ ©© ¨≠ ¨¨ ÆØ Æ
+∞ ÆÆ ±≤ ±± ≥¥ ≥≥ µ∂ µµ ∑∏ ∑∑ π∫ ππ ªº ªª Ωæ Ω
+ø ΩΩ ¿¡ ¿¿ ¬√ ¬¬ ƒ≈ ƒ
+∆ ƒƒ «» «« …  …
+À …… ÃÕ ÃÃ Œœ ŒŒ –— –– “” “’ ‘‘ ÷◊ ÷÷ ÿŸ ÿÿ ⁄‹ €€ ›ﬁ ›› ﬂ· ‡
+‚ ‡‡ „‰ „„ ÂÊ Â
+Á ÂÂ ËÈ ËË ÍÎ ÍÍ ÏÌ ÏÏ ÓÔ ÓÒ  ÚÛ ÚÚ Ùı ÙÙ ˆ¯ ˜˜ ˘˙ ˘˘ ˚¸ ˚˚ ˝˛ ˝Ä ˇˇ ÅÇ ÅÅ ÉÑ ÉÉ Öá ÜÜ àâ àà äå ã
+ç ãã éê è
+ë èè íì íí îï î
+ñ îî óò óó ôö ôô õú õõ ùû ù† üü °¢ °° £§ ££ •ß ¶¶ ®© ®® ™¨ ´
+≠ ´´ ÆØ ÆÆ ∞± ∞
+≤ ∞∞ ≥¥ ≥≥ µ∂ µµ ∑∏ ∑∑ π∫ ππ ªº ªª ΩΩ æø æ
+¿ ææ ¡¡ ¬√ ¬¬ ƒƒ ≈∆ ≈
+« ≈≈ »… »»  À    ÃÕ ÃÃ Œœ ŒŒ –— –
+“ –– ”‘ ”” ’÷ ’’ ◊ÿ ◊◊ Ÿ⁄ ŸŸ €‹ €
+› €€ ﬁﬂ ﬁﬁ ‡· ‡‡ ‚„ ‚‚ ‰Â ‰‰ ÊÁ ÊÊ ËÈ Ë
+Í ËË ÎÏ ÎÎ ÌÌ ÓÔ Ó
+ ÓÓ ÒÚ ÒÒ ÛÙ ÛÛ ıı ˆ˜ ˆˆ ¯˘ ¯¯ ˙˚ ˙˙ ¸˝ ¸¸ ˛ˇ ˛
+Ä ˛˛ ÅÅ ÇÉ Ç
+Ñ ÇÇ ÖÖ Üá ÜÜ àâ àà äã ää åç åå éè éé êë êê íí ìî ì
+ï ìì ñó ññ òô òò öõ öú ùû ùù ü† üü °¢ °° £§ ££ •
+ß ¶¶ ®© ®® ™™ ´¨ ´
+≠ ´´ ÆØ ∞ Ù± Ω± ¡± ƒ± Ì± ı± Å± Ö± í± ú± ™Ë ÌÏ ÔÓ ÒÏ ÛÚ ıË ˜ˆ ˘¯ ˚˙ ˝Ë ˇ˛ ÅÄ ÉÇ Ö¸ áÑ àË äâ åÜ éã èç ëê ìÈ îË ñï òó öô úõ ûË †ü ¢° §£ ¶• ®ù ™ß ´© ≠¨ ØÍ ∞Ë ≤± ¥≥ ∂Ë ∏∑ ∫π ºµ æª øË ¡¿ √Ω ≈¬ ∆ƒ »«  Î ÀÈ ÕÃ œŒ —– ”È ’‘ ◊÷ ŸÈ ‹€ ﬁÿ ·› ‚‡ ‰„ ÊÈ ÁÈ ÈË ÎÍ ÌÏ ÔÍ Ò ÛÚ ıÈ ¯˜ ˙˘ ¸˚ ˛Í Äˇ ÇÅ ÑÍ áÜ âÉ åà çÙ êã ëè ìí ïÍ ñÍ òó öô úõ ûÍ †ü ¢° §Í ß¶ ©£ ¨® ≠´ ØÆ ±Í ≤Í ¥≥ ∂µ ∏∑ ∫∑ ºª øΩ ¿¡ √¬ ∆ƒ «È …» À  ÕÃ œŒ —È “Í ‘” ÷’ ÿ◊ ⁄Ÿ ‹Í ›Í ﬂﬁ ·‡ „È Â‰ Á‚ ÈÊ ÍË ÏÎ ÔÌ Ë ÚÒ Ùı ˜ˆ ˘¯ ˚˙ ˝Û ˇ¸ Ä˛ ÉÅ ÑÖ áÜ âà ãä çå èå ëê îí ïÎ óñ ôò õú ûù †ü ¢° §£ ß¶ ©® ¨™ ≠“ ‘“ €⁄ ‡ﬂ ‡Ó Ó ˜ˆ è˝ ˇ˝ Üù üù ¶Ö ãä ã• ´™ ´é èö úö ¶• ¶≤ ≥≥ ¥¥ µµ ∂∂ ∑∑ ∏∏ ππ ∫ª ∫∫ ºΩ ºº æ
+ø ææ ¿¡ ¿¿ ¬
+√ ¬¬ ƒ≈ ƒƒ ∆« ∆∆ »… »
+  »» ÀÃ ÀÀ ÕŒ ÕÕ œ– œ
+— œœ “” ““ ‘’ ‘‘ ÷◊ ÷÷ ÿŸ ÿÿ ⁄€ ⁄⁄ ‹› ‹‹ ﬁﬂ ﬁ
+‡ ﬁﬁ ·‚ ·· „‰ „„ ÂÊ ÂÂ ÁË ÁÁ ÈÍ ÈÈ ÎÏ Î
+Ì ÎÎ ÓÔ ÓÓ Ò 
+Ú  ÛÙ ÛÛ ıˆ ıı ˜¯ ˜˜ ˘˙ ˘˘ ˚¸ ˚˚ ˝˛ ˝˝ ˇÄ	 ˇ
+Å	 ˇˇ Ç	É	 Ç	Ç	 Ñ	Ö	 Ñ	
+Ü	 Ñ	Ñ	 á	
+à	 á	á	 â	ä	 â	â	 ã	å	 ã	ã	 ç	é	 ç	ç	 è	ê	 è	è	 ë	í	 ë	
+ì	 ë	ë	 î	ï	 î	î	 ñ	ó	 ñ	
+ò	 ñ	ñ	 ô	ö	 ô	
+õ	 ô	ô	 ú	ù	 ú	ú	 û	ü	 û	û	 †	°	 †	†	 ¢	£	 ¢	¢	 §	•	 §	ß	 ¶	¶	 ®	©	 ®	®	 ™	´	 ™	™	 ¨	≠	 ¨	¨	 Æ	Ø	 Æ	
+∞	 Æ	Æ	 ±	
+≤	 ±	±	 ≥	µ	 ¥	¥	 ∂	∑	 ∂	∂	 ∏	π	 ∏	∏	 ∫	ª	 ∫	∫	 º	Ω	 º	º	 æ	ø	 æ	æ	 ¿	¡	 ¿	
+¬	 ¿	¿	 √	ƒ	 √	√	 ≈	∆	 ≈	≈	 «	»	 «	«	 …	 	 …	…	 À	Ã	 À	À	 Õ	Œ	 Õ	
+œ	 Õ	Õ	 –	—	 –	–	 “	”	 “	“	 ‘	’	 ‘	◊	 ÷	÷	 ÿ	Ÿ	 ÿ	ÿ	 ⁄	€	 ⁄	⁄	 ‹	›	 ‹	‹	 ﬁ	ﬂ	 ﬁ	
+‡	 ﬁ	ﬁ	 ·	„	 ‚	‚	 ‰	Â	 ‰	‰	 Ê	Á	 Ê	Ê	 Ë	È	 Ë	Ë	 Í	Î	 Í	Í	 Ï	Ì	 Ï	Ï	 Ó	Ô	 Ó	
+	 Ó	Ó	 Ò	Ú	 Ò	Ò	 Û	Ù	 Û	
+ı	 Û	Û	 ˆ	˜	 ˆ	ˆ	 ¯	˘	 ¯	¯	 ˙	˚	 ˙	˙	 ¸	˝	 ¸	¸	 ˛	ˇ	 ˛	˛	 Ä
+Å
+ Ä
+
+Ç
+ Ä
+Ä
+ É
+Ñ
+ É
+É
+ Ö
+Ü
+ Ö
+Ö
+ á
+à
+ á
+á
+ â
+â
+ ä
+ã
+ ä
+
+å
+ ä
+ä
+ ç
+ç
+ é
+è
+ é
+é
+ ê
+ê
+ ë
+í
+ ë
+
+ì
+ ë
+ë
+ î
+ï
+ î
+î
+ ñ
+ó
+ ñ
+ñ
+ ò
+ô
+ ò
+ò
+ ö
+õ
+ ö
+ö
+ ú
+ù
+ ú
+ú
+ û
+ü
+ û
+û
+ †
+°
+ †
+†
+ ¢
+£
+ ¢
+
+§
+ ¢
+¢
+ •
+•
+ ¶
+ß
+ ¶
+
+®
+ ¶
+¶
+ ©
+™
+ ©
+©
+ ´
+¨
+ ´
+´
+ ≠
+Æ
+ ≠
+≠
+ Ø
+∞
+ Ø
+Ø
+ ±
+≤
+ ±
+±
+ ≥
+≥
+ ¥
+µ
+ ¥
+
+∂
+ ¥
+¥
+ ∑
+∏
+ ∑
+∑
+ π
+∫
+ π
+π
+ ª
+º
+ ª
+ª
+ Ω
+æ
+ Ω
+Ω
+ ø
+¿
+ ø
+¬
+ ¡
+¡
+ √
+ƒ
+ √
+√
+ ≈
+∆
+ ≈
+≈
+ «
+»
+ «
+«
+ …
+
+À
+  
+ 
+ Ã
+Õ
+ Ã
+Ã
+ Œ
+Œ
+ œ
+–
+ œ
+
+—
+ œ
+œ
+ “
+”
+ “
+“
+ ‘
+’
+ ‘
+‘
+ ÷
+◊
+ ÷
+÷
+ ÿ
+Ÿ
+ ÿ
+ÿ
+ ⁄
+⁄
+ €
+‹
+ €
+
+›
+ €
+€
+ ﬁ
+ﬂ
+ â
+ﬂ
+ ç
+ﬂ
+ ê
+ﬂ
+ •
+ﬂ
+ ≥
+ﬂ
+ Œ
+ﬂ
+ ⁄
+‡
+ æ·
+ ¬≤ ª∫ Ωº ø∫ ¡¿ √≤ ≈ƒ «∆ …≥  ≤ ÃÀ ŒÕ –¥ —¥ ”“ ’‘ ◊≥ Ÿÿ €⁄ ›÷ ﬂ‹ ‡≤ ‚· ‰„ ÊÂ ËÂ Íﬁ ÏÈ ÌÎ ÔÓ Òµ Ú¥ ÙÛ ˆı ¯≥ ˙˘ ¸˚ ˛˜ Ä	˝ Å	ˇ É	Ç	 Ö	∂ Ü	π à	∂ ä	â	 å	µ é	ç	 ê	ã	 í	è	 ì	ë	 ï	î	 ó	∏ ò	î	 ö	∑ õ	µ ù	ú	 ü	û	 °	†	 £	¢	 •	∑ ß	¶	 ©	®	 ´	™	 ≠	¨	 Ø	∑ ∞	π ≤	¥ µ	¥	 ∑	∂	 π	≥ ª	∫	 Ω	º	 ø	∏	 ¡	æ	 ¬	≤ ƒ	√	 ∆	≈	 »	«	  	«	 Ã	¿	 Œ	À	 œ	Õ	 —	–	 ”	“	 ’	∑ ◊	÷	 Ÿ	ÿ	 €	⁄	 ›	‹	 ﬂ	∑ ‡	¥ „	‚	 Â	‰	 Á	≥ È	Ë	 Î	Í	 Ì	Ê	 Ô	Ï	 	π Ú	Ó	 Ù	Ò	 ı	≤ ˜	ˆ	 ˘	¯	 ˚	˙	 ˝	˙	 ˇ	Û	 Å
+˛	 Ç
+Ä
+ Ñ
+É
+ Ü
+Ö
+ à
+á
+ ã
+â
+ å
+ç
+ è
+é
+ í
+ê
+ ì
+≤ ï
+î
+ ó
+∑ ô
+ò
+ õ
+ö
+ ù
+ú
+ ü
+û
+ °
+ñ
+ £
+†
+ §
+¢
+ ß
+•
+ ®
+∑ ™
+©
+ ¨
+´
+ Æ
+≠
+ ∞
+Ø
+ ≤
+±
+ µ
+≥
+ ∂
+∏ ∏
+∑
+ ∫
+π
+ º
+ª
+ æ
+Ω
+ ¿
+∑ ¬
+¡
+ ƒ
+√
+ ∆
+≈
+ »
+«
+ À
+ 
+ Õ
+Ã
+ –
+Œ
+ —
+∑ ”
+“
+ ’
+‘
+ ◊
+÷
+ Ÿ
+ÿ
+ ‹
+⁄
+ ›
+§	 ¶	§	 ¥	≥	 ¥	‘	 ÷	‘	 ‚	·	 ‚	ø
+ ¡
+ø
+  
+…
+  
+‚
+ „
+„
+ ‰
+‰
+ Â
+Â
+ Ê
+Á
+ Ê
+Ê
+ Ë
+È
+ Ë
+Ë
+ Í
+
+Î
+ Í
+Í
+ Ï
+Ì
+ Ï
+Ï
+ Ó
+
+Ô
+ Ó
+Ó
+ 
+Ò
+ 
+
+ Ú
+Û
+ Ú
+Ú
+ Ù
+ı
+ Ù
+Ù
+ ˆ
+˜
+ ˆ
+ˆ
+ ¯
+
+˘
+ ¯
+¯
+ ˙
+˚
+ ˙
+˙
+ ¸
+˝
+ ¸
+¸
+ ˛
+ˇ
+ ˛
+˛
+ ÄÅ ÄÄ ÇÉ Ç
+Ñ ÇÇ ÖÜ ÖÖ áà áá âä â
+ã ââ åç åå éè é
+ê éé ëí ëë ìî ìì ïñ ïï óò óó ôö ôô õ
+ú õõ ùû ùù ü† üü °¢ °° £§ ££ •¶ •• ß® ß
+© ßß ™´ ™™ ¨≠ ¨
+Æ ¨¨ Ø∞ ØØ ±≤ ±± ≥¥ ≥≥ µ∂ µµ ∑∏ ∑∑ π∫ ππ ªº ª
+Ω ªª æø ææ ¿¡ ¿¿ ¬√ ¬
+ƒ ¬¬ ≈∆ ≈
+« ≈≈ »… »»  À    ÃÕ ÃÃ Œœ Œ— –– “” ““ ‘’ ‘‘ ÷ÿ ◊◊ Ÿ⁄ ŸŸ €› ‹
+ﬁ ‹‹ ﬂ‡ ﬂﬂ ·‚ ·
+„ ·· ‰Â ‰‰ ÊÁ ÊÊ ËÈ ËË ÍÎ ÍÌ ÏÏ ÓÔ ÓÓ Ò  ÚÙ ÛÛ ıˆ ıı ˜¯ ˜˜ ˘˙ ˘¸ ˚˚ ˝˛ ˝˝ ˇÄ ˇˇ ÅÉ ÇÇ ÑÖ ÑÑ Üà á
+â áá äå ã
+ç ãã éè éé êë ê
+í êê ìî ìì ïñ ïï óò óó ôö ôú õõ ùû ùù ü† üü °¢ °§ ££ •¶ •• ß® ßß ©´ ™™ ¨≠ ¨¨ Æ∞ Ø
+± ØØ ≤≥ ≤≤ ¥µ ¥
+∂ ¥¥ ∑∏ ∑∑ π∫ ππ ªº ªª Ωæ ΩΩ ø¿ øø ¡¡ ¬√ ¬
+ƒ ¬¬ ≈≈ ∆« ∆∆ »» …  …
+À …… ÃÕ ÃÃ Œœ ŒŒ –— –– “” ““ ‘’ ‘
+÷ ‘‘ ◊ÿ ◊◊ Ÿ⁄ ŸŸ €‹ €€ ›ﬁ ›› ﬂ‡ ﬂ
+· ﬂﬂ ‚„ ‚‚ ‰Â ‰‰ ÊÁ ÊÊ ËÈ ËË ÍÎ ÍÍ ÏÌ Ï
+Ó ÏÏ Ô ÔÔ ÒÒ ÚÛ Ú
+Ù ÚÚ ıˆ ıı ˜¯ ˜˜ ˘˘ ˙˚ ˙˙ ¸˝ ¸¸ ˛ˇ ˛˛ ÄÅ ÄÄ ÇÉ Ç
+Ñ ÇÇ ÖÖ Üá Ü
+à ÜÜ ââ äã ää åç åå éè éé êë êê íì íí îï îî ññ óò ó
+ô óó öõ öö úù úú ûü ûû †° †¢ £§ ££ •¶ •• ß® ßß ©™ ©© ´
+≠ ¨¨ ÆØ ÆÆ ∞∞ ±≤ ±
+≥ ±± ¥µ Í
+∂ Ó
+∑ ¡∑ ≈∑ »∑ Ò∑ ˘∑ Ö∑ â∑ ñ∑ ¢∑ ∞‚
+ Á
+Ê
+ È
+Ë
+ Î
+Ê
+ Ì
+Ï
+ Ô
+‚
+ Ò
+
+ Û
+Ú
+ ı
+Ù
+ ˜
+ˆ
+ ˘
+‚
+ ˚
+˙
+ ˝
+¸
+ ˇ
+˛
+ Å¯
+ ÉÄ Ñ‚
+ ÜÖ àÇ äá ãâ çå è„
+ ê‚
+ íë îì ñï òó öô ú‚
+ ûù †ü ¢° §£ ¶õ ®• ©ß ´™ ≠‰
+ Æ‚
+ ∞Ø ≤± ¥‚
+ ∂µ ∏∑ ∫≥ ºπ Ω‚
+ øæ ¡ª √¿ ƒ¬ ∆Â
+ «„
+ …» À  ÕÃ œ„
+ —– ”“ ’„
+ ÿ◊ ⁄‘ ›Ÿ ﬁ‹ ‡ﬂ ‚„
+ „„
+ Â‰ ÁÊ ÈË Î‰
+ ÌÏ ÔÓ Ò„
+ ÙÛ ˆı ¯˜ ˙‰
+ ¸˚ ˛˝ Ä‰
+ ÉÇ Öˇ àÑ â åá çã èé ë‰
+ í‰
+ îì ñï òó öÂ
+ úõ ûù †ü ¢‰
+ §£ ¶• ®‰
+ ´™ ≠ß ∞¨ ±Ø ≥≤ µ‰
+ ∂‰
+ ∏∑ ∫π ºª æª ¿ø √¡ ƒ≈ «∆  » À„
+ ÕÃ œŒ —– ”“ ’„
+ ÷‰
+ ÿ◊ ⁄Ÿ ‹€ ﬁ› ‡‰
+ ·‰
+ „‚ Â‰ Á„
+ ÈË ÎÊ ÌÍ ÓÏ Ô ÛÒ Ù‚
+ ˆı ¯˘ ˚˙ ˝¸ ˇ˛ Å˜ ÉÄ ÑÇ áÖ àâ ãä çå èé ëê ìê ïî òñ ôÂ
+ õö ùú üû °¢ §£ ¶• ®ß ™© ≠¨ ØÆ ≤∞ ≥Œ –Œ ◊÷ ‹€ ‹Í ÏÍ ÛÚ ã˘ ˚˘ Çô õô ™Å áÜ á° £° ™Æ Øä ã© Ø† ¢† ¨´ ¨∏ π∫ ππ ªº ªª Ω
+æ ΩΩ ø¿ øø ¡
+¬ ¡¡ √√ ƒ≈ ƒƒ ∆« ∆∆ »» …  …… ÀÃ ÀÀ ÕŒ Õ
+œ ÕÕ –— –“ ”‘ ”” ’’ ÷◊ ÷÷ ÿŸ ÿ
+⁄ ÿÿ €‹ €› ﬁﬂ ﬁﬁ ‡‡ ·‚ ·· „‰ „
+Â „„ ÊÁ ÊË ÈÍ ÈÈ ÎÎ ÏÌ ÏÏ ÓÔ Ó
+ ÓÓ ÒÚ ÒÛ Ùı ÙÙ ˆˆ ˜¯ ˜˜ ˘˙ ˘
+˚ ˘˘ ¸˝ ¸˛ ˇÄ ˇˇ ÅÅ ÇÉ ÇÇ ÑÖ Ñ
+Ü ÑÑ áà áã ää åç åå éè éé êë êê íì íí îï îî ñó ññ òô òò ö
+õ ö
+ú ö
+ù öö ûû ü† üü °¢ °° ££ §• §§ ¶ß ¶¶ ®© ®
+™ ®® ´¨ ´≠ ÆØ ÆÆ ∞± ∞∞ ≤≤ ≥¥ ≥≥ µ∂ µµ ∑
+∏ ∑
+π ∑∑ ∫ª ºΩ ºº ææ ø¿ øø ¡¬ ¡
+√ ¡¡ ƒ≈ ƒ∆ «» «« ……  À    Ã
+Õ Ã
+Œ ÃÃ œ– —“ —— ”” ‘’ ‘‘ ÷◊ ÷
+ÿ ÷÷ Ÿ⁄ Ÿ€ ‹› ‹‹ ﬁﬁ ﬂ‡ ﬂﬂ ·
+‚ ·
+„ ·· ‰Â ÊÁ ÊÊ ËË ÈÍ ÈÈ ÎÏ Î
+Ì ÎÎ ÓÔ Ó ÒÚ ÒÒ ÛÛ Ùı ÙÙ ˆ
+˜ ˆ
+¯ ˆˆ ˘˙ ˚¸ ˚˚ ˝˝ ˛ˇ ˛˛ ÄÅ Ä
+Ç ÄÄ ÉÑ ÉÖ Üá ÜÜ àà âä ââ ã
+å ã
+ç ãã éè êë êê íí ìî ìì ïñ ï
+ó ïï òô òö õú õõ ùù ûü ûû †
+° †
+¢ †† £§ •• ¶® Ω© ¡™ √™ “™ ›™ Ë™ Û™ ˛™ û™ ≠™ ª™ ∆™ –™ €™ Â™ ™ ˙™ Ö™ è™ ö´ »´ ’´ ‡´ Î´ ˆ´ Å´ £´ ≤´ æ´ …´ ”´ ﬁ´ Ë´ Û´ ˝´ à´ í´ ù∏ ∫π ºª æπ ¿ø ¬√ ≈ƒ «»  … Ã∆ ŒÀ œÕ —“ ‘’ ◊” Ÿ÷ ⁄ÿ ‹› ﬂ‡ ‚ﬁ ‰· Â„ ÁË ÍÎ ÌÈ ÔÏ Ó ÚÛ ıˆ ¯Ù ˙˜ ˚˘ ˝˛ ÄÅ Éˇ ÖÇ ÜÑ à∏ ãä çå è∏ ëê ìí ï∏ óñ ôé õî úò ùû †ü ¢£ •§ ß° ©¶ ™® ¨≠ ØÆ ±≤ ¥≥ ∂∞ ∏µ πª Ωæ ¿º ¬ø √¡ ≈∆ »… À« Õ  Œ– “” ’— ◊‘ ÿ÷ ⁄€ ›ﬁ ‡‹ ‚ﬂ „Â ÁË ÍÊ ÏÈ ÌÎ Ô ÚÛ ıÒ ˜Ù ¯˙ ¸˝ ˇ˚ Å˛ ÇÄ ÑÖ áà äÜ åâ çè ëí îê ñì óï ôö úù üõ °û ¢– “– ä€ ›€ ä´ ≠´ ªÊ ËÊ ä∫ ªƒ ∆ƒ –Ò ÛÒ äœ –Ÿ €Ÿ Â¸ ˛¸ ä‰ ÂÓ Ó ˙á âá ä˘ ˙É ÖÉ èâ ßé èò öò §£ §¶ ß≠ ÆÆ ØØ ∞∞ ±± ≤≤ ≥≥ ¥¥ µµ ∂∂ ∑∑ ∏∏ ππ ∫∫ ªª ºº ΩΩ ææ øø ¿¿ ¡¡ ¬¬ √√ ƒƒ ≈≈ ∆∆ «« »» ……    À
+Ã ÀÀ Õ
+Œ ÕÕ œ
+– œœ —
+“ —— ”’ ‘‘ ÷◊ ÷÷ ÿŸ ÿ
+€ ⁄⁄ ‹ﬁ ›› ﬂ‡ ﬂﬂ ·‚ ·
+‰ „„ ÂÁ ÊÊ ËÈ ËË ÍÎ Í
+Ì ÏÏ Ó ÔÔ ÒÚ ÒÒ ÛÙ Û
+ˆ ıı ˜˘ ¯¯ ˙˚ ˙˙ ¸˝ ¸ˇ ˛˛ ÄÅ ÄÄ ÇÉ ÇÇ ÑÖ Ñ
+Ü ÑÑ áà áá âä ââ ãå ãã çé ç
+è çç êë êê íì íí îï î
+ñ îî óò óó ôö ôô õú õ
+ù õõ ûü ûû †° †† ¢£ ¢
+§ ¢¢ •¶ •• ß® ßß ©™ ©
+´ ©© ¨≠ ¨¨ ÆØ ÆÆ ∞± ∞∞ ≤≥ ≤≤ ¥µ ¥¥ ∂∑ ∂
+∏ ∂
+π ∂∂ ∫ª ∫∫ ºΩ ºº æø æ
+¿ ææ ¡¬ ¡¡ √ƒ √√ ≈∆ ≈≈ «» «« …  …… ÀÃ À
+Õ À
+Œ ÀÀ œ– œœ —“ —— ”‘ ”
+’ ”” ÷◊ ÷÷ ÿŸ ÿÿ ⁄€ ⁄
+‹ ⁄⁄ ›ﬁ ›› ﬂ‡ ﬂﬂ ·‚ ·
+„ ·· ‰Â ‰‰ ÊÁ ÊÊ ËÈ ËË ÍÎ ÍÍ ÏÌ ÏÏ ÓÔ Ó
+ Ó
+Ò Ó
+Ú ÓÓ ÛÙ ÛÛ ıˆ ıı ˜¯ ˜
+˘ ˜˜ ˙˚ ˙˙ ¸˝ ¸¸ ˛ˇ ˛˛ ÄÅ ÄÄ ÇÉ ÇÇ ÑÖ Ñ
+Ü Ñ
+á ÑÑ àâ àà äã ää åç å
+é åå èê èè ëí ëë ìî ìì ïñ ïï óò óó ôö ô
+õ ô
+ú ôô ùû ùù ü† üü °¢ °
+£ °° §• §§ ¶ß ¶¶ ®© ®
+™ ®® ´¨ ´´ ≠Æ ≠≠ Ø∞ Ø
+± ØØ ≤≥ ≤≤ ¥µ ¥¥ ∂∑ ∂∂ ∏π ∏∏ ∫ª ∫∫ ºΩ º
+æ º
+ø º
+¿ ºº ¡¬ ¡¡ √ƒ √√ ≈∆ ≈
+« ≈≈ »… »»  À    ÃÕ ÃÃ Œœ ŒŒ –— –– “” “
+‘ “
+’ ““ ÷◊ ÷÷ ÿŸ ÿÿ ⁄€ ⁄
+‹ ⁄⁄ ›ﬁ ›› ﬂ‡ ﬂﬂ ·‚ ·· „‰ „„ ÂÊ ÂÂ ÁË Á
+È Á
+Í ÁÁ ÎÏ ÎÎ ÌÓ ÌÌ Ô Ô
+Ò ÔÔ ÚÛ ÚÚ Ùı ÙÙ ˆ˜ ˆ
+¯ ˆˆ ˘˙ ˘˘ ˚¸ ˚˚ ˝˛ ˝
+ˇ ˝˝ ÄÅ ÄÄ ÇÉ ÇÇ ÑÖ ÑÑ Üá ÜÜ àâ àà äã ä
+å ä
+ç ä
+é ää èë êê íì íí îï î
+ñ îî óö ôô õú õõ ùû ù
+ü ùù †£ ¢¢ §• §§ ¶ß ¶
+® ¶¶ ©¨ ´´ ≠Æ ≠≠ Ø∞ Ø
+± ØØ ≤µ ¥¥ ∂∑ ∂∂ ∏π ∏
+∫ ∏∏ ªº Ωæ ΩΩ ø¿ ø¡ ¬√ ƒ∆ œ« Õ≠ ÃÆ ŒØ –± “± ’‘ ◊÷ Ÿ≤ €≤ ﬁ› ‡ﬂ ‚≥ ‰≥ ÁÊ ÈË Î¥ Ì¥ Ô ÚÒ Ùµ ˆµ ˘¯ ˚˙ ˝± ˇ˛ Å∞ ÉÄ ÖÇ Ü≤ àá ä∞ åâ éã è≥ ë∞ ìê ïí ñ¥ ò∞ öó úô ùµ ü∞ °û £† §∑ ¶∞ ®• ™ß ´∑ ≠¨ ØÆ ±¨ ≥≤ µ∂ ∑∞ ∏¥ ππ ª∞ Ω∫ øº ¿π ¬¡ ƒ√ ∆¡ »«  ∏ Ã≈ Õ… Œ∫ –∞ “œ ‘— ’ª ◊∂ Ÿ÷ €ÿ ‹º ﬁ∏ ‡› ‚ﬂ „∫ Â‰ ÁÊ È‰ ÎÍ ÌË ÔÏ ª Òº Úæ Ù∞ ˆÛ ¯ı ˘æ ˚˙ ˝¸ ˇ˙ ÅÄ ÉΩ Ö˛ ÜÇ á¿ â∞ ãà çä é¿ êè íë îè ñï òø öì õó ú¡ û∞ †ù ¢ü £¬ •Ω ß§ ©¶ ™√ ¨ø Æ´ ∞≠ ±¡ ≥≤ µ¥ ∑≤ π∏ ª∂ Ω∫ æ¬ ø√ ¿≈ ¬∞ ƒ¡ ∆√ «≈ …» À  Õ» œŒ —ƒ ”Ã ‘– ’« ◊∞ Ÿ÷ €ÿ ‹« ﬁ› ‡ﬂ ‚› ‰„ Ê∆ Ë· ÈÂ Í» Ï∞ ÓÎ Ì Ò… Ûƒ ıÚ ˜Ù ¯  ˙∆ ¸˘ ˛˚ ˇ» ÅÄ ÉÇ ÖÄ áÜ âÑ ãà å… ç  éµ ëê ìí ïµ ñ¥ öô úõ û¥ ü≥ £¢ •§ ß≥ ®≤ ¨´ Æ≠ ∞≤ ±± µ¥ ∑∂ π± ∫º æΩ ¿” ‘ÿ ⁄ÿ º‹ ›ø ¡ø √· „· ≥¬ ≈ƒ ≈Â Ê≥ ¥Í ÏÍ ™ª ‘Ó Ô™ ´Û ıÛ °≤ ›˜ ¯° ¢¸ ˛¸ ò© Êè êò ôó ¯† Ô Ú‰   ŒÓ ∏ß ≠≈ »» ‚
+¥ ≤ﬁ
+ ËÆ ¨¨† ¨¨ †Ø »» Ø˜ »» ˜˝ »» ˝À ŒÓ À· ¨¨ ·° »» °” »» ”ã ¨¨ ã· »» ·Ô »» ÔÁ ‚
+¥ Áö ¨¨ ö“ ≤ﬁ
+ “⁄ »» ⁄√ ¨¨ √Ó ∏ß Óˆ »» ˆ© »» ©∂   ∂ˆ ¨¨ ˆä ∏ß ä§ ¨¨ §≈ »» ≈⁄ »» ⁄¡ ¨¨ ¡æ »» æô ËÆ ôº ∏ß º∑ ¨¨ ∑å »» å® »» ®Ñ Ú‰ ÑÃ ¨¨ Ã… ¯
+… õ
+… Ã
+… ˜
+… ó
+… ª
+  è
+  ¢
+  ®
+  ∫
+  ö
+  ´
+  Ò
+  Å
+  î
+
+  •
+
+  ı
+  Ö
+  Ë
+  Î
+  Â
+  Ë
+  
+  Û
+  ô
+À ©
+À æ
+À ”
+À ˜
+À å
+À °
+À ≈
+À ⁄
+À Ô	Ã  
+Ã ∫
+Ã ©
+Ã §
+Ã »
+Ã °
+Ã ‘
+Ã â
+Ã ¿
+Ã Ù
+Ã ™
+Ã ·
+Ã √	
+Ã ˆ	
+Ã Œ
+
+Ã Ö
+Ã æ
+Ã 
+Ã ∞
+Ã ›
+Ã ‡
+Ã ñ
+Ã –
+Ã ”
+Ã €
+Ã ﬁ
+Ã Ë
+Ã Ò
+Ã ˙
+Ã íÕ öŒ ·
+œ ⁄
+œ ·
+œ ®
+œ Ø
+œ ˆ
+œ ˝– Ã— — — — — — 	— 	— 
+— Ç
+— Ñ
+— à
+— ù
+— ∞— Œ— œ— –
+— ◊
+— €
+— Í
+— ˚
+— ã
+— »
+— ·
+— Ì
+— µ
+— æ
+— ”
+— Ÿ
+— Ë— Ú— Û— Ù— ı— ˆ— ˜— ¯— ˘
+— Ä
+— ã
+— ©
+— è
+— ì— Ë— È— Í— Î
+— Ú
+— ˛
+— ü
+— ∑
+— É
+— ª
+— Ω
+— ¡
+— ê— ≤— ≥— ¥— µ— ∂— ∑— ∏— π
+— ¿
+— À
+— È
+— À	
+— ˛	
+— â
+
+— ç
+— ‚
+— „
+— ‰
+— Â
+
+— Ï
+
+— 
+
+— ë
+— Ø
+— ˇ
+— ø
+— ¡
+— ≈
+— î— ∏
+— ø
+— “
+— ’
+— ä
+— ª
+— æ
+— ∆
+— …— •— ≠— Æ— Ø— ∞— ±— ≤— ≥— ¥— µ— ∂— ∑— ∏— π— ∫— ª— º— Ω— æ— ø— ¿— ¡— ¬— √— ƒ— ≈— ∆— «— »— …—  
+— ã
+— ≤
+— «
+— Í
+— Ä
+— ï
+— ∏
+— Œ
+— „
+— Ü
+— í
+— õ
+— §
+— ≠
+— ∂	“ =
+“ É
+“ µ
+“ ø
+“ ﬁ
+“ –
+“ õ
+“ ∑” √	‘ t
+‘ Ö
+‘ ⁄	
+’ –	
+’ ù
+’ ÷
+’ ﬂ÷ ˆ
+◊ •◊ º	ÿ 		ÿ 		ÿ 	ÿ ÿ 	ÿ  ÿ 2	ÿ l	ÿ ~
+ÿ Ç
+ÿ Ñ
+ÿ à
+ÿ ã
+ÿ è
+ÿ ô
+ÿ ù
+ÿ ¢
+ÿ ¨
+ÿ ∞
+ÿ ≤
+ÿ ∂
+ÿ ∫
+ÿ ∆
+ÿ ∆
+ÿ ”
+ÿ ”
+ÿ ◊
+ÿ €
+ÿ Í
+ÿ ˚
+ÿ ©
+ÿ ≠ÿ À
+ÿ ú
+ÿ ú
+ÿ †
+ÿ §
+ÿ ®
+ÿ ¨
+ÿ ¨
+ÿ ±
+ÿ µ
+ÿ ∫
+ÿ æ
+ÿ ƒ
+ÿ »
+ÿ Ã
+ÿ ”
+ÿ ’
+ÿ Ÿ
+ÿ ›
+ÿ ›
+ÿ ‰
+ÿ Ë
+ÿ Í
+ÿ ¸
+ÿ ¸
+ÿ Ä
+ÿ Ñ
+ÿ Ñ
+ÿ ã
+ÿ °
+ÿ •
+ÿ ©
+ÿ ˝
+ÿ è
+ÿ ì
+ÿ ñ
+ÿ ö
+ÿ §
+ÿ ´
+ÿ µ
+ÿ π
+ÿ √
+ÿ Õ
+ÿ ‘
+ÿ ‡
+ÿ ‡
+ÿ Ó
+ÿ Ó
+ÿ Ú
+ÿ ˆ
+ÿ ˆ
+ÿ ˛
+ÿ â
+ÿ ï
+ÿ ï
+ÿ ü
+ÿ ±
+ÿ ±
+ÿ ∑
+ÿ ¿
+ÿ ª
+ÿ Ω
+ÿ ¡
+ÿ ƒ
+ÿ Ì
+ÿ Ì
+ÿ Ò
+ÿ ı
+ÿ ı
+ÿ ˙
+ÿ Å
+ÿ Ö
+ÿ Ö
+ÿ ê
+ÿ í
+ÿ ò
+ÿ ú
+ÿ ú
+ÿ £
+ÿ ™
+ÿ º
+ÿ º
+ÿ ¿
+ÿ ƒ
+ÿ ƒ
+ÿ À
+ÿ ·
+ÿ Â
+ÿ Èÿ á	
+ÿ ¢	
+ÿ √	
+ÿ «	
+ÿ À	
+ÿ ˆ	
+ÿ ˙	
+ÿ ˛	
+ÿ â
+
+ÿ ç
+
+ÿ ê
+
+ÿ î
+
+ÿ û
+
+ÿ •
+
+ÿ Ø
+
+ÿ ≥
+
+ÿ Ω
+
+ÿ «
+
+ÿ Œ
+
+ÿ ⁄
+
+ÿ ⁄
+
+ÿ Ë
+
+ÿ Ë
+
+ÿ Ï
+
+ÿ 
+
+ÿ ˙
+
+ÿ ˙
+
+ÿ Ö
+ÿ ë
+ÿ ù
+ÿ ù
+ÿ Ø
+ÿ µ
+ÿ µ
+ÿ æ
+ÿ ø
+ÿ ¡
+ÿ ≈
+ÿ »
+ÿ Ò
+ÿ Ò
+ÿ ı
+ÿ ˘
+ÿ ˘
+ÿ ˛
+ÿ Ö
+ÿ â
+ÿ â
+ÿ î
+ÿ ñ
+ÿ û
+ÿ ¢
+ÿ ¢
+ÿ ©
+ÿ ∞
+ÿ ª
+ÿ ª
+ÿ ø
+ÿ √
+ÿ √
+ÿ »
+ÿ »
+ÿ “
+ÿ ’
+ÿ ›
+ÿ ‡
+ÿ Ë
+ÿ Î
+ÿ Û
+ÿ ˆ
+ÿ ˛
+ÿ Å
+ÿ ä
+ÿ ê
+ÿ ê
+ÿ ñ
+ÿ û
+ÿ û
+ÿ £
+ÿ £
+ÿ ≠
+ÿ ≠
+ÿ ≤
+ÿ ≤
+ÿ ª
+ÿ æ
+ÿ ∆
+ÿ …
+ÿ –
+ÿ ”
+ÿ €
+ÿ ﬁ
+ÿ Â
+ÿ Ë
+ÿ 
+ÿ Û
+ÿ ˙
+ÿ ˝
+ÿ Ö
+ÿ à
+ÿ è
+ÿ í
+ÿ ö
+ÿ ùÿ Àÿ —ÿ ⁄ÿ „ÿ Ïÿ ı
+ÿ Ç
+ÿ Ç
+ÿ ã
+ÿ í
+ÿ ô
+ÿ †
+ÿ Æ
+ÿ Æ
+ÿ ≤
+ÿ √
+ÿ √
+ÿ «
+ÿ Ê
+ÿ Ê
+ÿ Í
+ÿ ¸
+ÿ ¸
+ÿ Ä
+ÿ ë
+ÿ ë
+ÿ ï
+ÿ ¥
+ÿ ¥
+ÿ ∏
+ÿ  
+ÿ  
+ÿ Œ
+ÿ ﬂ
+ÿ ﬂ
+ÿ „
+ÿ Ç
+ÿ Ç
+ÿ Ü
+ÿ Ωÿ ≈	Ÿ c
+Ÿ Ù⁄ §
+€ ¬
+€ ‹
+€ ∏	
+€ æ	
+€ “	
+€ Ê	
+€ Ï	
+€ Ö
+
+€ ÷
+
+€ ü	‹ 0
+‹ 
+‹ ∑
+‹ Ω
+‹ õ
+‹ •
+‹ ˜
+‹ ˝
+‹ †	
+‹ ó
+‹ £› „› Ù	ﬁ 
+ﬁ ·
+ﬁ Å
+ﬁ ó
+ﬁ ¢
+ﬁ ◊
+ﬁ ˚
+ﬁ Ü
+ﬁ ñ
+ﬁ ú
+ﬁ ¸
+ﬁ Ñ
+ﬁ ˚
+ﬁ Ã
+ﬁ ◊
+ﬁ ÷
+ﬁ ‹
+ﬁ ˆ
+
+ﬁ Ä
+ﬁ –
+ﬁ €
+ﬂ ≤
+ﬂ ∂
+ﬂ Ú
+ﬂ ë
+ﬂ †
+ﬂ Í
+ﬂ π
+ﬂ ù
+ﬂ ß
+ﬂ ‚
+ﬂ í
+ﬂ ≥
+
+ﬂ ô
+ﬂ •
+ﬂ Ê
+ﬂ ñ
+ﬂ Û
+ﬂ ˆ
+ﬂ ˙
+ﬂ ˝
+ﬂ Ö
+ﬂ à
+ﬂ †‡ π‡ €· ã
+‚ É
+
+„ Ë‰ †
+Â ‚
+Â ¡
+Â À
+Â «
+Â ä
+Â å
+Â °
+Â ª
+
+Â ≈
+
+Â é
+Â ê
+Â ú
+Â ßÊ ∑Á ¡
+Ë Ú
+È ã
+È ’
+È ñ
+È ƒ
+È ê
+
+È »
+È ˛
+È Å
+È è
+È í
+È ö
+È ù	Í E
+Í Ê
+Í ÿ
+Í £
+Í ™	Í ±	
+Í ‘
+Í ß	Î a
+Ï ÏÌ œÌ –Ì ¶Ì  
+Ì ¨
+Ì ©
+Ì æ
+Ì ”
+Ì ⁄
+Ì ·
+Ì ˜
+Ì å
+Ì °
+Ì ®
+Ì Ø
+Ì ≈
+Ì ⁄
+Ì Ô
+Ì ˆ
+Ì ˝"
+_Z8uae_nbcd7input_t"
+_Z12verilog_nbcd7input_t"
+_Z8uae_abcd7input_t"
+_Z12verilog_abcd7input_t"
+_Z8uae_sbcd7input_t"
+_Z12verilog_sbcd7input_t" 
+_Z7compare7input_t8output_tS0_"
+printf"
+main"
+llvm.memcpy.p0i8.p0i8.i64*ö
+-î
+^
+llvm_data_layoutJ
+H
+Fe-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128
+2
+llvm_target_triple
+
+x86_64-unknown-linux-gnu
